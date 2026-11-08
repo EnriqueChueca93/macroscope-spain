@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-07",
-   "raw": 232.5805208,
-   "display": "233 €/MWh",
-   "period": "7 Nov 2026",
+   "date": "2026-11-08",
+   "raw": 200.0730208,
+   "display": "200 €/MWh",
+   "period": "8 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -449,10 +449,10 @@
    "flash": false
   },
   "electricity_demand": {
-   "date": "2026-11-06",
-   "raw": 719.9334,
-   "display": "719.9 GWh",
-   "period": "6 Nov 2026",
+   "date": "2026-11-07",
+   "raw": 618.1034,
+   "display": "618.1 GWh",
+   "period": "7 Nov 2026",
    "flash": false
   },
   "electricity_demand_monthly": {
@@ -652,24 +652,24 @@
    "flash": false
   },
   "ecb_deposit_rate": {
-   "date": "2026-11-07",
+   "date": "2026-11-08",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "7 Nov 2026",
+   "period": "8 Nov 2026",
    "flash": false
   },
   "ecb_mro_rate": {
-   "date": "2026-11-07",
+   "date": "2026-11-08",
    "raw": 2.65,
    "display": "2.65%",
-   "period": "7 Nov 2026",
+   "period": "8 Nov 2026",
    "flash": false
   },
   "ecb_mlf_rate": {
-   "date": "2026-11-07",
+   "date": "2026-11-08",
    "raw": 2.9,
    "display": "2.90%",
-   "period": "7 Nov 2026",
+   "period": "8 Nov 2026",
    "flash": false
   },
   "estr": {
@@ -7380,7 +7380,7 @@
   },
   "real_hpi_fr": {
    "date": "2026-04-01",
-   "raw": 100.4975182,
+   "raw": 100.4871867,
    "display": "−3.0% y/y",
    "period": "Q2 2026",
    "flash": false
@@ -7401,7 +7401,7 @@
   },
   "real_hpi_nl": {
    "date": "2025-10-01",
-   "raw": 156.60322,
+   "raw": 156.6042854,
    "display": "2.9% y/y",
    "period": "Q4 2025",
    "flash": false
@@ -8968,24 +8968,24 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-07",
+   "date": "2026-11-08",
    "raw": 1521.3953,
    "display": "€1,521.4 bn",
-   "period": "7 Nov 2026",
+   "period": "8 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-07",
+   "date": "2026-11-08",
    "raw": 2.36070911,
    "display": "2.36%",
-   "period": "7 Nov 2026",
+   "period": "8 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-07",
-   "raw": 7.740820424,
+   "date": "2026-11-08",
+   "raw": 7.738082573,
    "display": "7.74 years",
-   "period": "7 Nov 2026",
+   "period": "8 Nov 2026",
    "flash": false
   },
   "madrid_general": {
@@ -11488,8 +11488,22 @@
    "page": "inflation.html",
    "text": "Electricity price (day-ahead): −5.3% since the last update, to 233 €/MWh.",
    "at": "2026-11-07T15:43:11+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): −14.0% since the last update, to 200 €/MWh.",
+   "at": "2026-11-08T16:01:41+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_demand",
+   "page": "activity.html",
+   "text": "Electricity demand: −14.1% since the last update, to 618.1 GWh.",
+   "at": "2026-11-08T16:01:41+00:00"
   }
  ],
- "updated_at": "2026-11-07T21:11:06+00:00",
+ "updated_at": "2026-11-08T16:01:41+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
