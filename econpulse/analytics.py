@@ -16,7 +16,7 @@ import pandas as pd
 from statsmodels.tsa.filters.hp_filter import hpfilter
 
 from . import i18n, seasonal, transforms
-from .charts import localise
+from .charts import localise, source_page
 from .i18n import _
 from .snapshot import MINUS, fmt_change, fmt_value, period_label
 from .tables import DASH, Data
@@ -206,7 +206,7 @@ def composite_table(data: Data, key: str) -> dict | None:
         ind = data.by_id[row["component"].id]
         weight = max(0.0, 1 - row["age"] / 4)
         rows.append({"heading": False, "label": _(row["component"].label), "label_es": ind.label_es, "indent": 0,
-                     "period_note": period_label(row["date"], row["freq"]), "url": ind.source_url(),
+                     "period_note": period_label(row["date"], row["freq"]), "url": source_page(ind, data.by_id),
                      "cells": [_component_display(data, row), _fmt_signed(row["z"]), f"{weight:.2f}" if weight else "–"]})
     end = period_label(c["end"], "M")
     return {"title": _(title), "caption": _("Latest readings and their z-scores · composite for {month}").format(month=end),
@@ -352,7 +352,7 @@ def nowcast_inputs_table(data: Data) -> dict | None:
         return None
     q = period_label(n["quarter"], "Q")
     rows = [{"heading": False, "label": _(c["input"].label), "label_es": data.by_id[c["input"].id].label_es, "indent": 0,
-             "period_note": "", "url": data.by_id[c["input"].id].source_url(),
+             "period_note": "", "url": source_page(data.by_id[c["input"].id], data.by_id),
              "cells": [period_label(c["last"], "M"), _("{n} of {total}").format(n=c['months'], total=3)]}
             for c in n["coverage"]]
     return {"title": _("Input"), "caption": _("What the {q} nowcast is built on").format(q=q), "through": q,

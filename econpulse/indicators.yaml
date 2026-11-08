@@ -2777,7 +2777,7 @@ indicators:
     section: international
     source: eurostat
     key: namq_10_gdp
-    params: {geo: EA20, unit: CLV_PCH_SM, s_adj: SCA, na_item: B1GQ}
+    params: {geo: EA21, unit: CLV_PCH_SM, s_adj: SCA, na_item: B1GQ}
     freq: Q
     unit: "%"
     change_unit: pp
@@ -2968,7 +2968,7 @@ indicators:
     section: international
     source: eurostat
     key: namq_10_gdp
-    params: {geo: EA20, unit: CLV_I20, s_adj: SCA, na_item: B1GQ}
+    params: {geo: EA21, unit: CLV_I20, s_adj: SCA, na_item: B1GQ}
     freq: Q
     unit: index
     transforms: [yoy, pop]
@@ -3037,7 +3037,7 @@ indicators:
     section: international
     source: eurostat
     key: lfsi_emp_q
-    params: {geo: EA20, indic_em: EMP_LFS, age: Y15-64, sex: T, unit: PC_POP, s_adj: SA}
+    params: {geo: EA21, indic_em: EMP_LFS, age: Y15-64, sex: T, unit: PC_POP, s_adj: SA}
     freq: Q
     unit: "%"
     change_unit: pp
@@ -4314,7 +4314,7 @@ indicators:
     section: gdp
     source: eurostat
     key: namq_10_lp_ulc
-    params: {geo: EA20, unit: I20, s_adj: SCA, na_item: RLPR_HW}
+    params: {geo: EA21, unit: I20, s_adj: SCA, na_item: RLPR_HW}
     freq: Q
     unit: index
     decimals: 1
@@ -4326,7 +4326,7 @@ indicators:
     section: gdp
     source: eurostat
     key: namq_10_lp_ulc
-    params: {geo: EA20, unit: I20, s_adj: SCA, na_item: NULC_HW}
+    params: {geo: EA21, unit: I20, s_adj: SCA, na_item: NULC_HW}
     freq: Q
     unit: index
     decimals: 1
@@ -4446,7 +4446,7 @@ indicators:
     section: gdp
     source: eurostat
     key: prc_ppp_ind_1           # COICOP 2018; prc_ppp_ind (COICOP 1999) stopped at 2024
-    params: {geo: EA20, indic_ppp: VI_PPS_EU27_2020_HAB, ppp_cat18: GDP}
+    params: {geo: EA21, indic_ppp: VI_PPS_EU27_2020_HAB, ppp_cat18: GDP}
     freq: A
     unit: index
     decimals: 0
@@ -8863,7 +8863,7 @@ indicators:
     freq: A
     unit: "% of GDP"
     change_unit: pp
-    max_age_days: 1900           # the OECD's social expenditure figures come three or four years late
+    max_age_days: 2300           # the OECD's social expenditure figures come four or five years late (Spain's 2021 still the latest in Nov 2026)
     notes: Public cash spending on old-age and survivors' pensions, as % of GDP (OECD Social Expenditure Database, SOCX).
 
   - id: replacement_rate_{slug}

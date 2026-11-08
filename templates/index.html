@@ -89,7 +89,7 @@
           <tr class="gl-overall"><th scope="row">{{ b.overall.label }}</th>
             {% for c in b.overall.cells %}<td class="gl gl-{{ c.shade }}"{% if c.title %} title="{{ c.title }}"{% endif %}>{{ c.text }}</td>{% endfor %}</tr>
           {% for r in b.rows %}
-          <tr><th scope="row"><a href="{{ r.url }}" target="_blank" rel="noopener" title="{{ r.label_es }}">{{ r.label }}</a></th>
+          <tr><th scope="row">{% if r.url %}<a href="{{ r.url }}" target="_blank" rel="noopener" title="{{ r.label_es }}">{{ r.label }}</a>{% else %}<span title="{{ r.label_es }}">{{ r.label }}</span>{% endif %}</th>
             {% for c in r.cells %}<td class="gl gl-{{ c.shade }}"{% if c.span > 1 %} colspan="{{ c.span }}"{% endif %} title="{{ c.title }}">{{ c.text }}</td>{% endfor %}</tr>
           {% endfor %}
         </tbody>

@@ -137,7 +137,7 @@ def borrowing_costs(d: _Data) -> dict:
     Worked out on the latest date both yields exist, so the two parts add up exactly.
     """
     def parts():
-        both = pd.concat({"es": d.series("es_10y"), "de": d.series("de_10y")}, axis=1).dropna()
+        both = pd.concat({"es": d.series("es_10y"), "de": d.series("de_10y")}, axis=1, sort=True).dropna()
         latest = both.index[-1]
         before = both[both.index < pd.Timestamp(latest.year, 1, 1)]
         if before.empty:

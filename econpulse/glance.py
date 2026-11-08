@@ -14,6 +14,7 @@ import pandas as pd
 
 from . import analytics, i18n
 from .analytics import ACTIVITY, INFLATION, MINUS, Z_CLIP
+from .charts import source_page
 from .homepage import _format, extreme, headline_series, since_text
 from .i18n import _
 from .snapshot import period_label
@@ -88,7 +89,7 @@ def _component_rows(data: Data, components, hot: bool, months: list[pd.Timestamp
             cells = [cell(q, span) for q, span in quarters.items()]
         else:
             cells = [cell(m, 1) for m in months]
-        rows.append({"label": label, "label_es": ind.label_es, "url": ind.source_url(), "cells": cells})
+        rows.append({"label": label, "label_es": ind.label_es, "url": source_page(ind, data.by_id), "cells": cells})
     return rows
 
 

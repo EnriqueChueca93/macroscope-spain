@@ -98,6 +98,11 @@ def _pages(label: str, label_es: str | None, ind: Indicator, by_id: dict[str, In
             for page in _pages(by_id[dep].label, by_id[dep].label_es, by_id[dep], by_id)]
 
 
+def source_page(ind: Indicator, by_id: dict[str, Indicator]) -> str | None:
+    """The publisher's page behind one indicator: its own, or for a calculation its first input's."""
+    return next((page[3] for page in _pages(ind.label, ind.label_es, ind, by_id) if page[3]), None)
+
+
 def source_links(items: list[tuple[str, Indicator]], by_id: dict[str, Indicator]) -> list[dict]:
     """A chart's sources, each linked to its own page (see the module's docstring). `items` are
     (the series' name in the chart, its indicator). In the order of _sources, the calculation credit last."""

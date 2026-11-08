@@ -1,14 +1,14 @@
 {
  "latest": {
-  "fingerprint": "243f05fd0b23",
+  "fingerprint": "1d56efc1d518",
   "as_of": {
-   "letras": "2026-10-16",
+   "letras": "2026-11-06",
    "bonds": "2026-10-31"
   },
   "checked_by": "AI check (Claude)",
-  "checked_at": "2026-11-04",
+  "checked_at": "2026-11-08",
   "checked_against": "the Tesoro's page",
-  "note": "All 78 securities re-read independently from the page (maturity, amount, coupon); totals, the inflation-linked and green flags, and each indexed amount (face value times coefficient) agree. Since the 20 Oct edition the bond due 31 Oct 2026 has matured and the 8 inflation-linked bonds were revalued at month end."
+  "note": "All 78 securities re-read independently from the page: the 12 Letras (maturity, amount) and the 66 Bonos and Obligaciones (type, coupon, maturity, amount, inflation-linked and green flags); totals (83,429.4 and 1,437,965.9 million euros) and each indexed amount (face value times coefficient) agree. Since the edition checked on 4 Nov only the Letras changed (now as of 6 Nov)."
  },
  "history": [
   {
@@ -32,6 +32,17 @@
    "checked_at": "2026-11-04",
    "checked_against": "the Tesoro's page",
    "note": "All 78 securities re-read independently from the page (maturity, amount, coupon); totals, the inflation-linked and green flags, and each indexed amount (face value times coefficient) agree. Since the 20 Oct edition the bond due 31 Oct 2026 has matured and the 8 inflation-linked bonds were revalued at month end."
+  },
+  {
+   "fingerprint": "1d56efc1d518",
+   "as_of": {
+    "letras": "2026-11-06",
+    "bonds": "2026-10-31"
+   },
+   "checked_by": "AI check (Claude)",
+   "checked_at": "2026-11-08",
+   "checked_against": "the Tesoro's page",
+   "note": "All 78 securities re-read independently from the page: the 12 Letras (maturity, amount) and the 66 Bonos and Obligaciones (type, coupon, maturity, amount, inflation-linked and green flags); totals (83,429.4 and 1,437,965.9 million euros) and each indexed amount (face value times coefficient) agree. Since the edition checked on 4 Nov only the Letras changed (now as of 6 Nov)."
   }
  ]
 }

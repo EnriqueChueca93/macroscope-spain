@@ -545,7 +545,7 @@ details code { font-size: 11px; word-break: break-all; }
 
 /* Fiscal Explorer */
 .fx-badges { margin: 0 0 12px; }
-.fx-badges .badge { font-size: 12px; padding: 2px 8px; }
+.fx-badges .badge { font-size: 12px; padding: 2px 8px; white-space: normal; max-width: 100%; }   /* long ones wrap on a phone */
 .fx-levers label { flex-wrap: wrap; }
 .fx-levers input[type="range"] { width: 140px; }
 .fx-levers output { min-width: 64px; }

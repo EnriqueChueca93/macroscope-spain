@@ -60,6 +60,18 @@ def test_heatmap_rows_cells_and_quarters(tmp_path):
         assert next(b for b in es["blocks"] if b["id"] == "inflation")["overall"]["label"] == "Inflación, puntuación global"
 
 
+def test_every_row_links_to_a_page():
+    # A calculated row (the month's average electricity demand) links to its input's page, not to "None"
+    from econpulse.analytics import ACTIVITY, INFLATION
+    from econpulse.charts import source_page
+    from econpulse.registry import load_registry
+    by_id = {i.id: i for i in load_registry()}
+    assert by_id["electricity_demand_monthly"].source_url() is None
+    assert source_page(by_id["electricity_demand_monthly"], by_id) == "https://www.ree.es/es/datos/demanda"
+    assert source_page(by_id["cpi"], by_id) == by_id["cpi"].source_url()
+    assert all(source_page(by_id[c.id], by_id) for c in ACTIVITY + INFLATION)
+
+
 def test_records_need_two_years_and_count_people_in_millions(tmp_path):
     data = _data(tmp_path)
     tiles = [{"id": "afiliados", "headline": {"transform": "level"}}]
