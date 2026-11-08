@@ -7373,8 +7373,8 @@
   },
   "real_hpi_es": {
    "date": "2026-04-01",
-   "raw": 153.8861826,
-   "display": "8.7% y/y",
+   "raw": 153.8639811,
+   "display": "8.6% y/y",
    "period": "Q2 2026",
    "flash": false
   },
@@ -11502,8 +11502,15 @@
    "page": "activity.html",
    "text": "Electricity demand: −14.1% since the last update, to 618.1 GWh.",
    "at": "2026-11-08T16:01:41+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "real_hpi_es",
+   "page": "housing.html",
+   "text": "Real house prices, Spain for Q2 2026 revised to 8.6% y/y, from 8.7% y/y.",
+   "at": "2026-11-08T21:26:36+00:00"
   }
  ],
- "updated_at": "2026-11-08T16:01:41+00:00",
+ "updated_at": "2026-11-08T21:26:36+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
