@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_at": "2026-11-08T21:26:16+00:00",
+ "updated_at": "2026-11-09T19:53:29+00:00",
  "rebuilt_at": "2026-11-01T06:28:54+00:00",
  "ecb_modified": "Sun, 01 Nov 2026 05:21:10 GMT",
  "ecb_last": "2026-10-30",
@@ -17430,6 +17430,23 @@
    "dovish": 1,
    "score": null,
    "policy_share": 0.0
+  },
+  {
+   "id": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
+   "date": "2026-11-09",
+   "speaker": "Boris Vujčić",
+   "key": "vujcic",
+   "institution": "ECB",
+   "seat": "ECB Vice-President",
+   "title": "Vice-President",
+   "speech_title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
+   "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
+   "source": "BIS",
+   "words": 2454,
+   "hawkish": 1,
+   "dovish": 0,
+   "score": null,
+   "policy_share": 0.021
   }
  ]
 }
