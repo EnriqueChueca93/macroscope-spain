@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_at": "2026-11-10T00:59:03+00:00",
+ "updated_at": "2026-11-10T17:07:35+00:00",
  "rebuilt_at": "2026-11-01T06:28:54+00:00",
  "ecb_modified": "Sun, 01 Nov 2026 05:21:10 GMT",
  "ecb_last": "2026-10-30",
@@ -17447,6 +17447,40 @@
    "dovish": 0,
    "score": null,
    "policy_share": 0.021
+  },
+  {
+   "id": "https://www.bis.org/speeches/20261110-introductory-remarks-official-monetary-and-financial-institutions-forum-omfif",
+   "date": "2026-11-10",
+   "speaker": "Dimitar Radev",
+   "key": "radev",
+   "institution": "BG",
+   "seat": "BG",
+   "title": "Governor",
+   "speech_title": "Introductory remarks - Official Monetary and Financial Institutions Forum (OMFIF)",
+   "url": "https://www.bis.org/speeches/20261110-introductory-remarks-official-monetary-and-financial-institutions-forum-omfif",
+   "source": "BIS",
+   "words": 1230,
+   "hawkish": 5,
+   "dovish": 1,
+   "score": 66.7,
+   "policy_share": 0.282
+  },
+  {
+   "id": "https://www.bis.org/speeches/20261110-navigating-stormy-waters-reflections-monetary-policy",
+   "date": "2026-11-10",
+   "speaker": "Isabel Schnabel",
+   "key": "schnabel",
+   "institution": "ECB",
+   "seat": "ECB Executive Board",
+   "title": "Executive Board",
+   "speech_title": "Navigating stormy waters - reflections on monetary policy",
+   "url": "https://www.bis.org/speeches/20261110-navigating-stormy-waters-reflections-monetary-policy",
+   "source": "BIS",
+   "words": 158,
+   "hawkish": 0,
+   "dovish": 0,
+   "score": null,
+   "policy_share": 0.5
   }
  ]
 }
