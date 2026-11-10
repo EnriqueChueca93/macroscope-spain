@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-09",
-   "raw": 179.669375,
-   "display": "180 €/MWh",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 171.3840625,
+   "display": "171 €/MWh",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -449,10 +449,10 @@
    "flash": false
   },
   "electricity_demand": {
-   "date": "2026-11-08",
-   "raw": 581.64364,
-   "display": "581.6 GWh",
-   "period": "8 Nov 2026",
+   "date": "2026-11-09",
+   "raw": 670.72605,
+   "display": "670.7 GWh",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "electricity_demand_monthly": {
@@ -652,24 +652,24 @@
    "flash": false
   },
   "ecb_deposit_rate": {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "9 Nov 2026",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "ecb_mro_rate": {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "raw": 2.65,
    "display": "2.65%",
-   "period": "9 Nov 2026",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "ecb_mlf_rate": {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "raw": 2.9,
    "display": "2.90%",
-   "period": "9 Nov 2026",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "estr": {
@@ -8968,24 +8968,24 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "raw": 1521.3953,
    "display": "€1,521.4 bn",
-   "period": "9 Nov 2026",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "raw": 2.36070911,
    "display": "2.36%",
-   "period": "9 Nov 2026",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-09",
-   "raw": 7.735344722,
-   "display": "7.74 years",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 7.732606872,
+   "display": "7.73 years",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "madrid_general": {
@@ -11551,8 +11551,22 @@
    "page": "gdp.html",
    "text": "GDP per head in purchasing power, euro area (EU = 100) for 2025 revised to 103, from 104.",
    "at": "2026-11-09T19:53:54+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): −4.6% since the last update, to 171 €/MWh.",
+   "at": "2026-11-10T00:59:23+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_demand",
+   "page": "activity.html",
+   "text": "Electricity demand: +15.3% since the last update, to 670.7 GWh.",
+   "at": "2026-11-10T00:59:23+00:00"
   }
  ],
- "updated_at": "2026-11-09T19:53:54+00:00",
+ "updated_at": "2026-11-10T00:59:23+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
