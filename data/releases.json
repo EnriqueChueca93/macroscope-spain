@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-11",
-   "raw": 210.9359375,
-   "display": "211 €/MWh",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 116.1602083,
+   "display": "116 €/MWh",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -449,10 +449,10 @@
    "flash": false
   },
   "electricity_demand": {
-   "date": "2026-11-10",
-   "raw": 700.03941,
-   "display": "700.0 GWh",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 695.36365,
+   "display": "695.4 GWh",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "electricity_demand_monthly": {
@@ -8968,24 +8968,24 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "raw": 1527.4884,
    "display": "€1,527.5 bn",
-   "period": "11 Nov 2026",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "raw": 2.363751343,
    "display": "2.36%",
-   "period": "11 Nov 2026",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-11",
-   "raw": 7.737356484,
-   "display": "7.74 years",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 7.734618634,
+   "display": "7.73 years",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "madrid_general": {
@@ -11740,8 +11740,15 @@
    "page": "international.html",
    "text": "10-year spread over Germany, Netherlands: 12 bp in Oct 2026, after 9 bp in Sep 2026.",
    "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): −44.9% since the last update, to 116 €/MWh.",
+   "at": "2026-11-11T23:49:14+00:00"
   }
  ],
- "updated_at": "2026-11-11T17:09:58+00:00",
+ "updated_at": "2026-11-11T23:49:14+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
