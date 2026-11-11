@@ -295,10 +295,10 @@
    "flash": false
   },
   "wage_agreements": {
-   "date": "2026-09-01",
-   "raw": 3.05,
-   "display": "3.05%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 3.06,
+   "display": "3.06%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi": {
@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-10",
-   "raw": 171.3840625,
-   "display": "171 €/MWh",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 210.9359375,
+   "display": "211 €/MWh",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -449,15 +449,15 @@
    "flash": false
   },
   "electricity_demand": {
-   "date": "2026-11-09",
-   "raw": 683.19437,
-   "display": "683.2 GWh",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 700.03941,
+   "display": "700.0 GWh",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "electricity_demand_monthly": {
    "date": "2026-10-01",
-   "raw": 661.837421,
+   "raw": 661.491692,
    "display": "0.2% y/y",
    "period": "Oct 2026",
    "flash": false
@@ -652,220 +652,220 @@
    "flash": false
   },
   "ecb_deposit_rate": {
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "10 Nov 2026",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "ecb_mro_rate": {
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "raw": 2.65,
    "display": "2.65%",
-   "period": "10 Nov 2026",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "ecb_mlf_rate": {
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "raw": 2.9,
    "display": "2.90%",
-   "period": "10 Nov 2026",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "estr": {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "raw": 2.442,
    "display": "2.442%",
-   "period": "9 Nov 2026",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "aaa_fwd_3m": {
-   "date": "2026-11-09",
-   "raw": 2.742914862,
-   "display": "2.74%",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 2.778619934,
+   "display": "2.78%",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "aaa_fwd_6m": {
-   "date": "2026-11-09",
-   "raw": 2.907227077,
-   "display": "2.91%",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 2.97802317,
+   "display": "2.98%",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "aaa_fwd_9m": {
+   "date": "2026-11-10",
+   "raw": 3.082412634,
+   "display": "3.08%",
+   "period": "10 Nov 2026",
+   "flash": false
+  },
+  "aaa_fwd_1y": {
+   "date": "2026-11-10",
+   "raw": 3.127448384,
+   "display": "3.13%",
+   "period": "10 Nov 2026",
+   "flash": false
+  },
+  "aaa_fwd_2y": {
+   "date": "2026-11-10",
+   "raw": 3.096005425,
+   "display": "3.10%",
+   "period": "10 Nov 2026",
+   "flash": false
+  },
+  "aaa_fwd_3y": {
+   "date": "2026-11-10",
+   "raw": 3.075144695,
+   "display": "3.08%",
+   "period": "10 Nov 2026",
+   "flash": false
+  },
+  "euribor_3m": {
+   "date": "2026-11-10",
+   "raw": 2.738,
+   "display": "2.738%",
+   "period": "10 Nov 2026",
+   "flash": false
+  },
+  "euribor_12m": {
+   "date": "2026-11-10",
+   "raw": 3.217,
+   "display": "3.217%",
+   "period": "10 Nov 2026",
+   "flash": false
+  },
+  "es_12m_bill": {
    "date": "2026-11-09",
-   "raw": 2.992181684,
+   "raw": 2.986,
    "display": "2.99%",
    "period": "9 Nov 2026",
    "flash": false
   },
-  "aaa_fwd_1y": {
-   "date": "2026-11-09",
-   "raw": 3.028110668,
-   "display": "3.03%",
-   "period": "9 Nov 2026",
-   "flash": false
-  },
-  "aaa_fwd_2y": {
-   "date": "2026-11-09",
-   "raw": 3.004429762,
-   "display": "3.00%",
-   "period": "9 Nov 2026",
-   "flash": false
-  },
-  "aaa_fwd_3y": {
-   "date": "2026-11-09",
-   "raw": 3.003299668,
-   "display": "3.00%",
-   "period": "9 Nov 2026",
-   "flash": false
-  },
-  "euribor_3m": {
-   "date": "2026-11-09",
-   "raw": 2.773,
-   "display": "2.773%",
-   "period": "9 Nov 2026",
-   "flash": false
-  },
-  "euribor_12m": {
+  "es_3y": {
    "date": "2026-11-09",
    "raw": 3.204,
-   "display": "3.204%",
+   "display": "3.20%",
    "period": "9 Nov 2026",
-   "flash": false
-  },
-  "es_12m_bill": {
-   "date": "2026-11-06",
-   "raw": 3.001,
-   "display": "3.00%",
-   "period": "6 Nov 2026",
-   "flash": false
-  },
-  "es_3y": {
-   "date": "2026-11-06",
-   "raw": 3.28,
-   "display": "3.28%",
-   "period": "6 Nov 2026",
    "flash": false
   },
   "es_5y": {
-   "date": "2026-11-06",
-   "raw": 3.357,
-   "display": "3.36%",
-   "period": "6 Nov 2026",
+   "date": "2026-11-09",
+   "raw": 3.366,
+   "display": "3.37%",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "es_10y": {
-   "date": "2026-11-06",
-   "raw": 3.852,
-   "display": "3.85%",
-   "period": "6 Nov 2026",
+   "date": "2026-11-09",
+   "raw": 3.824,
+   "display": "3.82%",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "es_15y": {
-   "date": "2026-11-06",
-   "raw": 4.181,
-   "display": "4.18%",
-   "period": "6 Nov 2026",
+   "date": "2026-11-09",
+   "raw": 4.131,
+   "display": "4.13%",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "es_30y": {
-   "date": "2026-11-06",
-   "raw": 4.36,
+   "date": "2026-11-09",
+   "raw": 4.364,
    "display": "4.36%",
-   "period": "6 Nov 2026",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "de_10y": {
-   "date": "2026-11-10",
-   "raw": 3.31,
-   "display": "3.31%",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 3.37,
+   "display": "3.37%",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "aaa_1y": {
-   "date": "2026-11-09",
-   "raw": 2.853282092,
-   "display": "2.85%",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 2.913469115,
+   "display": "2.91%",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "aaa_3y": {
-   "date": "2026-11-09",
-   "raw": 2.958169512,
-   "display": "2.96%",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 3.038243873,
+   "display": "3.04%",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "aaa_5y": {
-   "date": "2026-11-09",
-   "raw": 3.012563153,
-   "display": "3.01%",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 3.084895141,
+   "display": "3.08%",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "aaa_10y": {
-   "date": "2026-11-09",
-   "raw": 3.271957806,
-   "display": "3.27%",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 3.330886527,
+   "display": "3.33%",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "aaa_15y": {
-   "date": "2026-11-09",
-   "raw": 3.474181684,
-   "display": "3.47%",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 3.519923543,
+   "display": "3.52%",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "aaa_30y": {
-   "date": "2026-11-09",
-   "raw": 3.571298438,
+   "date": "2026-11-10",
+   "raw": 3.571745089,
    "display": "3.57%",
-   "period": "9 Nov 2026",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "risk_premium": {
-   "date": "2026-11-09",
-   "raw": 55.9,
+   "date": "2026-11-10",
+   "raw": 55.7,
    "display": "56 bp",
-   "period": "9 Nov 2026",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "ibex35": {
-   "date": "2026-11-09",
-   "raw": 19743.0,
-   "display": "19,743",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 19936.0,
+   "display": "19,936",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "eurusd": {
-   "date": "2026-11-10",
-   "raw": 1.1214,
-   "display": "1.1214",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 1.1127,
+   "display": "1.1127",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "eurgbp": {
-   "date": "2026-11-10",
-   "raw": 0.83545,
-   "display": "0.8355",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 0.83618,
+   "display": "0.8362",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "eurchf": {
-   "date": "2026-11-10",
-   "raw": 0.9203,
-   "display": "0.9203",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 0.9234,
+   "display": "0.9234",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "eurjpy": {
-   "date": "2026-11-10",
-   "raw": 177.38,
-   "display": "177.38",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 177.18,
+   "display": "177.18",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "brent_usd": {
@@ -939,24 +939,24 @@
    "flash": false
   },
   "es_10y_monthly": {
-   "date": "2026-09-01",
-   "raw": 3.927,
-   "display": "3.93%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.066,
+   "display": "4.07%",
+   "period": "Oct 2026",
    "flash": false
   },
   "de_10y_monthly": {
-   "date": "2026-09-01",
-   "raw": 3.473,
-   "display": "3.47%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 3.416,
+   "display": "3.42%",
+   "period": "Oct 2026",
    "flash": false
   },
   "risk_premium_monthly": {
-   "date": "2026-09-01",
-   "raw": 45.4,
-   "display": "45 bp",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 65.0,
+   "display": "65 bp",
+   "period": "Oct 2026",
    "flash": false
   },
   "gdp_growth_de": {
@@ -1072,45 +1072,45 @@
    "flash": false
   },
   "bond10_fr": {
-   "date": "2026-09-01",
-   "raw": 4.44,
-   "display": "4.44%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.89,
+   "display": "4.89%",
+   "period": "Oct 2026",
    "flash": false
   },
   "bond10_it": {
-   "date": "2026-09-01",
-   "raw": 4.362,
-   "display": "4.36%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.68,
+   "display": "4.68%",
+   "period": "Oct 2026",
    "flash": false
   },
   "bond10_pt": {
-   "date": "2026-09-01",
-   "raw": 3.846,
-   "display": "3.85%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 3.917,
+   "display": "3.92%",
+   "period": "Oct 2026",
    "flash": false
   },
   "spread10_fr": {
-   "date": "2026-09-01",
-   "raw": 96.7,
-   "display": "97 bp",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 147.4,
+   "display": "147 bp",
+   "period": "Oct 2026",
    "flash": false
   },
   "spread10_it": {
-   "date": "2026-09-01",
-   "raw": 88.9,
-   "display": "89 bp",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 126.4,
+   "display": "126 bp",
+   "period": "Oct 2026",
    "flash": false
   },
   "spread10_pt": {
-   "date": "2026-09-01",
-   "raw": 37.3,
-   "display": "37 bp",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 50.1,
+   "display": "50 bp",
+   "period": "Oct 2026",
    "flash": false
   },
   "gdp_growth_ea": {
@@ -1688,17 +1688,17 @@
    "flash": false
   },
   "ciss_es": {
-   "date": "2026-11-09",
-   "raw": 0.01032889402,
-   "display": "0.010",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 0.009477983238,
+   "display": "0.009",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "ciss_ea": {
-   "date": "2026-11-09",
-   "raw": 0.005750200475,
+   "date": "2026-11-10",
+   "raw": 0.005840864167,
    "display": "0.006",
-   "period": "9 Nov 2026",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "npl_ratio": {
@@ -6126,10 +6126,10 @@
    "flash": false
   },
   "bond10_pl": {
-   "date": "2026-09-01",
-   "raw": 6.23,
-   "display": "6.23%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 6.32,
+   "display": "6.32%",
+   "period": "Oct 2026",
    "flash": false
   },
   "policy_rate_pl": {
@@ -6434,17 +6434,17 @@
    "flash": false
   },
   "bond10_nl": {
-   "date": "2026-09-01",
-   "raw": 3.564,
-   "display": "3.56%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 3.535,
+   "display": "3.54%",
+   "period": "Oct 2026",
    "flash": false
   },
   "spread10_nl": {
-   "date": "2026-09-01",
-   "raw": 9.1,
-   "display": "9 bp",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 11.9,
+   "display": "12 bp",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_jp": {
@@ -8919,45 +8919,45 @@
    "flash": false
   },
   "petrol_price": {
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "raw": 1.729889783,
    "display": "1.730 €/l",
-   "period": "2 Nov 2026",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "diesel_price": {
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "raw": 1.898318015,
    "display": "1.898 €/l",
-   "period": "2 Nov 2026",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "petrol_price_pretax": {
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "raw": 1.156970977,
    "display": "1.157 €/l",
-   "period": "2 Nov 2026",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "diesel_price_pretax": {
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "raw": 1.389857863,
    "display": "1.390 €/l",
-   "period": "2 Nov 2026",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "petrol_price_ea": {
-   "date": "2026-11-02",
-   "raw": 2.003881543,
-   "display": "2.004 €/l",
-   "period": "2 Nov 2026",
+   "date": "2026-11-09",
+   "raw": 1.958745933,
+   "display": "1.959 €/l",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "diesel_price_ea": {
-   "date": "2026-11-02",
-   "raw": 2.203130996,
-   "display": "2.203 €/l",
-   "period": "2 Nov 2026",
+   "date": "2026-11-09",
+   "raw": 2.14765523,
+   "display": "2.148 €/l",
+   "period": "9 Nov 2026",
    "flash": false
   },
   "vacancies_eurostat": {
@@ -8968,73 +8968,73 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "raw": 1527.4884,
    "display": "€1,527.5 bn",
-   "period": "10 Nov 2026",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "raw": 2.363751343,
    "display": "2.36%",
-   "period": "10 Nov 2026",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-10",
-   "raw": 7.740094335,
+   "date": "2026-11-11",
+   "raw": 7.737356484,
    "display": "7.74 years",
-   "period": "10 Nov 2026",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "madrid_general": {
-   "date": "2026-11-09",
-   "raw": 1953.0,
-   "display": "1,953.00",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 1972.0,
+   "display": "1,972.00",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "madrid_financials": {
-   "date": "2026-11-09",
-   "raw": 1595.6,
-   "display": "1,595.6",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 1624.3,
+   "display": "1,624.3",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "madrid_energy": {
-   "date": "2026-11-09",
-   "raw": 3283.4,
-   "display": "3,283.4",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 3272.7,
+   "display": "3,272.7",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "madrid_consumer_goods": {
-   "date": "2026-11-09",
-   "raw": 7585.4,
-   "display": "7,585.4",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 7637.7,
+   "display": "7,637.7",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "madrid_industry": {
-   "date": "2026-11-09",
-   "raw": 2668.6,
-   "display": "2,668.6",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 2693.1,
+   "display": "2,693.1",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "madrid_consumer_services": {
-   "date": "2026-11-09",
-   "raw": 1986.7,
-   "display": "1,986.7",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 2007.1,
+   "display": "2,007.1",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "madrid_tech": {
-   "date": "2026-11-09",
-   "raw": 695.8,
-   "display": "695.8",
-   "period": "9 Nov 2026",
+   "date": "2026-11-10",
+   "raw": 701.3,
+   "display": "701.3",
+   "period": "10 Nov 2026",
    "flash": false
   },
   "ms_nfa": {
@@ -11621,8 +11621,127 @@
    "page": "international.html",
    "text": "10-year yield, Japan (monthly avg.) for Oct 2026 revised to 2.94%, from 2.75%.",
    "at": "2026-11-10T22:40:13+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "wage_agreements",
+   "page": "wages.html",
+   "text": "Pay rise agreed in collective agreements: 3.06% in Oct 2026, after 3.05% in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): +23.1% since the last update, to 211 €/MWh.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "petrol_price_ea",
+   "page": "inflation.html",
+   "text": "Petrol (Euro-super 95), euro area: −2.3% since the last update, to 1.959 €/l.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "diesel_price_ea",
+   "page": "inflation.html",
+   "text": "Diesel, euro area: −2.5% since the last update, to 2.148 €/l.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_demand",
+   "page": "activity.html",
+   "text": "Electricity demand: +2.5% since the last update, to 700.0 GWh.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "es_10y_monthly",
+   "page": "international.html",
+   "text": "Spain 10-year yield (monthly avg.): 4.07% in Oct 2026, after 3.93% in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "de_10y_monthly",
+   "page": "international.html",
+   "text": "Germany 10-year yield (monthly avg.): 3.42% in Oct 2026, after 3.47% in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "risk_premium_monthly",
+   "page": "international.html",
+   "text": "ES−DE 10y spread (monthly avg.): 65 bp in Oct 2026, after 45 bp in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "bond10_fr",
+   "page": "international.html",
+   "text": "10-year yield, France (monthly avg.): 4.89% in Oct 2026, after 4.44% in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "bond10_it",
+   "page": "international.html",
+   "text": "10-year yield, Italy (monthly avg.): 4.68% in Oct 2026, after 4.36% in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "bond10_pt",
+   "page": "international.html",
+   "text": "10-year yield, Portugal (monthly avg.): 3.92% in Oct 2026, after 3.85% in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "bond10_nl",
+   "page": "international.html",
+   "text": "10-year yield, Netherlands (monthly avg.): 3.54% in Oct 2026, after 3.56% in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "bond10_pl",
+   "page": "international.html",
+   "text": "10-year yield, Poland (monthly avg.): 6.32% in Oct 2026, after 6.23% in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "spread10_fr",
+   "page": "international.html",
+   "text": "10-year spread over Germany, France: 147 bp in Oct 2026, after 97 bp in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "spread10_it",
+   "page": "international.html",
+   "text": "10-year spread over Germany, Italy: 126 bp in Oct 2026, after 89 bp in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "spread10_pt",
+   "page": "international.html",
+   "text": "10-year spread over Germany, Portugal: 50 bp in Oct 2026, after 37 bp in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "spread10_nl",
+   "page": "international.html",
+   "text": "10-year spread over Germany, Netherlands: 12 bp in Oct 2026, after 9 bp in Sep 2026.",
+   "at": "2026-11-11T17:09:58+00:00"
   }
  ],
- "updated_at": "2026-11-10T22:40:13+00:00",
+ "updated_at": "2026-11-11T17:09:58+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
