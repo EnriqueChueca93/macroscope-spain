@@ -869,17 +869,17 @@
    "flash": false
   },
   "brent_usd": {
-   "date": "2026-11-03",
-   "raw": 107.03,
-   "display": "$107.0",
-   "period": "3 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 92.14,
+   "display": "$92.1",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "brent_eur": {
-   "date": "2026-11-03",
-   "raw": 95.742016,
-   "display": "95.7 €/bbl",
-   "period": "3 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 82.807585,
+   "display": "82.8 €/bbl",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "gas_eu": {
@@ -6252,17 +6252,17 @@
    "flash": false
   },
   "youth_unemp_us": {
-   "date": "2026-10-01",
-   "raw": 9.3,
-   "display": "9.3%",
-   "period": "Oct 2026",
+   "date": "2026-09-01",
+   "raw": 9.9,
+   "display": "9.9%",
+   "period": "Sep 2026",
    "flash": false
   },
   "youth_unemp_ca": {
-   "date": "2026-10-01",
-   "raw": 13.7,
-   "display": "13.7%",
-   "period": "Oct 2026",
+   "date": "2026-09-01",
+   "raw": 13.0,
+   "display": "13.0%",
+   "period": "Sep 2026",
    "flash": false
   },
   "youth_unemp_ea": {
@@ -6456,8 +6456,8 @@
   },
   "bond10_jp": {
    "date": "2026-10-01",
-   "raw": 2.755,
-   "display": "2.75%",
+   "raw": 2.94,
+   "display": "2.94%",
    "period": "Oct 2026",
    "flash": false
   },
@@ -8626,8 +8626,8 @@
   },
   "old_age_dep_pt": {
    "date": "2025-01-01",
-   "raw": 38.6,
-   "display": "38.6%",
+   "raw": 35.8,
+   "display": "35.8%",
    "period": "2025",
    "flash": false
   },
@@ -11775,8 +11775,36 @@
    "page": "international.html",
    "text": "Youth unemployment rate (15-24), Canada: 13.7% in Oct 2026, after 13.0% in Sep 2026.",
    "at": "2026-11-12T17:41:47+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "brent_usd",
+   "page": "financial.html",
+   "text": "Brent crude: −13.9% since the last update, to $92.1.",
+   "at": "2026-11-12T22:58:46+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "brent_eur",
+   "page": "financial.html",
+   "text": "Brent crude in euros: −13.5% since the last update, to 82.8 €/bbl.",
+   "at": "2026-11-12T22:58:46+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "bond10_jp",
+   "page": "international.html",
+   "text": "10-year yield, Japan (monthly avg.) for Oct 2026 revised to 2.94%, from 2.75%.",
+   "at": "2026-11-12T22:58:46+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "old_age_dep_pt",
+   "page": "pensions.html",
+   "text": "Old-age dependency ratio, Portugal for 2025 revised to 35.8%, from 38.6%.",
+   "at": "2026-11-12T22:58:46+00:00"
   }
  ],
- "updated_at": "2026-11-12T17:41:47+00:00",
+ "updated_at": "2026-11-12T22:58:46+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
