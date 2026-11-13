@@ -6252,17 +6252,17 @@
    "flash": false
   },
   "youth_unemp_us": {
-   "date": "2026-09-01",
-   "raw": 9.9,
-   "display": "9.9%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 9.3,
+   "display": "9.3%",
+   "period": "Oct 2026",
    "flash": false
   },
   "youth_unemp_ca": {
-   "date": "2026-09-01",
-   "raw": 13.0,
-   "display": "13.0%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 13.7,
+   "display": "13.7%",
+   "period": "Oct 2026",
    "flash": false
   },
   "youth_unemp_ea": {
@@ -6456,8 +6456,8 @@
   },
   "bond10_jp": {
    "date": "2026-10-01",
-   "raw": 2.94,
-   "display": "2.94%",
+   "raw": 2.755,
+   "display": "2.75%",
    "period": "Oct 2026",
    "flash": false
   },
@@ -8640,8 +8640,8 @@
   },
   "old_age_dep_eu": {
    "date": "2025-01-01",
-   "raw": 34.5,
-   "display": "34.5%",
+   "raw": 34.4,
+   "display": "34.4%",
    "period": "2025",
    "flash": false
   },
@@ -12566,8 +12566,36 @@
    "page": "international.html",
    "text": "Goods imports from Nigeria: €5,807 mn 12-mo total in Sep 2026, after €5,326 mn 12-mo total in Aug 2026.",
    "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "bond10_jp",
+   "page": "international.html",
+   "text": "10-year yield, Japan (monthly avg.) for Oct 2026 revised to 2.75%, from 2.94%.",
+   "at": "2026-11-13T23:00:08+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "youth_unemp_us",
+   "page": "international.html",
+   "text": "Youth unemployment rate (15-24), United States: 9.3% in Oct 2026, after 9.9% in Sep 2026.",
+   "at": "2026-11-13T23:00:08+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "youth_unemp_ca",
+   "page": "international.html",
+   "text": "Youth unemployment rate (15-24), Canada: 13.7% in Oct 2026, after 13.0% in Sep 2026.",
+   "at": "2026-11-13T23:00:08+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "old_age_dep_eu",
+   "page": "pensions.html",
+   "text": "Old-age dependency ratio, EU for 2025 revised to 34.4%, from 34.5%.",
+   "at": "2026-11-13T23:00:08+00:00"
   }
  ],
- "updated_at": "2026-11-13T17:15:50+00:00",
+ "updated_at": "2026-11-13T23:00:08+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
