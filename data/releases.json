@@ -306,69 +306,69 @@
    "raw": 4.9,
    "display": "4.9%",
    "period": "Oct 2026",
-   "flash": true
+   "flash": false
   },
   "core_cpi": {
    "date": "2026-10-01",
    "raw": 3.1,
    "display": "3.1%",
    "period": "Oct 2026",
-   "flash": true
+   "flash": false
   },
   "cpi_index": {
-   "date": "2026-09-01",
-   "raw": 104.978,
-   "display": "0.3% m/m",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 105.651,
+   "display": "0.6% m/m",
+   "period": "Oct 2026",
    "flash": false
   },
   "core_cpi_index": {
-   "date": "2026-09-01",
-   "raw": 103.363,
-   "display": "−0.2% m/m",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 103.931,
+   "display": "0.5% m/m",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_services_index": {
-   "date": "2026-09-01",
-   "raw": 104.761,
-   "display": "3.9% y/y",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 104.958,
+   "display": "4.1% y/y",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_goods_index": {
-   "date": "2026-09-01",
-   "raw": 106.832,
-   "display": "7.8% y/y",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 107.971,
+   "display": "7.5% y/y",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_processed_food_index": {
-   "date": "2026-09-01",
-   "raw": 101.407,
-   "display": "1.5% y/y",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 101.6,
+   "display": "1.2% y/y",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_unprocessed_food_index": {
-   "date": "2026-09-01",
-   "raw": 103.995,
-   "display": "5.8% y/y",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 107.026,
+   "display": "5.5% y/y",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_energy_index": {
-   "date": "2026-09-01",
-   "raw": 120.909,
-   "display": "21.7% y/y",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 120.943,
+   "display": "20.8% y/y",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_rent_index": {
-   "date": "2026-09-01",
-   "raw": 103.031,
-   "display": "2.5% y/y",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 103.274,
+   "display": "2.6% y/y",
+   "period": "Oct 2026",
    "flash": false
   },
   "real_wage": {
@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-12",
-   "raw": 116.1602083,
-   "display": "116 €/MWh",
-   "period": "12 Nov 2026",
+   "date": "2026-11-13",
+   "raw": 186.0351042,
+   "display": "186 €/MWh",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -449,10 +449,10 @@
    "flash": false
   },
   "electricity_demand": {
-   "date": "2026-11-11",
-   "raw": 688.68755,
-   "display": "688.7 GWh",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 698.60694,
+   "display": "698.6 GWh",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "electricity_demand_monthly": {
@@ -652,220 +652,220 @@
    "flash": false
   },
   "ecb_deposit_rate": {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "12 Nov 2026",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "ecb_mro_rate": {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "raw": 2.65,
    "display": "2.65%",
-   "period": "12 Nov 2026",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "ecb_mlf_rate": {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "raw": 2.9,
    "display": "2.90%",
-   "period": "12 Nov 2026",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "estr": {
-   "date": "2026-11-11",
-   "raw": 2.439,
-   "display": "2.439%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 2.443,
+   "display": "2.443%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_fwd_3m": {
-   "date": "2026-11-11",
-   "raw": 2.792910361,
-   "display": "2.79%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 2.808215343,
+   "display": "2.81%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_fwd_6m": {
-   "date": "2026-11-11",
-   "raw": 3.008881864,
-   "display": "3.01%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.027944921,
+   "display": "3.03%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_fwd_9m": {
-   "date": "2026-11-11",
-   "raw": 3.119733621,
-   "display": "3.12%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.144638315,
+   "display": "3.14%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_fwd_1y": {
-   "date": "2026-11-11",
-   "raw": 3.165124592,
-   "display": "3.17%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.196047161,
+   "display": "3.20%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_fwd_2y": {
-   "date": "2026-11-11",
-   "raw": 3.114999973,
-   "display": "3.11%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.159136149,
+   "display": "3.16%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_fwd_3y": {
-   "date": "2026-11-11",
-   "raw": 3.07831036,
-   "display": "3.08%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.119695273,
+   "display": "3.12%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "euribor_3m": {
-   "date": "2026-11-11",
-   "raw": 2.754,
-   "display": "2.754%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 2.766,
+   "display": "2.766%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "euribor_12m": {
-   "date": "2026-11-11",
-   "raw": 3.222,
-   "display": "3.222%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.293,
+   "display": "3.293%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "es_12m_bill": {
-   "date": "2026-11-10",
-   "raw": 3.009,
+   "date": "2026-11-11",
+   "raw": 3.011,
    "display": "3.01%",
-   "period": "10 Nov 2026",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "es_3y": {
-   "date": "2026-11-10",
-   "raw": 3.231,
-   "display": "3.23%",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 3.272,
+   "display": "3.27%",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "es_5y": {
-   "date": "2026-11-10",
-   "raw": 3.378,
-   "display": "3.38%",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 3.409,
+   "display": "3.41%",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "es_10y": {
-   "date": "2026-11-10",
-   "raw": 3.824,
-   "display": "3.82%",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 3.855,
+   "display": "3.85%",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "es_15y": {
-   "date": "2026-11-10",
-   "raw": 4.083,
-   "display": "4.08%",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 4.096,
+   "display": "4.10%",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "es_30y": {
-   "date": "2026-11-10",
-   "raw": 4.343,
-   "display": "4.34%",
-   "period": "10 Nov 2026",
+   "date": "2026-11-11",
+   "raw": 4.357,
+   "display": "4.36%",
+   "period": "11 Nov 2026",
    "flash": false
   },
   "de_10y": {
-   "date": "2026-11-12",
-   "raw": 3.36,
-   "display": "3.36%",
-   "period": "12 Nov 2026",
+   "date": "2026-11-13",
+   "raw": 3.43,
+   "display": "3.43%",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "aaa_1y": {
-   "date": "2026-11-11",
-   "raw": 2.937442178,
-   "display": "2.94%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 2.958005551,
+   "display": "2.96%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_3y": {
-   "date": "2026-11-11",
-   "raw": 3.059410806,
-   "display": "3.06%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.093872424,
+   "display": "3.09%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_5y": {
-   "date": "2026-11-11",
-   "raw": 3.096875812,
-   "display": "3.10%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.131103139,
+   "display": "3.13%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_10y": {
-   "date": "2026-11-11",
-   "raw": 3.340082971,
-   "display": "3.34%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.367245916,
+   "display": "3.37%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_15y": {
-   "date": "2026-11-11",
-   "raw": 3.53481286,
-   "display": "3.53%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.558167121,
+   "display": "3.56%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "aaa_30y": {
-   "date": "2026-11-11",
-   "raw": 3.602596071,
-   "display": "3.60%",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3.619137037,
+   "display": "3.62%",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "risk_premium": {
-   "date": "2026-11-11",
-   "raw": 55.8,
-   "display": "56 bp",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 56.7,
+   "display": "57 bp",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "ibex35": {
-   "date": "2026-11-11",
-   "raw": 20028.0,
-   "display": "20,028",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 19966.0,
+   "display": "19,966",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "eurusd": {
-   "date": "2026-11-12",
-   "raw": 1.1081,
-   "display": "1.1081",
-   "period": "12 Nov 2026",
+   "date": "2026-11-13",
+   "raw": 1.1052,
+   "display": "1.1052",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "eurgbp": {
-   "date": "2026-11-12",
-   "raw": 0.83595,
-   "display": "0.8359",
-   "period": "12 Nov 2026",
+   "date": "2026-11-13",
+   "raw": 0.83559,
+   "display": "0.8356",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "eurchf": {
-   "date": "2026-11-12",
-   "raw": 0.9232,
-   "display": "0.9232",
-   "period": "12 Nov 2026",
+   "date": "2026-11-13",
+   "raw": 0.9266,
+   "display": "0.9266",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "eurjpy": {
-   "date": "2026-11-12",
-   "raw": 176.96,
-   "display": "176.96",
-   "period": "12 Nov 2026",
+   "date": "2026-11-13",
+   "raw": 176.83,
+   "display": "176.83",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "brent_usd": {
@@ -1408,122 +1408,122 @@
    "flash": false
   },
   "cpi_andalucia": {
-   "date": "2026-09-01",
-   "raw": 4.7,
-   "display": "4.7%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.4,
+   "display": "4.4%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_aragon": {
-   "date": "2026-09-01",
-   "raw": 4.4,
-   "display": "4.4%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.5,
+   "display": "4.5%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_asturias": {
-   "date": "2026-09-01",
-   "raw": 4.5,
-   "display": "4.5%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.7,
+   "display": "4.7%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_baleares": {
-   "date": "2026-09-01",
-   "raw": 5.1,
-   "display": "5.1%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.9,
+   "display": "4.9%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_canarias": {
-   "date": "2026-09-01",
-   "raw": 4.4,
-   "display": "4.4%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.5,
+   "display": "4.5%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_cantabria": {
-   "date": "2026-09-01",
-   "raw": 5.4,
-   "display": "5.4%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 5.2,
+   "display": "5.2%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_castilla_leon": {
-   "date": "2026-09-01",
-   "raw": 5.4,
-   "display": "5.4%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 5.3,
+   "display": "5.3%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_castilla_mancha": {
-   "date": "2026-09-01",
-   "raw": 5.5,
-   "display": "5.5%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 5.3,
+   "display": "5.3%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_cataluna": {
-   "date": "2026-09-01",
-   "raw": 4.5,
-   "display": "4.5%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.8,
+   "display": "4.8%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_valenciana": {
-   "date": "2026-09-01",
+   "date": "2026-10-01",
    "raw": 4.8,
    "display": "4.8%",
-   "period": "Sep 2026",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_extremadura": {
-   "date": "2026-09-01",
-   "raw": 5.3,
-   "display": "5.3%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 5.1,
+   "display": "5.1%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_galicia": {
-   "date": "2026-09-01",
-   "raw": 5.5,
-   "display": "5.5%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 5.3,
+   "display": "5.3%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_madrid": {
-   "date": "2026-09-01",
-   "raw": 5.3,
-   "display": "5.3%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 5.1,
+   "display": "5.1%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_murcia": {
-   "date": "2026-09-01",
-   "raw": 5.0,
-   "display": "5.0%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 5.2,
+   "display": "5.2%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_navarra": {
-   "date": "2026-09-01",
-   "raw": 5.3,
-   "display": "5.3%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.8,
+   "display": "4.8%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_pais_vasco": {
-   "date": "2026-09-01",
-   "raw": 5.0,
-   "display": "5.0%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 4.8,
+   "display": "4.8%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_rioja": {
-   "date": "2026-09-01",
+   "date": "2026-10-01",
    "raw": 4.6,
    "display": "4.6%",
-   "period": "Sep 2026",
+   "period": "Oct 2026",
    "flash": false
   },
   "gdp_per_head_spain": {
@@ -1688,17 +1688,17 @@
    "flash": false
   },
   "ciss_es": {
-   "date": "2026-11-11",
-   "raw": 0.007683337587,
-   "display": "0.008",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 0.00354080951,
+   "display": "0.004",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "ciss_ea": {
-   "date": "2026-11-11",
-   "raw": 0.006449165567,
-   "display": "0.006",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 0.006507749542,
+   "display": "0.007",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "npl_ratio": {
@@ -5006,570 +5006,570 @@
    "flash": false
   },
   "trade_exp_total": {
-   "date": "2026-08-01",
-   "raw": 26754.37828,
-   "display": "€401,843 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 35548.84138,
+   "display": "€405,347 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_total": {
-   "date": "2026-08-01",
-   "raw": 35118.73863,
-   "display": "€477,055 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 43740.96983,
+   "display": "€481,722 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_bal_total": {
-   "date": "2026-08-01",
-   "raw": -8364.36035,
-   "display": "−€75,212 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": -8192.12845,
+   "display": "−€76,375 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_meat_fish": {
-   "date": "2026-08-01",
-   "raw": 1586.524798,
-   "display": "€20,666 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1699.586897,
+   "display": "€20,607 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_fruit_veg": {
-   "date": "2026-08-01",
-   "raw": 1508.484901,
-   "display": "€28,162 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1684.565702,
+   "display": "€28,299 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_fats": {
-   "date": "2026-08-01",
-   "raw": 528.875514,
-   "display": "€7,587 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 669.262847,
+   "display": "€7,596 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_drinks": {
-   "date": "2026-08-01",
-   "raw": 498.126861,
-   "display": "€6,619 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 592.850942,
+   "display": "€6,658 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_other_food": {
-   "date": "2026-08-01",
-   "raw": 1155.672872,
-   "display": "€15,823 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1366.53762,
+   "display": "€15,840 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_energy": {
-   "date": "2026-08-01",
-   "raw": 3018.741816,
-   "display": "€29,275 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 3290.830554,
+   "display": "€30,576 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_minerals": {
-   "date": "2026-08-01",
-   "raw": 714.055726,
-   "display": "€10,178 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 870.336342,
+   "display": "€10,273 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_metals": {
-   "date": "2026-08-01",
-   "raw": 2079.472001,
-   "display": "€36,111 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 3292.56051,
+   "display": "€36,684 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_wood_paper": {
-   "date": "2026-08-01",
-   "raw": 769.044974,
-   "display": "€11,161 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 928.276512,
+   "display": "€11,134 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_chemicals": {
-   "date": "2026-08-01",
-   "raw": 2365.63181,
-   "display": "€33,137 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 3125.420631,
+   "display": "€33,588 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_pharma": {
-   "date": "2026-08-01",
-   "raw": 1562.564058,
-   "display": "€18,949 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1479.348317,
+   "display": "€18,828 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_plastics": {
-   "date": "2026-08-01",
-   "raw": 1245.831023,
-   "display": "€18,926 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1682.200569,
+   "display": "€19,047 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_textiles": {
-   "date": "2026-08-01",
-   "raw": 1938.549583,
-   "display": "€23,996 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 2200.964223,
+   "display": "€24,060 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_machinery": {
-   "date": "2026-08-01",
-   "raw": 1866.894342,
-   "display": "€29,646 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 2359.398069,
+   "display": "€29,823 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_electrical": {
-   "date": "2026-08-01",
-   "raw": 1525.71143,
-   "display": "€23,745 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 2184.516963,
+   "display": "€23,946 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_vehicles": {
-   "date": "2026-08-01",
-   "raw": 2302.616262,
-   "display": "€54,933 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 5236.536876,
+   "display": "€55,182 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_other_transport": {
-   "date": "2026-08-01",
-   "raw": 415.185912,
-   "display": "€8,094 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 817.156034,
+   "display": "€8,190 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_other": {
-   "date": "2026-08-01",
-   "raw": 1672.399685,
-   "display": "€24,832 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 2068.497406,
+   "display": "€25,016 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_meat_fish": {
-   "date": "2026-08-01",
-   "raw": 1508.934624,
-   "display": "€18,660 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1628.364326,
+   "display": "€18,702 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_fruit_veg": {
-   "date": "2026-08-01",
-   "raw": 771.52211,
-   "display": "€10,959 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 909.726537,
+   "display": "€11,042 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_fats": {
-   "date": "2026-08-01",
-   "raw": 520.343131,
-   "display": "€6,016 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 576.632076,
+   "display": "€6,241 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_drinks": {
-   "date": "2026-08-01",
-   "raw": 401.648546,
-   "display": "€4,804 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 435.509093,
+   "display": "€4,862 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_other_food": {
-   "date": "2026-08-01",
-   "raw": 1894.916059,
-   "display": "€22,211 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1974.282995,
+   "display": "€22,246 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_energy": {
-   "date": "2026-08-01",
-   "raw": 5908.12082,
-   "display": "€59,724 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 6211.591431,
+   "display": "€61,776 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_minerals": {
-   "date": "2026-08-01",
-   "raw": 364.878411,
-   "display": "€5,557 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 497.150763,
+   "display": "€5,594 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_metals": {
-   "date": "2026-08-01",
-   "raw": 2730.395241,
-   "display": "€38,675 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 3476.466249,
+   "display": "€38,739 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_wood_paper": {
-   "date": "2026-08-01",
-   "raw": 851.516178,
-   "display": "€12,146 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1035.990499,
+   "display": "€12,161 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_chemicals": {
-   "date": "2026-08-01",
-   "raw": 2304.525018,
-   "display": "€33,345 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 2903.523586,
+   "display": "€33,528 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_pharma": {
-   "date": "2026-08-01",
-   "raw": 1789.609148,
-   "display": "€23,427 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 2372.077622,
+   "display": "€23,338 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_plastics": {
-   "date": "2026-08-01",
-   "raw": 1502.891609,
-   "display": "€22,302 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1951.880812,
+   "display": "€22,397 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_textiles": {
-   "date": "2026-08-01",
-   "raw": 2871.500823,
-   "display": "€35,603 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 3296.454732,
+   "display": "€35,760 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_machinery": {
-   "date": "2026-08-01",
-   "raw": 2980.165986,
-   "display": "€46,729 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 4143.978756,
+   "display": "€47,109 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_electrical": {
-   "date": "2026-08-01",
-   "raw": 3074.47098,
-   "display": "€45,228 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 4382.872904,
+   "display": "€45,846 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_vehicles": {
-   "date": "2026-08-01",
-   "raw": 3351.616487,
-   "display": "€53,562 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 4930.20996,
+   "display": "€54,167 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_other_transport": {
-   "date": "2026-08-01",
-   "raw": 266.731567,
-   "display": "€6,215 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 374.517658,
+   "display": "€6,202 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_other": {
-   "date": "2026-08-01",
-   "raw": 2024.953762,
-   "display": "€31,892 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 2639.741925,
+   "display": "€32,011 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_eu": {
-   "date": "2026-08-01",
-   "raw": 16373.83397,
-   "display": "€251,605 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 23059.75175,
+   "display": "€253,735 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_non_eu": {
-   "date": "2026-08-01",
-   "raw": 10380.54431,
-   "display": "€150,238 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 12489.08963,
+   "display": "€151,612 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_france": {
-   "date": "2026-08-01",
-   "raw": 3532.838294,
-   "display": "€58,226 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 5119.426589,
+   "display": "€58,437 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_germany": {
-   "date": "2026-08-01",
-   "raw": 2236.506852,
-   "display": "€41,164 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 3431.086369,
+   "display": "€41,271 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_portugal": {
-   "date": "2026-08-01",
-   "raw": 2836.076373,
-   "display": "€37,847 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 3630.04029,
+   "display": "€38,366 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_italy": {
-   "date": "2026-08-01",
-   "raw": 2102.06971,
-   "display": "€34,454 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 3345.71787,
+   "display": "€34,886 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_netherlands": {
-   "date": "2026-08-01",
-   "raw": 1007.059864,
-   "display": "€13,281 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1418.220214,
+   "display": "€13,633 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_belgium": {
-   "date": "2026-08-01",
-   "raw": 826.229152,
-   "display": "€11,986 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1115.539258,
+   "display": "€11,990 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_poland": {
-   "date": "2026-08-01",
-   "raw": 701.87887,
-   "display": "€10,957 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 958.580612,
+   "display": "€10,996 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_uk": {
-   "date": "2026-08-01",
-   "raw": 1873.80145,
-   "display": "€25,542 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 2002.136357,
+   "display": "€25,569 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_switzerland": {
-   "date": "2026-08-01",
-   "raw": 245.535141,
-   "display": "€4,844 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 368.721059,
+   "display": "€4,797 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_turkey": {
-   "date": "2026-08-01",
-   "raw": 526.932088,
-   "display": "€9,507 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 778.671411,
+   "display": "€9,516 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_us": {
-   "date": "2026-08-01",
-   "raw": 1387.782782,
-   "display": "€17,412 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1496.686223,
+   "display": "€17,748 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_mexico": {
-   "date": "2026-08-01",
-   "raw": 405.52769,
-   "display": "€5,618 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 424.073531,
+   "display": "€5,619 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_brazil": {
-   "date": "2026-08-01",
-   "raw": 221.742778,
-   "display": "€3,218 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 276.069525,
+   "display": "€3,282 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_china": {
-   "date": "2026-08-01",
-   "raw": 553.417607,
-   "display": "€8,020 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 531.665951,
+   "display": "€8,048 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_japan": {
-   "date": "2026-08-01",
-   "raw": 130.593043,
-   "display": "€2,412 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 150.393963,
+   "display": "€2,390 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_india": {
-   "date": "2026-08-01",
-   "raw": 154.540307,
-   "display": "€1,948 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 171.688827,
+   "display": "€1,985 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_morocco": {
-   "date": "2026-08-01",
-   "raw": 730.554842,
-   "display": "€12,599 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1009.04133,
+   "display": "€12,652 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_algeria": {
-   "date": "2026-08-01",
-   "raw": 131.550406,
-   "display": "€2,355 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 200.512748,
+   "display": "€2,387 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_exp_nigeria": {
-   "date": "2026-08-01",
-   "raw": 21.557119,
-   "display": "€367 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 24.234232,
+   "display": "€354 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_eu": {
-   "date": "2026-08-01",
-   "raw": 17563.58541,
-   "display": "€265,131 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 23796.08352,
+   "display": "€266,815 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_non_eu": {
-   "date": "2026-08-01",
-   "raw": 17555.15322,
-   "display": "€211,924 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 19944.88631,
+   "display": "€214,907 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_france": {
-   "date": "2026-08-01",
-   "raw": 3020.020233,
-   "display": "€46,249 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 4266.743371,
+   "display": "€46,783 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_germany": {
-   "date": "2026-08-01",
-   "raw": 3772.134017,
-   "display": "€59,837 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 5214.093836,
+   "display": "€60,057 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_portugal": {
-   "date": "2026-08-01",
-   "raw": 1317.670461,
-   "display": "€19,361 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1776.480557,
+   "display": "€19,541 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_italy": {
-   "date": "2026-08-01",
-   "raw": 2189.871132,
-   "display": "€36,932 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 3109.018451,
+   "display": "€36,953 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_netherlands": {
-   "date": "2026-08-01",
-   "raw": 2522.86386,
-   "display": "€34,510 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 3330.15674,
+   "display": "€35,160 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_belgium": {
-   "date": "2026-08-01",
-   "raw": 1143.391962,
-   "display": "€17,464 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 1550.552256,
+   "display": "€17,316 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_poland": {
-   "date": "2026-08-01",
-   "raw": 699.748197,
-   "display": "€10,636 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 951.013116,
+   "display": "€10,717 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_uk": {
-   "date": "2026-08-01",
-   "raw": 682.078629,
-   "display": "€11,469 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 915.138754,
+   "display": "€11,600 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_switzerland": {
-   "date": "2026-08-01",
-   "raw": 239.876629,
-   "display": "€3,925 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 282.471724,
+   "display": "€3,853 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_turkey": {
-   "date": "2026-08-01",
-   "raw": 794.340195,
-   "display": "€10,101 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 835.899056,
+   "display": "€10,199 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_us": {
-   "date": "2026-08-01",
-   "raw": 2187.555564,
-   "display": "€25,830 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 2925.834649,
+   "display": "€26,524 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_mexico": {
-   "date": "2026-08-01",
-   "raw": 379.511352,
-   "display": "€5,330 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 481.139271,
+   "display": "€5,543 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_brazil": {
-   "date": "2026-08-01",
-   "raw": 809.136373,
-   "display": "€7,921 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 899.842233,
+   "display": "€8,068 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_china": {
-   "date": "2026-08-01",
-   "raw": 3777.960628,
-   "display": "€47,208 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 4709.038763,
+   "display": "€47,864 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_japan": {
-   "date": "2026-08-01",
-   "raw": 382.347334,
-   "display": "€4,532 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 478.388744,
+   "display": "€4,687 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_india": {
-   "date": "2026-08-01",
-   "raw": 485.181637,
-   "display": "€5,531 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 534.845442,
+   "display": "€5,630 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_morocco": {
-   "date": "2026-08-01",
-   "raw": 644.21581,
-   "display": "€10,506 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 843.451309,
+   "display": "€10,520 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_algeria": {
-   "date": "2026-08-01",
-   "raw": 574.51812,
-   "display": "€6,231 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 546.086243,
+   "display": "€6,405 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "trade_imp_nigeria": {
-   "date": "2026-08-01",
-   "raw": 836.946974,
-   "display": "€5,326 mn 12-mo total",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 839.337775,
+   "display": "€5,807 mn 12-mo total",
+   "period": "Sep 2026",
    "flash": false
   },
   "svc_exp_transport": {
@@ -6098,10 +6098,10 @@
    "flash": false
   },
   "gdp_growth_pl": {
-   "date": "2026-04-01",
-   "raw": 4.0,
-   "display": "4.0%",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 3.6,
+   "display": "3.6%",
+   "period": "Q3 2026",
    "flash": false
   },
   "hicp_pl": {
@@ -6168,15 +6168,15 @@
    "flash": false
   },
   "gdp_level_pl": {
-   "date": "2026-04-01",
-   "raw": 124.928,
-   "display": "4.0% y/y",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 125.914,
+   "display": "3.6% y/y",
+   "period": "Q3 2026",
    "flash": false
   },
   "gdp_level_ea": {
    "date": "2026-07-01",
-   "raw": 115.4,
+   "raw": 115.397,
    "display": "1.3% y/y",
    "period": "Q3 2026",
    "flash": false
@@ -8968,73 +8968,73 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-12",
-   "raw": 1527.4884,
-   "display": "€1,527.5 bn",
-   "period": "12 Nov 2026",
+   "date": "2026-11-13",
+   "raw": 1529.0905,
+   "display": "€1,529.1 bn",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "raw": 2.363751343,
    "display": "2.36%",
-   "period": "12 Nov 2026",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-12",
-   "raw": 7.734618634,
-   "display": "7.73 years",
-   "period": "12 Nov 2026",
+   "date": "2026-11-13",
+   "raw": 7.724329452,
+   "display": "7.72 years",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "madrid_general": {
-   "date": "2026-11-11",
-   "raw": 1981.0,
-   "display": "1,981.00",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 1975.0,
+   "display": "1,975.00",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "madrid_financials": {
-   "date": "2026-11-11",
-   "raw": 1625.1,
-   "display": "1,625.1",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 1607.4,
+   "display": "1,607.4",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "madrid_energy": {
-   "date": "2026-11-11",
-   "raw": 3311.4,
-   "display": "3,311.4",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 3339.7,
+   "display": "3,339.7",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "madrid_consumer_goods": {
-   "date": "2026-11-11",
-   "raw": 7644.7,
-   "display": "7,644.7",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 7612.5,
+   "display": "7,612.5",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "madrid_industry": {
-   "date": "2026-11-11",
-   "raw": 2723.4,
-   "display": "2,723.4",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 2736.3,
+   "display": "2,736.3",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "madrid_consumer_services": {
-   "date": "2026-11-11",
-   "raw": 1999.6,
-   "display": "1,999.6",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 1992.4,
+   "display": "1,992.4",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "madrid_tech": {
-   "date": "2026-11-11",
-   "raw": 707.8,
-   "display": "707.8",
-   "period": "11 Nov 2026",
+   "date": "2026-11-12",
+   "raw": 704.4,
+   "display": "704.4",
+   "period": "12 Nov 2026",
    "flash": false
   },
   "ms_nfa": {
@@ -11803,8 +11803,771 @@
    "page": "pensions.html",
    "text": "Old-age dependency ratio, Portugal for 2025 revised to 35.8%, from 38.6%.",
    "at": "2026-11-12T22:58:46+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_index",
+   "page": "inflation.html",
+   "text": "CPI index: 0.6% m/m in Oct 2026, after 0.3% m/m in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "core_cpi_index",
+   "page": "inflation.html",
+   "text": "Core CPI index: 0.5% m/m in Oct 2026, after −0.2% m/m in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_services_index",
+   "page": "inflation.html",
+   "text": "CPI services: 4.1% y/y in Oct 2026, after 3.9% y/y in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_goods_index",
+   "page": "inflation.html",
+   "text": "CPI non-energy industrial goods: 7.5% y/y in Oct 2026, after 7.8% y/y in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_processed_food_index",
+   "page": "inflation.html",
+   "text": "CPI processed food, drinks and tobacco: 1.2% y/y in Oct 2026, after 1.5% y/y in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_unprocessed_food_index",
+   "page": "inflation.html",
+   "text": "CPI unprocessed food: 5.5% y/y in Oct 2026, after 5.8% y/y in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_energy_index",
+   "page": "inflation.html",
+   "text": "CPI energy: 20.8% y/y in Oct 2026, after 21.7% y/y in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_rent_index",
+   "page": "inflation.html",
+   "text": "CPI rents: 2.6% y/y in Oct 2026, after 2.5% y/y in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): +60.2% since the last update, to 186 €/MWh.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "gdp_growth_pl",
+   "page": "international.html",
+   "text": "Real GDP growth, Poland: 3.6% in Q3 2026, after 4.0% in Q2 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "gdp_level_pl",
+   "page": "international.html",
+   "text": "Real GDP, Poland: 3.6% y/y in Q3 2026, after 4.0% y/y in Q2 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_andalucia",
+   "page": "regions.html",
+   "text": "CPI inflation, Andalucía: 4.4% in Oct 2026, after 4.7% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_aragon",
+   "page": "regions.html",
+   "text": "CPI inflation, Aragón: 4.5% in Oct 2026, after 4.4% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_asturias",
+   "page": "regions.html",
+   "text": "CPI inflation, Asturias: 4.7% in Oct 2026, after 4.5% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_baleares",
+   "page": "regions.html",
+   "text": "CPI inflation, Illes Balears: 4.9% in Oct 2026, after 5.1% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_canarias",
+   "page": "regions.html",
+   "text": "CPI inflation, Canarias: 4.5% in Oct 2026, after 4.4% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_cantabria",
+   "page": "regions.html",
+   "text": "CPI inflation, Cantabria: 5.2% in Oct 2026, after 5.4% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_castilla_leon",
+   "page": "regions.html",
+   "text": "CPI inflation, Castilla y León: 5.3% in Oct 2026, after 5.4% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_castilla_mancha",
+   "page": "regions.html",
+   "text": "CPI inflation, Castilla-La Mancha: 5.3% in Oct 2026, after 5.5% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_cataluna",
+   "page": "regions.html",
+   "text": "CPI inflation, Cataluña: 4.8% in Oct 2026, after 4.5% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_valenciana",
+   "page": "regions.html",
+   "text": "CPI inflation, Comunitat Valenciana: 4.8% in Oct 2026, after 4.8% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_extremadura",
+   "page": "regions.html",
+   "text": "CPI inflation, Extremadura: 5.1% in Oct 2026, after 5.3% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_galicia",
+   "page": "regions.html",
+   "text": "CPI inflation, Galicia: 5.3% in Oct 2026, after 5.5% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_madrid",
+   "page": "regions.html",
+   "text": "CPI inflation, Madrid: 5.1% in Oct 2026, after 5.3% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_murcia",
+   "page": "regions.html",
+   "text": "CPI inflation, Murcia: 5.2% in Oct 2026, after 5.0% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_navarra",
+   "page": "regions.html",
+   "text": "CPI inflation, Navarra: 4.8% in Oct 2026, after 5.3% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_pais_vasco",
+   "page": "regions.html",
+   "text": "CPI inflation, País Vasco: 4.8% in Oct 2026, after 5.0% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_rioja",
+   "page": "regions.html",
+   "text": "CPI inflation, La Rioja: 4.6% in Oct 2026, after 4.6% in Sep 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_total",
+   "page": "international.html",
+   "text": "Goods exports (Comext): €405,347 mn 12-mo total in Sep 2026, after €401,843 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_total",
+   "page": "international.html",
+   "text": "Goods imports (Comext): €481,722 mn 12-mo total in Sep 2026, after €477,055 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_bal_total",
+   "page": "international.html",
+   "text": "Goods trade balance (Comext): −€76,375 mn 12-mo total in Sep 2026, after −€75,212 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_meat_fish",
+   "page": "international.html",
+   "text": "Goods exports, meat, fish and dairy: €20,607 mn 12-mo total in Sep 2026, after €20,666 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_fruit_veg",
+   "page": "international.html",
+   "text": "Goods exports, fruit and vegetables: €28,299 mn 12-mo total in Sep 2026, after €28,162 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_fats",
+   "page": "international.html",
+   "text": "Goods exports, olive oil and other fats: €7,596 mn 12-mo total in Sep 2026, after €7,587 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_drinks",
+   "page": "international.html",
+   "text": "Goods exports, drinks and tobacco: €6,658 mn 12-mo total in Sep 2026, after €6,619 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_other_food",
+   "page": "international.html",
+   "text": "Goods exports, other food and feed: €15,840 mn 12-mo total in Sep 2026, after €15,823 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_energy",
+   "page": "international.html",
+   "text": "Goods exports, energy products: €30,576 mn 12-mo total in Sep 2026, after €29,275 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_minerals",
+   "page": "international.html",
+   "text": "Goods exports, stone, ceramics and glass: €10,273 mn 12-mo total in Sep 2026, after €10,178 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_metals",
+   "page": "international.html",
+   "text": "Goods exports, metals and ores: €36,684 mn 12-mo total in Sep 2026, after €36,111 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_wood_paper",
+   "page": "international.html",
+   "text": "Goods exports, leather, wood and paper: €11,134 mn 12-mo total in Sep 2026, after €11,161 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_chemicals",
+   "page": "international.html",
+   "text": "Goods exports, chemicals: €33,588 mn 12-mo total in Sep 2026, after €33,137 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_pharma",
+   "page": "international.html",
+   "text": "Goods exports, pharmaceuticals: €18,828 mn 12-mo total in Sep 2026, after €18,949 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_plastics",
+   "page": "international.html",
+   "text": "Goods exports, plastics and rubber: €19,047 mn 12-mo total in Sep 2026, after €18,926 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_textiles",
+   "page": "international.html",
+   "text": "Goods exports, textiles, clothing and footwear: €24,060 mn 12-mo total in Sep 2026, after €23,996 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_machinery",
+   "page": "international.html",
+   "text": "Goods exports, machinery: €29,823 mn 12-mo total in Sep 2026, after €29,646 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_electrical",
+   "page": "international.html",
+   "text": "Goods exports, electrical equipment and electronics: €23,946 mn 12-mo total in Sep 2026, after €23,745 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_vehicles",
+   "page": "international.html",
+   "text": "Goods exports, vehicles and parts: €55,182 mn 12-mo total in Sep 2026, after €54,933 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_other_transport",
+   "page": "international.html",
+   "text": "Goods exports, aircraft, ships and trains: €8,190 mn 12-mo total in Sep 2026, after €8,094 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_other",
+   "page": "international.html",
+   "text": "Goods exports, other goods: €25,016 mn 12-mo total in Sep 2026, after €24,832 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_meat_fish",
+   "page": "international.html",
+   "text": "Goods imports, meat, fish and dairy: €18,702 mn 12-mo total in Sep 2026, after €18,660 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_fruit_veg",
+   "page": "international.html",
+   "text": "Goods imports, fruit and vegetables: €11,042 mn 12-mo total in Sep 2026, after €10,959 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_fats",
+   "page": "international.html",
+   "text": "Goods imports, olive oil and other fats: €6,241 mn 12-mo total in Sep 2026, after €6,016 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_drinks",
+   "page": "international.html",
+   "text": "Goods imports, drinks and tobacco: €4,862 mn 12-mo total in Sep 2026, after €4,804 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_other_food",
+   "page": "international.html",
+   "text": "Goods imports, other food and feed: €22,246 mn 12-mo total in Sep 2026, after €22,211 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_energy",
+   "page": "international.html",
+   "text": "Goods imports, energy products: €61,776 mn 12-mo total in Sep 2026, after €59,724 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_minerals",
+   "page": "international.html",
+   "text": "Goods imports, stone, ceramics and glass: €5,594 mn 12-mo total in Sep 2026, after €5,557 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_metals",
+   "page": "international.html",
+   "text": "Goods imports, metals and ores: €38,739 mn 12-mo total in Sep 2026, after €38,675 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_wood_paper",
+   "page": "international.html",
+   "text": "Goods imports, leather, wood and paper: €12,161 mn 12-mo total in Sep 2026, after €12,146 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_chemicals",
+   "page": "international.html",
+   "text": "Goods imports, chemicals: €33,528 mn 12-mo total in Sep 2026, after €33,345 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_pharma",
+   "page": "international.html",
+   "text": "Goods imports, pharmaceuticals: €23,338 mn 12-mo total in Sep 2026, after €23,427 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_plastics",
+   "page": "international.html",
+   "text": "Goods imports, plastics and rubber: €22,397 mn 12-mo total in Sep 2026, after €22,302 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_textiles",
+   "page": "international.html",
+   "text": "Goods imports, textiles, clothing and footwear: €35,760 mn 12-mo total in Sep 2026, after €35,603 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_machinery",
+   "page": "international.html",
+   "text": "Goods imports, machinery: €47,109 mn 12-mo total in Sep 2026, after €46,729 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_electrical",
+   "page": "international.html",
+   "text": "Goods imports, electrical equipment and electronics: €45,846 mn 12-mo total in Sep 2026, after €45,228 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_vehicles",
+   "page": "international.html",
+   "text": "Goods imports, vehicles and parts: €54,167 mn 12-mo total in Sep 2026, after €53,562 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_other_transport",
+   "page": "international.html",
+   "text": "Goods imports, aircraft, ships and trains: €6,202 mn 12-mo total in Sep 2026, after €6,215 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_other",
+   "page": "international.html",
+   "text": "Goods imports, other goods: €32,011 mn 12-mo total in Sep 2026, after €31,892 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_eu",
+   "page": "international.html",
+   "text": "Goods exports to the EU: €253,735 mn 12-mo total in Sep 2026, after €251,605 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_non_eu",
+   "page": "international.html",
+   "text": "Goods exports to countries outside the EU: €151,612 mn 12-mo total in Sep 2026, after €150,238 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_france",
+   "page": "international.html",
+   "text": "Goods exports to France: €58,437 mn 12-mo total in Sep 2026, after €58,226 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_germany",
+   "page": "international.html",
+   "text": "Goods exports to Germany: €41,271 mn 12-mo total in Sep 2026, after €41,164 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_portugal",
+   "page": "international.html",
+   "text": "Goods exports to Portugal: €38,366 mn 12-mo total in Sep 2026, after €37,847 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_italy",
+   "page": "international.html",
+   "text": "Goods exports to Italy: €34,886 mn 12-mo total in Sep 2026, after €34,454 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_netherlands",
+   "page": "international.html",
+   "text": "Goods exports to the Netherlands: €13,633 mn 12-mo total in Sep 2026, after €13,281 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_belgium",
+   "page": "international.html",
+   "text": "Goods exports to Belgium: €11,990 mn 12-mo total in Sep 2026, after €11,986 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_poland",
+   "page": "international.html",
+   "text": "Goods exports to Poland: €10,996 mn 12-mo total in Sep 2026, after €10,957 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_uk",
+   "page": "international.html",
+   "text": "Goods exports to the United Kingdom: €25,569 mn 12-mo total in Sep 2026, after €25,542 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_switzerland",
+   "page": "international.html",
+   "text": "Goods exports to Switzerland: €4,797 mn 12-mo total in Sep 2026, after €4,844 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_turkey",
+   "page": "international.html",
+   "text": "Goods exports to Türkiye: €9,516 mn 12-mo total in Sep 2026, after €9,507 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_us",
+   "page": "international.html",
+   "text": "Goods exports to the United States: €17,748 mn 12-mo total in Sep 2026, after €17,412 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_mexico",
+   "page": "international.html",
+   "text": "Goods exports to Mexico: €5,619 mn 12-mo total in Sep 2026, after €5,618 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_brazil",
+   "page": "international.html",
+   "text": "Goods exports to Brazil: €3,282 mn 12-mo total in Sep 2026, after €3,218 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_china",
+   "page": "international.html",
+   "text": "Goods exports to China: €8,048 mn 12-mo total in Sep 2026, after €8,020 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_japan",
+   "page": "international.html",
+   "text": "Goods exports to Japan: €2,390 mn 12-mo total in Sep 2026, after €2,412 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_india",
+   "page": "international.html",
+   "text": "Goods exports to India: €1,985 mn 12-mo total in Sep 2026, after €1,948 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_morocco",
+   "page": "international.html",
+   "text": "Goods exports to Morocco: €12,652 mn 12-mo total in Sep 2026, after €12,599 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_algeria",
+   "page": "international.html",
+   "text": "Goods exports to Algeria: €2,387 mn 12-mo total in Sep 2026, after €2,355 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_exp_nigeria",
+   "page": "international.html",
+   "text": "Goods exports to Nigeria: €354 mn 12-mo total in Sep 2026, after €367 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_eu",
+   "page": "international.html",
+   "text": "Goods imports from the EU: €266,815 mn 12-mo total in Sep 2026, after €265,131 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_non_eu",
+   "page": "international.html",
+   "text": "Goods imports from countries outside the EU: €214,907 mn 12-mo total in Sep 2026, after €211,924 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_france",
+   "page": "international.html",
+   "text": "Goods imports from France: €46,783 mn 12-mo total in Sep 2026, after €46,249 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_germany",
+   "page": "international.html",
+   "text": "Goods imports from Germany: €60,057 mn 12-mo total in Sep 2026, after €59,837 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_portugal",
+   "page": "international.html",
+   "text": "Goods imports from Portugal: €19,541 mn 12-mo total in Sep 2026, after €19,361 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_italy",
+   "page": "international.html",
+   "text": "Goods imports from Italy: €36,953 mn 12-mo total in Sep 2026, after €36,932 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_netherlands",
+   "page": "international.html",
+   "text": "Goods imports from the Netherlands: €35,160 mn 12-mo total in Sep 2026, after €34,510 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_belgium",
+   "page": "international.html",
+   "text": "Goods imports from Belgium: €17,316 mn 12-mo total in Sep 2026, after €17,464 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_poland",
+   "page": "international.html",
+   "text": "Goods imports from Poland: €10,717 mn 12-mo total in Sep 2026, after €10,636 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_uk",
+   "page": "international.html",
+   "text": "Goods imports from the United Kingdom: €11,600 mn 12-mo total in Sep 2026, after €11,469 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_switzerland",
+   "page": "international.html",
+   "text": "Goods imports from Switzerland: €3,853 mn 12-mo total in Sep 2026, after €3,925 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_turkey",
+   "page": "international.html",
+   "text": "Goods imports from Türkiye: €10,199 mn 12-mo total in Sep 2026, after €10,101 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_us",
+   "page": "international.html",
+   "text": "Goods imports from the United States: €26,524 mn 12-mo total in Sep 2026, after €25,830 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_mexico",
+   "page": "international.html",
+   "text": "Goods imports from Mexico: €5,543 mn 12-mo total in Sep 2026, after €5,330 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_brazil",
+   "page": "international.html",
+   "text": "Goods imports from Brazil: €8,068 mn 12-mo total in Sep 2026, after €7,921 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_china",
+   "page": "international.html",
+   "text": "Goods imports from China: €47,864 mn 12-mo total in Sep 2026, after €47,208 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_japan",
+   "page": "international.html",
+   "text": "Goods imports from Japan: €4,687 mn 12-mo total in Sep 2026, after €4,532 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_india",
+   "page": "international.html",
+   "text": "Goods imports from India: €5,630 mn 12-mo total in Sep 2026, after €5,531 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_morocco",
+   "page": "international.html",
+   "text": "Goods imports from Morocco: €10,520 mn 12-mo total in Sep 2026, after €10,506 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_algeria",
+   "page": "international.html",
+   "text": "Goods imports from Algeria: €6,405 mn 12-mo total in Sep 2026, after €6,231 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "trade_imp_nigeria",
+   "page": "international.html",
+   "text": "Goods imports from Nigeria: €5,807 mn 12-mo total in Sep 2026, after €5,326 mn 12-mo total in Aug 2026.",
+   "at": "2026-11-13T17:15:50+00:00"
   }
  ],
- "updated_at": "2026-11-12T22:58:46+00:00",
+ "updated_at": "2026-11-13T17:15:50+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
