@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-13",
-   "raw": 186.0351042,
-   "display": "186 €/MWh",
-   "period": "13 Nov 2026",
+   "date": "2026-11-14",
+   "raw": 169.4823958,
+   "display": "169 €/MWh",
+   "period": "14 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -449,10 +449,10 @@
    "flash": false
   },
   "electricity_demand": {
-   "date": "2026-11-12",
-   "raw": 698.60694,
-   "display": "698.6 GWh",
-   "period": "12 Nov 2026",
+   "date": "2026-11-13",
+   "raw": 707.44975,
+   "display": "707.4 GWh",
+   "period": "13 Nov 2026",
    "flash": false
   },
   "electricity_demand_monthly": {
@@ -652,24 +652,24 @@
    "flash": false
   },
   "ecb_deposit_rate": {
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "13 Nov 2026",
+   "period": "14 Nov 2026",
    "flash": false
   },
   "ecb_mro_rate": {
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "raw": 2.65,
    "display": "2.65%",
-   "period": "13 Nov 2026",
+   "period": "14 Nov 2026",
    "flash": false
   },
   "ecb_mlf_rate": {
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "raw": 2.9,
    "display": "2.90%",
-   "period": "13 Nov 2026",
+   "period": "14 Nov 2026",
    "flash": false
   },
   "estr": {
@@ -8968,24 +8968,24 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "raw": 1529.0905,
    "display": "€1,529.1 bn",
-   "period": "13 Nov 2026",
+   "period": "14 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "raw": 2.363751343,
    "display": "2.36%",
-   "period": "13 Nov 2026",
+   "period": "14 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-13",
-   "raw": 7.724329452,
+   "date": "2026-11-14",
+   "raw": 7.721591602,
    "display": "7.72 years",
-   "period": "13 Nov 2026",
+   "period": "14 Nov 2026",
    "flash": false
   },
   "madrid_general": {
@@ -12594,8 +12594,15 @@
    "page": "pensions.html",
    "text": "Old-age dependency ratio, EU for 2025 revised to 34.4%, from 34.5%.",
    "at": "2026-11-13T23:00:08+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): −8.9% since the last update, to 169 €/MWh.",
+   "at": "2026-11-14T15:52:52+00:00"
   }
  ],
- "updated_at": "2026-11-13T23:00:08+00:00",
+ "updated_at": "2026-11-14T15:52:52+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
