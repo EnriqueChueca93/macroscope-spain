@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-18",
-   "raw": 52.13177083,
-   "display": "52 €/MWh",
-   "period": "18 Nov 2026",
+   "date": "2026-11-19",
+   "raw": 32.67802083,
+   "display": "33 €/MWh",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -449,10 +449,10 @@
    "flash": false
   },
   "electricity_demand": {
-   "date": "2026-11-17",
-   "raw": 725.22121,
-   "display": "725.2 GWh",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 730.82436,
+   "display": "730.8 GWh",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "electricity_demand_monthly": {
@@ -869,17 +869,17 @@
    "flash": false
   },
   "brent_usd": {
-   "date": "2026-11-11",
-   "raw": 92.14,
-   "display": "$92.1",
-   "period": "11 Nov 2026",
+   "date": "2026-11-17",
+   "raw": 92.94,
+   "display": "$92.9",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "brent_eur": {
-   "date": "2026-11-11",
-   "raw": 82.807585,
-   "display": "82.8 €/bbl",
-   "period": "11 Nov 2026",
+   "date": "2026-11-17",
+   "raw": 84.575485,
+   "display": "84.6 €/bbl",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "gas_eu": {
@@ -7443,8 +7443,8 @@
   },
   "real_hpi_jp": {
    "date": "2025-10-01",
-   "raw": 119.1032807,
-   "display": "2.4% y/y",
+   "raw": 119.1042926,
+   "display": "2.3% y/y",
    "period": "Q4 2025",
    "flash": false
   },
@@ -8968,24 +8968,24 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "raw": 1529.0905,
    "display": "€1,529.1 bn",
-   "period": "18 Nov 2026",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "raw": 2.363751343,
    "display": "2.36%",
-   "period": "18 Nov 2026",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-18",
-   "raw": 7.710640199,
+   "date": "2026-11-19",
+   "raw": 7.707902348,
    "display": "7.71 years",
-   "period": "18 Nov 2026",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "madrid_general": {
@@ -9514,16 +9514,16 @@
    "flash": false
   },
   "lp_hour_de": {
-   "date": "2026-04-01",
-   "raw": 102.63,
-   "display": "102.6",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 102.916,
+   "display": "102.9",
+   "period": "Q3 2026",
    "flash": false
   },
   "ulc_hour_de": {
    "date": "2026-04-01",
-   "raw": 123.741,
-   "display": "123.7",
+   "raw": 123.754,
+   "display": "123.8",
    "period": "Q2 2026",
    "flash": false
   },
@@ -13280,8 +13280,43 @@
    "page": "analysis.html",
    "text": "European Commission forecast, government budget balance: −2.2% of GDP in 2028, after −2.0% of GDP in 2027.",
    "at": "2026-11-18T18:05:02+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): −37.3% since the last update, to 33 €/MWh.",
+   "at": "2026-11-18T23:41:12+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "brent_eur",
+   "page": "financial.html",
+   "text": "Brent crude in euros: +2.1% since the last update, to 84.6 €/bbl.",
+   "at": "2026-11-18T23:41:12+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "real_hpi_jp",
+   "page": "housing.html",
+   "text": "Real house prices, Japan for Q4 2025 revised to 2.3% y/y, from 2.4% y/y.",
+   "at": "2026-11-18T23:41:12+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "lp_hour_de",
+   "page": "gdp.html",
+   "text": "Real labour productivity per hour worked, Germany: 102.9 in Q3 2026, after 102.6 in Q2 2026.",
+   "at": "2026-11-18T23:41:12+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "ulc_hour_de",
+   "page": "gdp.html",
+   "text": "Nominal unit labour cost (hours), Germany for Q2 2026 revised to 123.8, from 123.7.",
+   "at": "2026-11-18T23:41:12+00:00"
   }
  ],
- "updated_at": "2026-11-18T18:05:02+00:00",
+ "updated_at": "2026-11-18T23:41:12+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
