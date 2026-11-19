@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_at": "2026-11-18T23:40:53+00:00",
+ "updated_at": "2026-11-19T18:18:56+00:00",
  "rebuilt_at": "2026-11-01T06:28:54+00:00",
  "ecb_modified": "Sun, 01 Nov 2026 05:21:10 GMT",
  "ecb_last": "2026-10-30",
@@ -17549,6 +17549,57 @@
    "dovish": 0,
    "score": null,
    "policy_share": 0.215
+  },
+  {
+   "id": "https://www.bis.org/speeches/20261119-industrial-policy-redux-or-renewal",
+   "date": "2026-11-19",
+   "speaker": "Gabriel Makhlouf",
+   "key": "makhlouf",
+   "institution": "IE",
+   "seat": "IE",
+   "title": "Governor",
+   "speech_title": "Industrial policy - redux or renewal?",
+   "url": "https://www.bis.org/speeches/20261119-industrial-policy-redux-or-renewal",
+   "source": "BIS",
+   "words": 1914,
+   "hawkish": 1,
+   "dovish": 1,
+   "score": null,
+   "policy_share": 0.012
+  },
+  {
+   "id": "https://www.bis.org/speeches/20261119-navigating-new-economic-realities-europes-outlook-changing-global-landscape",
+   "date": "2026-11-19",
+   "speaker": "Joachim Nagel",
+   "key": "nagel",
+   "institution": "DE",
+   "seat": "DE",
+   "title": "Governor",
+   "speech_title": "Navigating new economic realities - Europe’s outlook in a changing global landscape",
+   "url": "https://www.bis.org/speeches/20261119-navigating-new-economic-realities-europes-outlook-changing-global-landscape",
+   "source": "BIS",
+   "words": 230,
+   "hawkish": 0,
+   "dovish": 0,
+   "score": null,
+   "policy_share": 0.105
+  },
+  {
+   "id": "https://www.bis.org/speeches/20261119-made-europe",
+   "date": "2026-11-19",
+   "speaker": "Isabel Schnabel",
+   "key": "schnabel",
+   "institution": "ECB",
+   "seat": "ECB Executive Board",
+   "title": "Executive Board",
+   "speech_title": "Made in Europe",
+   "url": "https://www.bis.org/speeches/20261119-made-europe",
+   "source": "BIS",
+   "words": 196,
+   "hawkish": 0,
+   "dovish": 0,
+   "score": null,
+   "policy_share": 0.0
   }
  ]
 }

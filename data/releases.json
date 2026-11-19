@@ -450,8 +450,8 @@
   },
   "electricity_demand": {
    "date": "2026-11-18",
-   "raw": 730.82436,
-   "display": "730.8 GWh",
+   "raw": 721.79599,
+   "display": "721.8 GWh",
    "period": "18 Nov 2026",
    "flash": false
   },
@@ -652,220 +652,220 @@
    "flash": false
   },
   "ecb_deposit_rate": {
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "18 Nov 2026",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "ecb_mro_rate": {
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "raw": 2.65,
    "display": "2.65%",
-   "period": "18 Nov 2026",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "ecb_mlf_rate": {
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "raw": 2.9,
    "display": "2.90%",
-   "period": "18 Nov 2026",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "estr": {
-   "date": "2026-11-17",
-   "raw": 2.441,
-   "display": "2.441%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 2.442,
+   "display": "2.442%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_fwd_3m": {
-   "date": "2026-11-17",
-   "raw": 2.827692048,
+   "date": "2026-11-18",
+   "raw": 2.828809731,
    "display": "2.83%",
-   "period": "17 Nov 2026",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_fwd_6m": {
-   "date": "2026-11-17",
-   "raw": 3.050758579,
+   "date": "2026-11-18",
+   "raw": 3.045129614,
    "display": "3.05%",
-   "period": "17 Nov 2026",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_fwd_9m": {
-   "date": "2026-11-17",
-   "raw": 3.166156813,
-   "display": "3.17%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 3.157297822,
+   "display": "3.16%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_fwd_1y": {
-   "date": "2026-11-17",
-   "raw": 3.214733604,
-   "display": "3.21%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 3.204624138,
+   "display": "3.20%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_fwd_2y": {
-   "date": "2026-11-17",
-   "raw": 3.174301241,
-   "display": "3.17%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 3.164628557,
+   "display": "3.16%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_fwd_3y": {
-   "date": "2026-11-17",
-   "raw": 3.148673232,
-   "display": "3.15%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 3.138080269,
+   "display": "3.14%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "euribor_3m": {
-   "date": "2026-11-17",
-   "raw": 2.784,
-   "display": "2.784%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 2.825,
+   "display": "2.825%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "euribor_12m": {
-   "date": "2026-11-17",
-   "raw": 3.361,
-   "display": "3.361%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 3.351,
+   "display": "3.351%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "es_12m_bill": {
-   "date": "2026-11-16",
-   "raw": 3.104,
+   "date": "2026-11-17",
+   "raw": 3.098,
    "display": "3.10%",
-   "period": "16 Nov 2026",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "es_3y": {
-   "date": "2026-11-16",
-   "raw": 3.364,
-   "display": "3.36%",
-   "period": "16 Nov 2026",
+   "date": "2026-11-17",
+   "raw": 3.365,
+   "display": "3.37%",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "es_5y": {
-   "date": "2026-11-16",
-   "raw": 3.488,
-   "display": "3.49%",
-   "period": "16 Nov 2026",
+   "date": "2026-11-17",
+   "raw": 3.471,
+   "display": "3.47%",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "es_10y": {
-   "date": "2026-11-16",
-   "raw": 3.908,
-   "display": "3.91%",
-   "period": "16 Nov 2026",
+   "date": "2026-11-17",
+   "raw": 3.946,
+   "display": "3.95%",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "es_15y": {
-   "date": "2026-11-16",
-   "raw": 4.197,
+   "date": "2026-11-17",
+   "raw": 4.199,
    "display": "4.20%",
-   "period": "16 Nov 2026",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "es_30y": {
-   "date": "2026-11-16",
-   "raw": 4.428,
-   "display": "4.43%",
-   "period": "16 Nov 2026",
+   "date": "2026-11-17",
+   "raw": 4.463,
+   "display": "4.46%",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "de_10y": {
-   "date": "2026-11-18",
-   "raw": 3.43,
-   "display": "3.43%",
-   "period": "18 Nov 2026",
+   "date": "2026-11-19",
+   "raw": 3.45,
+   "display": "3.45%",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "aaa_1y": {
-   "date": "2026-11-17",
-   "raw": 2.977566187,
-   "display": "2.98%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 2.974347289,
+   "display": "2.97%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_3y": {
-   "date": "2026-11-17",
-   "raw": 3.112517766,
-   "display": "3.11%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 3.104781832,
+   "display": "3.10%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_5y": {
-   "date": "2026-11-17",
-   "raw": 3.161319379,
-   "display": "3.16%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 3.151376924,
+   "display": "3.15%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_10y": {
-   "date": "2026-11-17",
-   "raw": 3.424564814,
-   "display": "3.42%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 3.410323615,
+   "display": "3.41%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_15y": {
-   "date": "2026-11-17",
-   "raw": 3.626612406,
-   "display": "3.63%",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 3.61194805,
+   "display": "3.61%",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "aaa_30y": {
-   "date": "2026-11-17",
-   "raw": 3.683278035,
+   "date": "2026-11-18",
+   "raw": 3.675680443,
    "display": "3.68%",
-   "period": "17 Nov 2026",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "risk_premium": {
-   "date": "2026-11-17",
-   "raw": 56.6,
+   "date": "2026-11-18",
+   "raw": 57.3,
    "display": "57 bp",
-   "period": "17 Nov 2026",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "ibex35": {
-   "date": "2026-11-17",
-   "raw": 19625.0,
-   "display": "19,625",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 19373.0,
+   "display": "19,373",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "eurusd": {
-   "date": "2026-11-18",
-   "raw": 1.0968,
-   "display": "1.0968",
-   "period": "18 Nov 2026",
+   "date": "2026-11-19",
+   "raw": 1.0992,
+   "display": "1.0992",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "eurgbp": {
-   "date": "2026-11-18",
-   "raw": 0.8329,
-   "display": "0.8329",
-   "period": "18 Nov 2026",
+   "date": "2026-11-19",
+   "raw": 0.83581,
+   "display": "0.8358",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "eurchf": {
-   "date": "2026-11-18",
-   "raw": 0.9243,
-   "display": "0.9243",
-   "period": "18 Nov 2026",
+   "date": "2026-11-19",
+   "raw": 0.9262,
+   "display": "0.9262",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "eurjpy": {
-   "date": "2026-11-18",
-   "raw": 174.85,
-   "display": "174.85",
-   "period": "18 Nov 2026",
+   "date": "2026-11-19",
+   "raw": 175.84,
+   "display": "175.84",
+   "period": "19 Nov 2026",
    "flash": false
   },
   "brent_usd": {
@@ -1163,10 +1163,10 @@
    "flash": false
   },
   "us_fed_funds": {
-   "date": "2026-11-10",
+   "date": "2026-11-17",
    "raw": 3.875,
    "display": "3.875%",
-   "period": "10 Nov 2026",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "unemployment_andalucia": {
@@ -1688,17 +1688,17 @@
    "flash": false
   },
   "ciss_es": {
-   "date": "2026-11-17",
-   "raw": 0.005402446418,
+   "date": "2026-11-18",
+   "raw": 0.005037488619,
    "display": "0.005",
-   "period": "17 Nov 2026",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "ciss_ea": {
-   "date": "2026-11-17",
-   "raw": 0.007497467742,
-   "display": "0.007",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 0.008904833324,
+   "display": "0.009",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "npl_ratio": {
@@ -1723,10 +1723,10 @@
    "flash": false
   },
   "gdp_growth_uk": {
-   "date": "2026-04-01",
-   "raw": 1.372599483,
-   "display": "1.4%",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 1.942205489,
+   "display": "1.9%",
+   "period": "Q3 2026",
    "flash": false
   },
   "gdp_growth_ca": {
@@ -1737,10 +1737,10 @@
    "flash": false
   },
   "cpi_uk": {
-   "date": "2026-09-01",
-   "raw": 3.6,
-   "display": "3.6%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 3.7,
+   "display": "3.7%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_ca": {
@@ -1751,10 +1751,10 @@
    "flash": false
   },
   "core_cpi_uk": {
-   "date": "2026-09-01",
+   "date": "2026-10-01",
    "raw": 3.1,
    "display": "3.1%",
-   "period": "Sep 2026",
+   "period": "Oct 2026",
    "flash": false
   },
   "unemployment_uk": {
@@ -1780,23 +1780,23 @@
   },
   "bond10_ca": {
    "date": "2026-10-01",
-   "raw": 3.903,
-   "display": "3.90%",
+   "raw": 3.874762,
+   "display": "3.87%",
    "period": "Oct 2026",
    "flash": false
   },
   "policy_rate_uk": {
-   "date": "2026-11-09",
+   "date": "2026-11-16",
    "raw": 4.0,
    "display": "4.00%",
-   "period": "9 Nov 2026",
+   "period": "16 Nov 2026",
    "flash": false
   },
   "policy_rate_ca": {
-   "date": "2026-11-09",
+   "date": "2026-11-16",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "9 Nov 2026",
+   "period": "16 Nov 2026",
    "flash": false
   },
   "fc_oecd_gdp": {
@@ -6133,10 +6133,10 @@
    "flash": false
   },
   "policy_rate_pl": {
-   "date": "2026-11-10",
+   "date": "2026-11-17",
    "raw": 3.75,
    "display": "3.75%",
-   "period": "10 Nov 2026",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "gdp_level_de": {
@@ -6182,10 +6182,10 @@
    "flash": false
   },
   "gdp_level_uk": {
-   "date": "2026-04-01",
-   "raw": 2529.2971,
-   "display": "1.4% y/y",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 2548.1398,
+   "display": "1.9% y/y",
+   "period": "Q3 2026",
    "flash": false
   },
   "gdp_level_us": {
@@ -6252,17 +6252,17 @@
    "flash": false
   },
   "youth_unemp_us": {
-   "date": "2026-10-01",
-   "raw": 9.3,
-   "display": "9.3%",
-   "period": "Oct 2026",
+   "date": "2026-09-01",
+   "raw": 9.9,
+   "display": "9.9%",
+   "period": "Sep 2026",
    "flash": false
   },
   "youth_unemp_ca": {
-   "date": "2026-10-01",
-   "raw": 13.7,
-   "display": "13.7%",
-   "period": "Oct 2026",
+   "date": "2026-09-01",
+   "raw": 13.0,
+   "display": "13.0%",
+   "period": "Sep 2026",
    "flash": false
   },
   "youth_unemp_ea": {
@@ -6323,8 +6323,8 @@
   },
   "emp_rate_us": {
    "date": "2026-07-01",
-   "raw": 71.94911,
-   "display": "71.9%",
+   "raw": 71.98423,
+   "display": "72.0%",
    "period": "Q3 2026",
    "flash": false
   },
@@ -6462,10 +6462,10 @@
    "flash": false
   },
   "policy_rate_jp": {
-   "date": "2026-11-10",
+   "date": "2026-11-17",
    "raw": 1.25,
    "display": "1.25%",
-   "period": "10 Nov 2026",
+   "period": "17 Nov 2026",
    "flash": false
   },
   "gdp_level_nl": {
@@ -7281,17 +7281,17 @@
    "flash": false
   },
   "gdp_growth_jp": {
-   "date": "2026-04-01",
-   "raw": 0.726654038,
-   "display": "0.7%",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 1.156133449,
+   "display": "1.2%",
+   "period": "Q3 2026",
    "flash": false
   },
   "gdp_level_jp": {
-   "date": "2026-04-01",
-   "raw": 598722.7133,
-   "display": "0.7% y/y",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 599227.9211,
+   "display": "1.2% y/y",
+   "period": "Q3 2026",
    "flash": false
   },
   "house_price_income": {
@@ -7436,7 +7436,7 @@
   },
   "real_hpi_ca": {
    "date": "2026-07-01",
-   "raw": 128.9003299,
+   "raw": 128.9710673,
    "display": "−6.1% y/y",
    "period": "Q3 2026",
    "flash": false
@@ -7513,35 +7513,35 @@
   },
   "price_income_ca": {
    "date": "2026-07-01",
-   "raw": 138.3562509,
+   "raw": 138.4272085,
    "display": "138.4",
    "period": "Q3 2026",
    "flash": false
   },
   "price_income_jp": {
    "date": "2025-10-01",
-   "raw": 88.28122733,
+   "raw": 88.28060187,
    "display": "88.3",
    "period": "Q4 2025",
    "flash": false
   },
   "price_rent_es": {
    "date": "2026-04-01",
-   "raw": 169.041765,
-   "display": "169.0",
+   "raw": 169.0562508,
+   "display": "169.1",
    "period": "Q2 2026",
    "flash": false
   },
   "price_rent_fr": {
    "date": "2026-04-01",
-   "raw": 126.6952899,
+   "raw": 126.6870958,
    "display": "126.7",
    "period": "Q2 2026",
    "flash": false
   },
   "price_rent_de": {
    "date": "2026-04-01",
-   "raw": 110.6825789,
+   "raw": 110.6900683,
    "display": "110.7",
    "period": "Q2 2026",
    "flash": false
@@ -7555,14 +7555,14 @@
   },
   "price_rent_nl": {
    "date": "2025-10-01",
-   "raw": 157.3245461,
-   "display": "157.3",
+   "raw": 157.3571623,
+   "display": "157.4",
    "period": "Q4 2025",
    "flash": false
   },
   "price_rent_pt": {
    "date": "2026-04-01",
-   "raw": 154.8197554,
+   "raw": 154.8223876,
    "display": "154.8",
    "period": "Q2 2026",
    "flash": false
@@ -7576,15 +7576,15 @@
   },
   "price_rent_uk": {
    "date": "2026-04-01",
-   "raw": 130.8784769,
+   "raw": 130.8650977,
    "display": "130.9",
    "period": "Q2 2026",
    "flash": false
   },
   "price_rent_ca": {
    "date": "2026-07-01",
-   "raw": 157.8937609,
-   "display": "157.9",
+   "raw": 158.0452553,
+   "display": "158.0",
    "period": "Q3 2026",
    "flash": false
   },
@@ -8961,10 +8961,10 @@
    "flash": false
   },
   "vacancies_eurostat": {
-   "date": "2026-04-01",
-   "raw": 150.765,
-   "display": "150.8k",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 148.944,
+   "display": "148.9k",
+   "period": "Q3 2026",
    "flash": false
   },
   "state_debt_outstanding": {
@@ -8989,52 +8989,52 @@
    "flash": false
   },
   "madrid_general": {
-   "date": "2026-11-17",
-   "raw": 1942.0,
-   "display": "1,942.00",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 1916.0,
+   "display": "1,916.00",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "madrid_financials": {
-   "date": "2026-11-17",
-   "raw": 1573.4,
-   "display": "1,573.4",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 1547.7,
+   "display": "1,547.7",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "madrid_energy": {
-   "date": "2026-11-17",
-   "raw": 3299.1,
-   "display": "3,299.1",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 3249.4,
+   "display": "3,249.4",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "madrid_consumer_goods": {
-   "date": "2026-11-17",
-   "raw": 7582.6,
-   "display": "7,582.6",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 7552.7,
+   "display": "7,552.7",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "madrid_industry": {
-   "date": "2026-11-17",
-   "raw": 2662.8,
-   "display": "2,662.8",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 2642.0,
+   "display": "2,642.0",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "madrid_consumer_services": {
-   "date": "2026-11-17",
-   "raw": 1969.6,
-   "display": "1,969.6",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 1964.3,
+   "display": "1,964.3",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "madrid_tech": {
-   "date": "2026-11-17",
-   "raw": 692.2,
-   "display": "692.2",
-   "period": "17 Nov 2026",
+   "date": "2026-11-18",
+   "raw": 678.9,
+   "display": "678.9",
+   "period": "18 Nov 2026",
    "flash": false
   },
   "ms_nfa": {
@@ -13315,8 +13315,92 @@
    "page": "gdp.html",
    "text": "Nominal unit labour cost (hours), Germany for Q2 2026 revised to 123.8, from 123.7.",
    "at": "2026-11-18T23:41:12+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "vacancies_eurostat",
+   "page": "labour.html",
+   "text": "Job vacancies (Eurostat, from 2001): 148.9k in Q3 2026, after 150.8k in Q2 2026.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "gdp_growth_uk",
+   "page": "international.html",
+   "text": "Real GDP growth, United Kingdom: 1.9% in Q3 2026, after 1.4% in Q2 2026.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "gdp_growth_jp",
+   "page": "international.html",
+   "text": "Real GDP growth, Japan: 1.2% in Q3 2026, after 0.7% in Q2 2026.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_uk",
+   "page": "international.html",
+   "text": "CPI inflation, United Kingdom: 3.7% in Oct 2026, after 3.6% in Sep 2026.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "core_cpi_uk",
+   "page": "international.html",
+   "text": "Core CPI inflation, United Kingdom: 3.1% in Oct 2026, after 3.1% in Sep 2026.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "bond10_ca",
+   "page": "international.html",
+   "text": "10-year yield, Canada (monthly avg.) for Oct 2026 revised to 3.87%, from 3.90%.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "gdp_level_uk",
+   "page": "international.html",
+   "text": "Real GDP, United Kingdom: 1.9% y/y in Q3 2026, after 1.4% y/y in Q2 2026.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "gdp_level_jp",
+   "page": "international.html",
+   "text": "Real GDP, Japan: 1.2% y/y in Q3 2026, after 0.7% y/y in Q2 2026.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "emp_rate_us",
+   "page": "international.html",
+   "text": "Employment rate (15-64), United States for Q3 2026 revised to 72.0%, from 71.9%.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "price_rent_es",
+   "page": "housing.html",
+   "text": "House price to rent ratio, Spain for Q2 2026 revised to 169.1, from 169.0.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "price_rent_nl",
+   "page": "housing.html",
+   "text": "House price to rent ratio, Netherlands for Q4 2025 revised to 157.4, from 157.3.",
+   "at": "2026-11-19T18:19:23+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "price_rent_ca",
+   "page": "housing.html",
+   "text": "House price to rent ratio, Canada for Q3 2026 revised to 158.0, from 157.9.",
+   "at": "2026-11-19T18:19:23+00:00"
   }
  ],
- "updated_at": "2026-11-18T23:41:12+00:00",
+ "updated_at": "2026-11-19T18:19:23+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
