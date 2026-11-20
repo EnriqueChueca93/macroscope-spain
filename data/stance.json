@@ -1,8 +1,8 @@
 {
- "fetched_at": "2026-11-19T23:58:01+00:00",
+ "fetched_at": "2026-11-20T17:50:55+00:00",
  "data": {
   "meta": {
-   "generated_at": "2026-11-19T20:30:29+00:00",
+   "generated_at": "2026-11-20T11:29:23+00:00",
    "title": "Global Central Bank Stance Matrix",
    "source": "BIS — Central bank policy rates (WS_CBPOL), daily, end of period",
    "fast_sources": [
@@ -45,7 +45,7 @@
    "note": "Cycle phase is a transparent heuristic derived from the size and recency of each bank's last policy-rate change, not an official central-bank characterization. “Next move” is either the editor's dated desk view or an automatic lean from the phase; hand entries and desk views are set by the editor, and BIS publishes no forward path."
   },
   "summary": {
-   "as_of": "2026-11-19",
+   "as_of": "2026-11-20",
    "as_of_min": "2026-11-12",
    "total": 12,
    "cutting": 0,
@@ -62,7 +62,7 @@
     "instrument": "Federal Funds Rate (target range)",
     "rate": 3.875,
     "rate_display": "3.75–4.00%",
-    "as_of": "2026-11-19",
+    "as_of": "2026-11-20",
     "as_of_source": "Federal Reserve Board — federal funds target range (openmarket.htm)",
     "fast": true,
     "manual": false,
@@ -91,12 +91,12 @@
      "label": "Federal Reserve monetary policy press releases (RSS)",
      "note": null,
      "items_seen": 15,
-     "fetched_at": "2026-11-19T20:29:36+00:00",
+     "fetched_at": "2026-11-20T11:28:04+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-09",
-     "days_until": 20,
+     "days_until": 19,
      "source": "calendar",
      "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
      "calendar_through": "2027-12-08",
@@ -108,35 +108,35 @@
      "sources": [
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:30.334Z",
+       "asof": "2026-11-20T11:27:56.196Z",
        "decision_date": "2026-12-09",
-       "p_cut": 0.0192,
-       "p_hold": 0.0288,
-       "p_hike": 0.9519,
+       "p_cut": 0.0194,
+       "p_hold": 0.0485,
+       "p_hike": 0.932,
        "outcomes": [
         {
          "label": "Cut >25 bp",
-         "prob": 0.0096,
+         "prob": 0.0097,
          "moves": -2
         },
         {
          "label": "Cut 25 bp",
-         "prob": 0.0096,
+         "prob": 0.0097,
          "moves": -1
         },
         {
          "label": "Hold",
-         "prob": 0.0288,
+         "prob": 0.0485,
          "moves": 0
         },
         {
          "label": "Hike 25 bp",
-         "prob": 0.8846,
+         "prob": 0.8932,
          "moves": 1
         },
         {
          "label": "Hike >25 bp",
-         "prob": 0.0673,
+         "prob": 0.0388,
          "moves": 2
         }
        ],
@@ -147,7 +147,7 @@
       },
       {
        "source": "CME futures (chartbook)",
-       "asof": "2026-11-19T20:29:30Z",
+       "asof": "2026-11-20T11:27:56Z",
        "decision_date": null,
        "p_cut": null,
        "p_hold": null,
@@ -226,7 +226,7 @@
       "value": 3.875
      },
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "value": 3.875
      }
     ]
@@ -239,7 +239,7 @@
     "instrument": "Deposit Facility Rate",
     "rate": 2.5,
     "rate_display": "2.50%",
-    "as_of": "2026-11-19",
+    "as_of": "2026-11-20",
     "as_of_source": "ECB Data Portal — deposit facility rate",
     "fast": true,
     "manual": false,
@@ -268,12 +268,12 @@
      "label": "European Central Bank press releases (RSS) + Governing Council decisions listing",
      "note": "the feed's 15 items held no decision; read the bank's listing page instead",
      "items_seen": 30,
-     "fetched_at": "2026-11-19T20:29:37+00:00",
+     "fetched_at": "2026-11-20T11:28:06+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-17",
-     "days_until": 28,
+     "days_until": 27,
      "source": "calendar",
      "source_url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
      "calendar_through": "2027-12-16",
@@ -285,11 +285,11 @@
      "sources": [
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:30Z",
+       "asof": "2026-11-20T11:27:56Z",
        "decision_date": "2026-12-17",
        "p_cut": 0.01,
-       "p_hold": 0.04,
-       "p_hike": 0.96,
+       "p_hold": 0.03,
+       "p_hike": 0.98,
        "outcomes": [
         {
          "label": "Cut >25 bp",
@@ -303,17 +303,17 @@
         },
         {
          "label": "Hold",
-         "prob": 0.04,
+         "prob": 0.03,
          "moves": 0
         },
         {
          "label": "Hike 25 bp",
-         "prob": 0.95,
+         "prob": 0.955,
          "moves": 1
         },
         {
          "label": "Hike >25 bp",
-         "prob": 0.01,
+         "prob": 0.025,
          "moves": 2
         }
        ],
@@ -322,8 +322,8 @@
        "url": "https://kalshi.com/markets/kxcbdecisioneu",
        "ticker": "KXCBDECISIONEU-26DEC17",
        "event_title": "European Central Bank rate decision in December",
-       "volume_contracts": 16207,
-       "prob_sum": 1.01
+       "volume_contracts": 16253,
+       "prob_sum": 1.02
       }
      ],
      "errors": {
@@ -402,7 +402,7 @@
       "value": 2.5
      },
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "value": 2.5
      }
     ]
@@ -443,13 +443,13 @@
      "source_url": "https://www.boj.or.jp/en/rss/whatsnew.xml",
      "label": "Bank of Japan What's New (RSS) + Monetary Policy Releases listing",
      "note": null,
-     "items_seen": 46,
-     "fetched_at": "2026-11-19T20:29:40+00:00",
+     "items_seen": 47,
+     "fetched_at": "2026-11-20T11:28:11+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-18",
-     "days_until": 29,
+     "days_until": 28,
      "source": "calendar",
      "source_url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
      "calendar_through": "2027-12-17",
@@ -461,10 +461,10 @@
      "sources": [
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:31Z",
+       "asof": "2026-11-20T11:27:57Z",
        "decision_date": "2026-12-18",
-       "p_cut": 0.01,
-       "p_hold": 0.105,
+       "p_cut": 0.015,
+       "p_hold": 0.095,
        "p_hike": 0.885,
        "outcomes": [
         {
@@ -474,12 +474,12 @@
         },
         {
          "label": "Cut 25 bp",
-         "prob": 0.005,
+         "prob": 0.01,
          "moves": -1
         },
         {
          "label": "Hold",
-         "prob": 0.105,
+         "prob": 0.095,
          "moves": 0
         },
         {
@@ -498,8 +498,8 @@
        "url": "https://kalshi.com/markets/kxcbdecisionjapan",
        "ticker": "KXCBDECISIONJAPAN-26DEC17",
        "event_title": "Bank of Japan rate decision in December",
-       "volume_contracts": 42207,
-       "prob_sum": 1.0
+       "volume_contracts": 44415,
+       "prob_sum": 0.995
       }
      ],
      "errors": {
@@ -551,7 +551,7 @@
     "instrument": "Bank Rate",
     "rate": 4.0,
     "rate_display": "4.00%",
-    "as_of": "2026-11-18",
+    "as_of": "2026-11-19",
     "as_of_source": "Bank of England — Bank Rate (IUDBEDR)",
     "fast": true,
     "manual": false,
@@ -580,12 +580,12 @@
      "label": "Bank of England news (RSS)",
      "note": null,
      "items_seen": 50,
-     "fetched_at": "2026-11-19T20:29:37+00:00",
+     "fetched_at": "2026-11-20T11:28:07+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-17",
-     "days_until": 28,
+     "days_until": 27,
      "source": "calendar",
      "source_url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
      "calendar_through": "2027-12-16",
@@ -597,15 +597,15 @@
      "sources": [
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:31Z",
+       "asof": "2026-11-20T11:27:56Z",
        "decision_date": "2026-12-17",
-       "p_cut": 0.015,
-       "p_hold": 0.255,
-       "p_hike": 0.715,
+       "p_cut": 0.01,
+       "p_hold": 0.25,
+       "p_hike": 0.735,
        "outcomes": [
         {
          "label": "Cut >25 bp",
-         "prob": 0.01,
+         "prob": 0.005,
          "moves": -2
         },
         {
@@ -615,12 +615,12 @@
         },
         {
          "label": "Hold",
-         "prob": 0.255,
+         "prob": 0.25,
          "moves": 0
         },
         {
          "label": "Hike 25 bp",
-         "prob": 0.7,
+         "prob": 0.72,
          "moves": 1
         },
         {
@@ -634,12 +634,12 @@
        "url": "https://kalshi.com/markets/kxcbdecisionengland",
        "ticker": "KXCBDECISIONENGLAND-26DEC17",
        "event_title": "Bank of England rate decision in December",
-       "volume_contracts": 50925,
-       "prob_sum": 0.985
+       "volume_contracts": 51103,
+       "prob_sum": 0.995
       },
       {
        "source": "Bank of England OIS curve",
-       "asof": "2026-11-18",
+       "asof": "2026-11-19",
        "decision_date": null,
        "p_cut": null,
        "p_hold": null,
@@ -649,27 +649,27 @@
         {
          "date": "2027-02",
          "months": 3,
-         "rate": 4.319
+         "rate": 4.333
         },
         {
          "date": "2027-05",
          "months": 6,
-         "rate": 4.599
+         "rate": 4.632
         },
         {
          "date": "2027-11",
          "months": 12,
-         "rate": 4.868
+         "rate": 4.928
         },
         {
          "date": "2028-11",
          "months": 24,
-         "rate": 4.799
+         "rate": 4.854
         }
        ],
        "thin": false,
        "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/yield-curves/latest-yield-curve-data.zip",
-       "curve_date": "2026-11-18",
+       "curve_date": "2026-11-19",
        "note": "instantaneous OIS forward rate (sheet '1. fwds, short end'); the curve date is the latest in the Bank's current-month file"
       }
      ],
@@ -733,7 +733,7 @@
       "value": 4.0
      },
      {
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "value": 4.0
      }
     ]
@@ -775,12 +775,12 @@
      "label": "Bank of Canada press releases (RSS)",
      "note": null,
      "items_seen": 10,
-     "fetched_at": "2026-11-19T20:29:38+00:00",
+     "fetched_at": "2026-11-20T11:28:07+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-09",
-     "days_until": 20,
+     "days_until": 19,
      "source": "calendar",
      "source_url": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/schedule/",
      "calendar_through": "2027-12-08",
@@ -792,11 +792,11 @@
      "sources": [
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:31Z",
+       "asof": "2026-11-20T11:27:57Z",
        "decision_date": "2026-12-09",
        "p_cut": 0.01,
-       "p_hold": 0.385,
-       "p_hike": 0.61,
+       "p_hold": 0.42,
+       "p_hike": 0.6,
        "outcomes": [
         {
          "label": "Cut >25 bp",
@@ -810,12 +810,12 @@
         },
         {
          "label": "Hold",
-         "prob": 0.385,
+         "prob": 0.42,
          "moves": 0
         },
         {
          "label": "Hike 25 bp",
-         "prob": 0.6,
+         "prob": 0.59,
          "moves": 1
         },
         {
@@ -829,8 +829,8 @@
        "url": "https://kalshi.com/markets/kxcbdecisioncanada",
        "ticker": "KXCBDECISIONCANADA-26DEC",
        "event_title": "Bank of Canada decision in Dec 2026?",
-       "volume_contracts": 207912,
-       "prob_sum": 1.005
+       "volume_contracts": 210031,
+       "prob_sum": 1.03
       }
      ],
      "errors": {
@@ -939,12 +939,12 @@
      "label": "Reserve Bank of Australia media releases (RSS) + media-releases listing",
      "note": "the feed's 1 items held no decision; read the bank's listing page instead",
      "items_seen": 13,
-     "fetched_at": "2026-11-19T20:29:39+00:00",
+     "fetched_at": "2026-11-20T11:28:08+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-08",
-     "days_until": 19,
+     "days_until": 18,
      "source": "calendar",
      "source_url": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
      "calendar_through": "2027-12-14",
@@ -956,32 +956,32 @@
      "sources": [
       {
        "source": "ASX futures",
-       "asof": "2026-11-18",
+       "asof": "2026-11-20",
        "decision_date": null,
-       "p_cut": 0,
-       "p_hold": 0.97,
-       "p_hike": 0.03,
+       "p_cut": 0.05,
+       "p_hold": 0.95,
+       "p_hike": 0,
        "outcomes": [
         {
-         "label": "Hold",
-         "prob": 0.97,
-         "moves": 0
+         "label": "Cut 25 bp",
+         "prob": 0.05,
+         "moves": -1
         },
         {
-         "label": "Hike 25 bp",
-         "prob": 0.03,
-         "moves": 1
+         "label": "Hold",
+         "prob": 0.95,
+         "moves": 0
         }
        ],
        "implied_path": [],
        "thin": false,
        "url": "https://www.asx.com.au/markets/trade-our-derivatives-market/futures-market/rba-rate-tracker",
-       "expected_rate": 5.1,
+       "expected_rate": 4.6,
        "note": "ASX RBA Rate Tracker: 30-day interbank cash rate futures, at the close"
       },
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:33Z",
+       "asof": "2026-11-20T11:27:58Z",
        "decision_date": "2026-12-08",
        "p_cut": 0.015,
        "p_hold": 0.985,
@@ -1004,12 +1004,12 @@
         },
         {
          "label": "Hike 25 bp",
-         "prob": 0.01,
+         "prob": 0.015,
          "moves": 1
         },
         {
          "label": "Hike >25 bp",
-         "prob": 0.01,
+         "prob": 0.005,
          "moves": 2
         }
        ],
@@ -1128,12 +1128,12 @@
      "label": "Swiss National Bank monetary policy releases (RSS)",
      "note": null,
      "items_seen": 15,
-     "fetched_at": "2026-11-19T20:29:44+00:00",
+     "fetched_at": "2026-11-20T11:28:16+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-10",
-     "days_until": 21,
+     "days_until": 20,
      "source": "calendar",
      "source_url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
      "calendar_through": "2027-12-16",
@@ -1145,30 +1145,30 @@
      "sources": [
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:33Z",
+       "asof": "2026-11-20T11:27:59Z",
        "decision_date": "2026-12-10",
-       "p_cut": 0.03,
-       "p_hold": 0.895,
-       "p_hike": 0.145,
+       "p_cut": 0.01,
+       "p_hold": 0.88,
+       "p_hike": 0.155,
        "outcomes": [
         {
          "label": "Cut >25 bp",
-         "prob": 0.02,
+         "prob": 0.005,
          "moves": -2
         },
         {
          "label": "Cut 25 bp",
-         "prob": 0.01,
+         "prob": 0.005,
          "moves": -1
         },
         {
          "label": "Hold",
-         "prob": 0.895,
+         "prob": 0.88,
          "moves": 0
         },
         {
          "label": "Hike 25 bp",
-         "prob": 0.125,
+         "prob": 0.135,
          "moves": 1
         },
         {
@@ -1183,8 +1183,7 @@
        "ticker": "KXCBDSWISS-26DEC10",
        "event_title": "Swiss National Bank rate decision in December",
        "volume_contracts": 33137,
-       "prob_sum": 1.07,
-       "note": "bracket prices sum to 1.070, not 1"
+       "prob_sum": 1.045
       }
      ],
      "errors": {
@@ -1273,12 +1272,12 @@
      "label": "Sveriges Riksbank press releases (RSS)",
      "note": null,
      "items_seen": 10,
-     "fetched_at": "2026-11-19T20:29:39+00:00",
+     "fetched_at": "2026-11-20T11:28:10+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-16",
-     "days_until": 27,
+     "days_until": 26,
      "source": "calendar",
      "source_url": "https://www.riksbank.se/en-gb/press-and-published/calendar/calendar-2027/",
      "calendar_through": "2027-06-22",
@@ -1290,7 +1289,7 @@
      "sources": [
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:33Z",
+       "asof": "2026-11-20T11:27:59Z",
        "decision_date": "2026-12-16",
        "p_cut": 0.025,
        "p_hold": 0.8,
@@ -1435,12 +1434,12 @@
      "label": "Norges Bank press releases (RSS)",
      "note": null,
      "items_seen": 5,
-     "fetched_at": "2026-11-19T20:29:44+00:00",
+     "fetched_at": "2026-11-20T11:28:17+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-17",
-     "days_until": 28,
+     "days_until": 27,
      "source": "calendar",
      "source_url": "https://www.norges-bank.no/en/news-events/calendar/policy-rate-decisions/",
      "calendar_through": "2027-12-16",
@@ -1452,11 +1451,11 @@
      "sources": [
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:33Z",
+       "asof": "2026-11-20T11:27:59Z",
        "decision_date": "2026-12-17",
        "p_cut": 0.0,
-       "p_hold": 0.0,
-       "p_hike": 0.17,
+       "p_hold": 0.81,
+       "p_hike": 0.165,
        "outcomes": [
         {
          "label": "Cut >25 bp",
@@ -1470,12 +1469,12 @@
         },
         {
          "label": "Hold",
-         "prob": 0.0,
+         "prob": 0.81,
          "moves": 0
         },
         {
          "label": "Hike 25 bp",
-         "prob": 0.17,
+         "prob": 0.165,
          "moves": 1
         },
         {
@@ -1490,8 +1489,7 @@
        "ticker": "KXCBDNORWAY-26DEC17",
        "event_title": "Norway rate decision in December",
        "volume_contracts": 400,
-       "prob_sum": 0.17,
-       "note": "bracket prices sum to 0.170, not 1"
+       "prob_sum": 0.975
       }
      ],
      "errors": {},
@@ -1586,12 +1584,12 @@
      "label": "Reserve Bank of New Zealand news (RSS)",
      "note": "statement page not read (HTTPError: HTTP Error 403: Forbidden); excerpt is the feed's summary",
      "items_seen": 50,
-     "fetched_at": "2026-11-19T20:29:39+00:00",
+     "fetched_at": "2026-11-20T11:28:10+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-09",
-     "days_until": 20,
+     "days_until": 19,
      "source": "calendar",
      "source_url": "https://www.rbnz.govt.nz/news-and-events/how-we-release-information/ocr-decision-dates-and-financial-stability-report-dates-to-feb-2028",
      "calendar_through": "2028-02-09",
@@ -1603,11 +1601,11 @@
      "sources": [
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:33Z",
+       "asof": "2026-11-20T11:27:59Z",
        "decision_date": "2026-12-09",
        "p_cut": 0.015,
-       "p_hold": 0.085,
-       "p_hike": 0.91,
+       "p_hold": 0.08,
+       "p_hike": 0.895,
        "outcomes": [
         {
          "label": "Cut >25 bp",
@@ -1621,12 +1619,12 @@
         },
         {
          "label": "Hold",
-         "prob": 0.085,
+         "prob": 0.08,
          "moves": 0
         },
         {
          "label": "Hike 25 bp",
-         "prob": 0.895,
+         "prob": 0.88,
          "moves": 1
         },
         {
@@ -1641,7 +1639,7 @@
        "ticker": "KXCBDECISIONNZ-26DEC08",
        "event_title": "New Zealand rate decision in December",
        "volume_contracts": 11525,
-       "prob_sum": 1.01
+       "prob_sum": 0.99
       }
      ],
      "errors": {
@@ -1746,20 +1744,20 @@
      "edited": ""
     },
     "decision": {
-     "announced": "2026-10-20",
-     "title": "Announcement on Loan Prime Rate (October 20, 2026)",
-     "url": "https://www.pbc.gov.cn/en/3688229/3688335/3730276/3883798/2026102014240299288/index.html",
-     "excerpt": "Under the authorization of the People’s Bank of China (PBOC), the National Interbank Funding Center (NIFC) announced the Loan Prime Rate (LPR) on October 20, 2026 as follows: the one-year LPR is 3.0% and the over-five-year LPR is 3.5%. The rates are effective until the next release.\nDate of last update\nNov. 29 2018\n2026年10月20日\nContact Us\nE-mail: webbox@pbc.gov.cn Tel: 86-10-66194114\nAdd: No.32 Chengfang Street, Xicheng District, Beijing 100800, P.R.China.\nThe English translation may only be used as a reference. In case a different interpretation of the translated information contained in this website arises, the original Chinese shall prevail.",
+     "announced": "2026-11-20",
+     "title": "Announcement on Loan Prime Rate (November 20, 2026)",
+     "url": "https://www.pbc.gov.cn/en/3688229/3688335/3730276/3883798/2026112015142928273/index.html",
+     "excerpt": "Under the authorization of the People’s Bank of China (PBOC), the National Interbank Funding Center (NIFC) announced the Loan Prime Rate (LPR) on November 20, 2026 as follows: the one-year LPR is 3.0% and the over-five-year LPR is 3.5%. The rates are effective until the next release.\nDate of last update\nNov. 29 2018\n2026年11月20日\nContact Us\nE-mail: webbox@pbc.gov.cn Tel: 86-10-66194114\nAdd: No.32 Chengfang Street, Xicheng District, Beijing 100800, P.R.China.\nThe English translation may only be used as a reference. In case a different interpretation of the translated information contained in this website arises, the original Chinese shall prevail.",
      "source_url": "https://www.pbc.gov.cn/en/3688229/3688335/3730276/3883798/index.html",
      "label": "People's Bank of China — Loan Prime Rate announcements (listing page, no feed)",
      "note": null,
      "items_seen": 10,
-     "fetched_at": "2026-11-19T20:29:47+00:00",
+     "fetched_at": "2026-11-20T11:28:21+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-11-20",
-     "days_until": 1,
+     "days_until": 0,
      "source": "rule",
      "source_url": "http://www.pbc.gov.cn/en/3688229/3688335/3883798/index.html",
      "calendar_through": null,
@@ -1812,7 +1810,7 @@
     "instrument": "Policy Repo Rate",
     "rate": 5.5,
     "rate_display": "5.50%",
-    "as_of": "2026-11-19",
+    "as_of": "2026-11-20",
     "as_of_source": "Reserve Bank of India — Policy Repo Rate (rbi.org.in home page + MPC resolutions)",
     "fast": true,
     "manual": false,
@@ -1841,12 +1839,12 @@
      "label": "Reserve Bank of India press releases (RSS) + Monetary Policy Statements listing",
      "note": "the feed's 10 items held no decision; read the bank's listing page instead",
      "items_seen": 14,
-     "fetched_at": "2026-11-19T20:29:43+00:00",
+     "fetched_at": "2026-11-20T11:28:14+00:00",
      "error": null
     },
     "next_meeting": {
      "date": "2026-12-04",
-     "days_until": 15,
+     "days_until": 14,
      "source": "calendar",
      "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62422",
      "calendar_through": "2027-02-05",
@@ -1858,11 +1856,11 @@
      "sources": [
       {
        "source": "Kalshi",
-       "asof": "2026-11-19T20:29:31Z",
+       "asof": "2026-11-20T11:27:57Z",
        "decision_date": "2026-12-04",
        "p_cut": 0.01,
-       "p_hold": 0.05,
-       "p_hike": 0.925,
+       "p_hold": 0.03,
+       "p_hike": 0.93,
        "outcomes": [
         {
          "label": "Cut >25 bp",
@@ -1876,12 +1874,12 @@
         },
         {
          "label": "Hold",
-         "prob": 0.05,
+         "prob": 0.03,
          "moves": 0
         },
         {
          "label": "Hike 25 bp",
-         "prob": 0.91,
+         "prob": 0.915,
          "moves": 1
         },
         {
@@ -1896,7 +1894,7 @@
        "ticker": "KXCBDECISIONINDIA-26DEC04",
        "event_title": "Reserve Bank of India rate decision in December",
        "volume_contracts": 19676,
-       "prob_sum": 0.985
+       "prob_sum": 0.97
       }
      ],
      "errors": {
@@ -1935,7 +1933,7 @@
       "value": 5.5
      },
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "value": 5.5
      }
     ]
@@ -1948,7 +1946,7 @@
     "n_banks": 37,
     "n_series": 41,
     "window_months": 3,
-    "generated_at": "2026-11-19T20:29:33+00:00",
+    "generated_at": "2026-11-20T11:27:59+00:00",
     "fetch_mode": "wildcard",
     "dropped": [],
     "not_counted_latest": [
@@ -4091,11 +4089,11 @@
  },
  "desk": {
   "meta": {
-   "generated_at": "2026-11-19T23:30:50+00:00",
+   "generated_at": "2026-11-20T11:40:18+00:00",
    "source": "Desk research received by the macro@ mailbox (named houses), read daily by macro-briefing reader.py; statements summarized from each bank's own release",
    "call_window_days": 45,
    "quote_window_days": 21,
-   "reader_updated": "2026-11-19",
+   "reader_updated": "2026-11-20",
    "banks_with_calls": 11,
    "banks_with_statement": 12,
    "banks_with_core": 12,
@@ -4110,12 +4108,32 @@
     "latest_decision": "2026-10-28",
     "lean": {
      "hold": 2,
-     "hike": 21,
+     "hike": 22,
      "cut": 0
     },
-    "n_desks": 23,
+    "n_desks": 24,
     "consensus": "Hike",
     "calls": [
+     {
+      "institution": "Robin Brooks",
+      "person": "Waller",
+      "call": "hike",
+      "size_bp": 50,
+      "meeting": "2026-12",
+      "path": null,
+      "note": "Brooks says Waller tied a 50bp December hike to the October core CPI outturn.",
+      "as_of": "2026-11-20"
+     },
+     {
+      "institution": "MS",
+      "person": "Gapen",
+      "call": "hike",
+      "size_bp": 25,
+      "meeting": "2026-12",
+      "path": "25bp hikes in December and March, then hold through 2027 and easing in 2028",
+      "note": "Resilient growth and slow disinflation, with gradual pace given financial-conditions concerns",
+      "as_of": "2026-11-20"
+     },
      {
       "institution": "St. Louis Fed (Musalem view, not a desk)",
       "person": "Musalem",
@@ -4167,24 +4185,14 @@
       "as_of": "2026-11-19"
      },
      {
-      "institution": "MS",
-      "person": "Gapen",
-      "call": "hike",
-      "size_bp": 25,
-      "meeting": "2026-12",
-      "path": "another 25bp in March",
-      "note": "high bar for 50bp; a hot jobs report could meet it",
-      "as_of": "2026-11-18"
-     },
-     {
       "institution": "GS",
-      "person": null,
+      "person": "Mericle",
       "call": "hike",
       "size_bp": 25,
       "meeting": "2026-12",
-      "path": "another 25bp in March 2027 to 4.25-4.5% peak; cuts from Nov 2027 to 3.25-3.5%",
-      "note": "",
-      "as_of": "2026-11-18"
+      "path": "Another 25bp hike in March to 4.25-4.5%; cuts to 3.25-3.5% from November 2027",
+      "note": "Inflation pressures broad-based; hikes continue until inflation falls",
+      "as_of": "2026-11-19"
      },
      {
       "institution": "Evenflow",
@@ -4382,7 +4390,7 @@
      "measure": "CPI excluding food and energy (BLS); October 2025 base (never collected: the shutdown) = the Sep/Nov 2025 geometric average",
      "source": "bls:CUSR0000SA0L1E|yoy",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -4393,13 +4401,23 @@
     "window_from": "2026-10-29",
     "latest_decision": "2026-10-29",
     "lean": {
-     "hold": 2,
-     "hike": 9,
+     "hold": 1,
+     "hike": 10,
      "cut": 0
     },
     "n_desks": 11,
     "consensus": "Hike",
     "calls": [
+     {
+      "institution": "Berenberg",
+      "person": null,
+      "call": "hike",
+      "size_bp": 25,
+      "meeting": "2026-12-17",
+      "path": "No more than one final hike; deposit rate to 2.75%; cumulative hikes since early 2026 limited to 75bp",
+      "note": "Winter momentum softens; energy base effects drive sharp inflation decline after March 2027",
+      "as_of": "2026-11-20"
+     },
      {
       "institution": "UIA",
       "person": null,
@@ -4499,16 +4517,6 @@
       "path": "deposit rate to 2.75%; March (first meeting of Lagarde's successor) expected to hold unchanged absent a major Middle East escalation or sustained gas-price increases",
       "note": "energy shock lifting headline inflation but tighter financing conditions limiting passthrough to core, reducing risk of second-round effects",
       "as_of": "2026-10-29"
-     },
-     {
-      "institution": "Berenberg",
-      "person": "Wishart",
-      "call": "hold",
-      "size_bp": null,
-      "meeting": "2026-10-29",
-      "path": "Expects one more 25bp hike on 17 December, with an outside chance of no further hike; sees market pricing of two-to-three further hikes as too aggressive",
-      "note": "Underlying inflation and wage growth contained; energy prices are the sole driver of accelerating headline HICP inflation",
-      "as_of": "2026-10-29"
      }
     ],
     "market_quotes": [
@@ -4546,7 +4554,7 @@
      "measure": "HICP excluding energy, food, alcohol and tobacco (Eurostat)",
      "source": "CORE_CPI/EA",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -4700,7 +4708,7 @@
      "measure": "CPI excluding energy, food, alcohol and tobacco (ONS)",
      "source": "CORE_CPI/GBR",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -4797,7 +4805,7 @@
      "measure": "CPI excluding food and energy (Statistics Canada)",
      "source": "CORE_CPI/CAN",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -4883,7 +4891,7 @@
      "measure": "Trimmed mean CPI, monthly (ABS; the RBA's measure)",
      "source": "CORE_CPI/AUS",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -4891,7 +4899,7 @@
    "CH": {
     "code": "CH",
     "name": "Swiss National Bank",
-    "window_from": "2026-10-05",
+    "window_from": "2026-10-06",
     "latest_decision": "2026-09-24",
     "lean": {
      "hold": 0,
@@ -4919,7 +4927,7 @@
      "measure": "Core inflation 1: CPI ex fresh and seasonal products, energy and fuel (FSO)",
      "source": "CORE_CPI/CHE",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -4995,7 +5003,7 @@
      "measure": "CPIF excluding energy (Statistics Sweden; the Riksbank's measure)",
      "source": "CORE_CPI/SWE",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -5062,7 +5070,7 @@
      "measure": "CPI-ATE: ex energy, adjusted for taxes (Statistics Norway; Norges Bank's measure)",
      "source": "CORE_CPI/NOR",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -5120,7 +5128,7 @@
      "measure": "CPI ex food, household energy and vehicle fuels, quarterly (Stats NZ)",
      "source": "CORE_CPI/NZL",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -5132,12 +5140,32 @@
     "latest_decision": "2026-10-30",
     "lean": {
      "hold": 2,
-     "hike": 2,
+     "hike": 4,
      "cut": 0
     },
-    "n_desks": 4,
-    "consensus": "Split",
+    "n_desks": 6,
+    "consensus": "Hike",
     "calls": [
+     {
+      "institution": "UIA",
+      "person": null,
+      "call": "hike",
+      "size_bp": null,
+      "meeting": "2026-12",
+      "path": "possibly another hike in early 2027; beyond that a bet",
+      "note": "underlying inflation at or slightly above 2% target justifies further hikes",
+      "as_of": "2026-11-20"
+     },
+     {
+      "institution": "SGH Macro Advisors",
+      "person": null,
+      "call": "hike",
+      "size_bp": 25,
+      "meeting": "2026-12-18",
+      "path": "Further hikes in March and June at three-month pace toward a 2%-3% terminal zone",
+      "note": "Board debating pace to neutral; hawks Takata and Tamura leave July 2027, adding urgency",
+      "as_of": "2026-11-19"
+     },
      {
       "institution": "GS",
       "person": null,
@@ -5201,12 +5229,12 @@
      "model": "claude-sonnet-5-5"
     },
     "core_inflation": {
-     "value": 2.1,
-     "period": "2026-09",
+     "value": 2.2,
+     "period": "2026-10",
      "measure": "CPI excluding fresh food (Statistics Bureau; the BoJ's 'core')",
      "source": "CORE_CPI/JPN",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -5214,68 +5242,57 @@
    "CN": {
     "code": "CN",
     "name": "People's Bank of China",
-    "window_from": "2026-10-20",
-    "latest_decision": "2026-10-20",
+    "window_from": "2026-11-20",
+    "latest_decision": "2026-11-20",
     "lean": {
-     "hold": 3,
+     "hold": 2,
      "hike": 0,
-     "cut": 1
+     "cut": 0
     },
-    "n_desks": 4,
+    "n_desks": 2,
     "consensus": "Hold",
     "calls": [
      {
-      "institution": "JPM",
-      "person": "Tingting Ge",
+      "institution": "GS",
+      "person": "Goohoon Kwon",
       "call": "hold",
       "size_bp": 0,
-      "meeting": null,
-      "path": "no cut by year-end; 10bp cut pushed to 2Q27",
-      "note": "PBoC 3Q report points to limited room for rate cuts; policy rate 1.25%.",
-      "as_of": "2026-11-17"
-     },
-     {
-      "institution": "Citi Research",
-      "person": "Tamayo",
-      "call": "hold",
-      "size_bp": null,
-      "meeting": null,
+      "meeting": "2026-11-26",
       "path": null,
-      "note": "placeholder removed",
-      "as_of": "2026-11-16"
+      "note": "hawkish hold, close call; weak consumption, soft labor, subdued non-tech sectors",
+      "as_of": "2026-11-20"
      },
      {
       "institution": "Citi",
       "person": null,
       "call": "hold",
-      "size_bp": null,
+      "size_bp": 0,
       "meeting": null,
-      "path": "on hold this year, resuming cuts next year",
-      "note": "investment stabilization on track but 2027 concerns",
-      "as_of": "2026-11-16"
-     },
-     {
-      "institution": "GS",
-      "person": null,
-      "call": "cut",
-      "size_bp": null,
-      "meeting": null,
-      "path": "falling Chinese interest rates in 2027 with a stronger CNY",
-      "note": "Inflation forecast well below consensus; stronger current account.",
-      "as_of": "2026-11-12"
+      "path": null,
+      "note": "Citi expects no change in LPR fixing (prior 3.00%/3.50%)",
+      "as_of": "2026-11-20"
      }
     ],
-    "market_quotes": [],
+    "market_quotes": [
+     {
+      "institution": "GS",
+      "quote": "The Bloomberg consensus currently expects a 25bp hike at this meeting.",
+      "meeting": "2026-11-26",
+      "p_hike": null,
+      "p_cut": null,
+      "as_of": "2026-11-20"
+     }
+    ],
     "statement": {
-     "announced": "2026-10-20",
-     "title": "Announcement on Loan Prime Rate (October 20, 2026)",
-     "url": "https://www.pbc.gov.cn/en/3688229/3688335/3730276/3883798/2026102014240299288/index.html",
-     "summary": "PBOC kept the one-year LPR at 3.0% and the over-five-year LPR at 3.5%, unchanged, effective until the next monthly release.",
+     "announced": "2026-11-20",
+     "title": "Announcement on Loan Prime Rate (November 20, 2026)",
+     "url": "https://www.pbc.gov.cn/en/3688229/3688335/3730276/3883798/2026112015142928273/index.html",
+     "summary": "The PBOC announced its Loan Prime Rates: one-year at 3.0% and over-five-year at 3.5%, effective until the next release. No forward guidance was given.",
      "quote": "The rates are effective until the next release.",
      "vote": null,
      "tilt": "neutral",
-     "summarized_at": "2026-10-25T08:23:13+00:00",
-     "model": "claude-sonnet-5"
+     "summarized_at": "2026-11-20T11:40:18+00:00",
+     "model": "claude-sonnet-5-5"
     },
     "core_inflation": {
      "value": 0.8,
@@ -5283,7 +5300,7 @@
      "measure": "CPI excluding food and energy (National Bureau of Statistics)",
      "source": "CORE_CPI/CHN",
      "is_core": true,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
@@ -5367,7 +5384,7 @@
      "measure": "HEADLINE CPI — India publishes no official core measure (MoSPI)",
      "source": "CPI/IND",
      "is_core": false,
-     "fetched_at": "2026-11-19T23:30:05+00:00",
+     "fetched_at": "2026-11-20T11:40:05+00:00",
      "stale": false,
      "error": null
     }
