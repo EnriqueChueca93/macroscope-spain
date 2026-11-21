@@ -1723,10 +1723,10 @@
    "flash": false
   },
   "gdp_growth_uk": {
-   "date": "2026-04-01",
-   "raw": 1.372599483,
-   "display": "1.4%",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 1.942205489,
+   "display": "1.9%",
+   "period": "Q3 2026",
    "flash": false
   },
   "gdp_growth_ca": {
@@ -1737,10 +1737,10 @@
    "flash": false
   },
   "cpi_uk": {
-   "date": "2026-09-01",
-   "raw": 3.6,
-   "display": "3.6%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 3.7,
+   "display": "3.7%",
+   "period": "Oct 2026",
    "flash": false
   },
   "cpi_ca": {
@@ -1751,10 +1751,10 @@
    "flash": false
   },
   "core_cpi_uk": {
-   "date": "2026-09-01",
+   "date": "2026-10-01",
    "raw": 3.1,
    "display": "3.1%",
-   "period": "Sep 2026",
+   "period": "Oct 2026",
    "flash": false
   },
   "unemployment_uk": {
@@ -1780,8 +1780,8 @@
   },
   "bond10_ca": {
    "date": "2026-10-01",
-   "raw": 3.903,
-   "display": "3.90%",
+   "raw": 3.874762,
+   "display": "3.87%",
    "period": "Oct 2026",
    "flash": false
   },
@@ -6182,10 +6182,10 @@
    "flash": false
   },
   "gdp_level_uk": {
-   "date": "2026-04-01",
-   "raw": 2529.2971,
-   "display": "1.4% y/y",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 2548.1398,
+   "display": "1.9% y/y",
+   "period": "Q3 2026",
    "flash": false
   },
   "gdp_level_us": {
@@ -6252,17 +6252,17 @@
    "flash": false
   },
   "youth_unemp_us": {
-   "date": "2026-10-01",
-   "raw": 9.3,
-   "display": "9.3%",
-   "period": "Oct 2026",
+   "date": "2026-09-01",
+   "raw": 9.9,
+   "display": "9.9%",
+   "period": "Sep 2026",
    "flash": false
   },
   "youth_unemp_ca": {
-   "date": "2026-10-01",
-   "raw": 13.7,
-   "display": "13.7%",
-   "period": "Oct 2026",
+   "date": "2026-09-01",
+   "raw": 13.0,
+   "display": "13.0%",
+   "period": "Sep 2026",
    "flash": false
   },
   "youth_unemp_ea": {
@@ -6323,8 +6323,8 @@
   },
   "emp_rate_us": {
    "date": "2026-07-01",
-   "raw": 71.94911,
-   "display": "71.9%",
+   "raw": 71.98423,
+   "display": "72.0%",
    "period": "Q3 2026",
    "flash": false
   },
@@ -7281,17 +7281,17 @@
    "flash": false
   },
   "gdp_growth_jp": {
-   "date": "2026-04-01",
-   "raw": 0.726654038,
-   "display": "0.7%",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 1.156133449,
+   "display": "1.2%",
+   "period": "Q3 2026",
    "flash": false
   },
   "gdp_level_jp": {
-   "date": "2026-04-01",
-   "raw": 598722.7133,
-   "display": "0.7% y/y",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 599227.9211,
+   "display": "1.2% y/y",
+   "period": "Q3 2026",
    "flash": false
   },
   "house_price_income": {
@@ -7436,7 +7436,7 @@
   },
   "real_hpi_ca": {
    "date": "2026-07-01",
-   "raw": 128.9003299,
+   "raw": 128.9710673,
    "display": "−6.1% y/y",
    "period": "Q3 2026",
    "flash": false
@@ -7513,35 +7513,35 @@
   },
   "price_income_ca": {
    "date": "2026-07-01",
-   "raw": 138.3562509,
+   "raw": 138.4272085,
    "display": "138.4",
    "period": "Q3 2026",
    "flash": false
   },
   "price_income_jp": {
    "date": "2025-10-01",
-   "raw": 88.28122733,
+   "raw": 88.28060187,
    "display": "88.3",
    "period": "Q4 2025",
    "flash": false
   },
   "price_rent_es": {
    "date": "2026-04-01",
-   "raw": 169.041765,
-   "display": "169.0",
+   "raw": 169.0562508,
+   "display": "169.1",
    "period": "Q2 2026",
    "flash": false
   },
   "price_rent_fr": {
    "date": "2026-04-01",
-   "raw": 126.6952899,
+   "raw": 126.6870958,
    "display": "126.7",
    "period": "Q2 2026",
    "flash": false
   },
   "price_rent_de": {
    "date": "2026-04-01",
-   "raw": 110.6825789,
+   "raw": 110.6900683,
    "display": "110.7",
    "period": "Q2 2026",
    "flash": false
@@ -7555,14 +7555,14 @@
   },
   "price_rent_nl": {
    "date": "2025-10-01",
-   "raw": 157.3245461,
-   "display": "157.3",
+   "raw": 157.3571623,
+   "display": "157.4",
    "period": "Q4 2025",
    "flash": false
   },
   "price_rent_pt": {
    "date": "2026-04-01",
-   "raw": 154.8197554,
+   "raw": 154.8223876,
    "display": "154.8",
    "period": "Q2 2026",
    "flash": false
@@ -7576,15 +7576,15 @@
   },
   "price_rent_uk": {
    "date": "2026-04-01",
-   "raw": 130.8784769,
+   "raw": 130.8650977,
    "display": "130.9",
    "period": "Q2 2026",
    "flash": false
   },
   "price_rent_ca": {
    "date": "2026-07-01",
-   "raw": 157.8937609,
-   "display": "157.9",
+   "raw": 158.0452553,
+   "display": "158.0",
    "period": "Q3 2026",
    "flash": false
   },
@@ -13637,8 +13637,85 @@
    "page": "financial.html",
    "text": "Nonfinancial corporations' balance sheet total (FSI), quarterly: 6,073,289,871,000 in Q2 2026, after 5,914,594,506,000 in Q1 2026.",
    "at": "2026-11-21T16:48:29+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "gdp_growth_uk",
+   "page": "international.html",
+   "text": "Real GDP growth, United Kingdom: 1.9% in Q3 2026, after 1.4% in Q2 2026.",
+   "at": "2026-11-21T22:32:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "gdp_growth_jp",
+   "page": "international.html",
+   "text": "Real GDP growth, Japan: 1.2% in Q3 2026, after 0.7% in Q2 2026.",
+   "at": "2026-11-21T22:32:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "cpi_uk",
+   "page": "international.html",
+   "text": "CPI inflation, United Kingdom: 3.7% in Oct 2026, after 3.6% in Sep 2026.",
+   "at": "2026-11-21T22:32:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "core_cpi_uk",
+   "page": "international.html",
+   "text": "Core CPI inflation, United Kingdom: 3.1% in Oct 2026, after 3.1% in Sep 2026.",
+   "at": "2026-11-21T22:32:42+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "bond10_ca",
+   "page": "international.html",
+   "text": "10-year yield, Canada (monthly avg.) for Oct 2026 revised to 3.87%, from 3.90%.",
+   "at": "2026-11-21T22:32:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "gdp_level_uk",
+   "page": "international.html",
+   "text": "Real GDP, United Kingdom: 1.9% y/y in Q3 2026, after 1.4% y/y in Q2 2026.",
+   "at": "2026-11-21T22:32:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "gdp_level_jp",
+   "page": "international.html",
+   "text": "Real GDP, Japan: 1.2% y/y in Q3 2026, after 0.7% y/y in Q2 2026.",
+   "at": "2026-11-21T22:32:42+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "emp_rate_us",
+   "page": "international.html",
+   "text": "Employment rate (15-64), United States for Q3 2026 revised to 72.0%, from 71.9%.",
+   "at": "2026-11-21T22:32:42+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "price_rent_es",
+   "page": "housing.html",
+   "text": "House price to rent ratio, Spain for Q2 2026 revised to 169.1, from 169.0.",
+   "at": "2026-11-21T22:32:42+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "price_rent_nl",
+   "page": "housing.html",
+   "text": "House price to rent ratio, Netherlands for Q4 2025 revised to 157.4, from 157.3.",
+   "at": "2026-11-21T22:32:42+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "price_rent_ca",
+   "page": "housing.html",
+   "text": "House price to rent ratio, Canada for Q3 2026 revised to 158.0, from 157.9.",
+   "at": "2026-11-21T22:32:42+00:00"
   }
  ],
- "updated_at": "2026-11-21T16:48:29+00:00",
+ "updated_at": "2026-11-21T22:32:42+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
