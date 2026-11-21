@@ -450,8 +450,8 @@
   },
   "electricity_demand": {
    "date": "2026-11-20",
-   "raw": 714.95916,
-   "display": "715.0 GWh",
+   "raw": 724.99953,
+   "display": "725.0 GWh",
    "period": "20 Nov 2026",
    "flash": false
   },
@@ -652,24 +652,24 @@
    "flash": false
   },
   "ecb_deposit_rate": {
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "20 Nov 2026",
+   "period": "21 Nov 2026",
    "flash": false
   },
   "ecb_mro_rate": {
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "raw": 2.65,
    "display": "2.65%",
-   "period": "20 Nov 2026",
+   "period": "21 Nov 2026",
    "flash": false
   },
   "ecb_mlf_rate": {
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "raw": 2.9,
    "display": "2.90%",
-   "period": "20 Nov 2026",
+   "period": "21 Nov 2026",
    "flash": false
   },
   "estr": {
@@ -2991,15 +2991,15 @@
   },
   "fsi_nfc_debt": {
    "date": "2025-01-01",
-   "raw": 1931698101000.0,
-   "display": "1,931,698,101,000",
+   "raw": 1923858963000.0,
+   "display": "1,923,858,963,000",
    "period": "2025",
    "flash": false
   },
   "fsi_nfc_balance_sheet": {
    "date": "2025-01-01",
-   "raw": 5773344843000.0,
-   "display": "5,773,344,843,000",
+   "raw": 5752547099000.0,
+   "display": "5,752,547,099,000",
    "period": "2025",
    "flash": false
   },
@@ -3676,17 +3676,17 @@
    "flash": false
   },
   "fsi_q_nfc_debt": {
-   "date": "2026-01-01",
-   "raw": 1989860722000.0,
-   "display": "1,989,860,722,000",
-   "period": "Q1 2026",
+   "date": "2026-04-01",
+   "raw": 1969365311000.0,
+   "display": "1,969,365,311,000",
+   "period": "Q2 2026",
    "flash": false
   },
   "fsi_q_nfc_balance_sheet": {
-   "date": "2026-01-01",
-   "raw": 5914594506000.0,
-   "display": "5,914,594,506,000",
-   "period": "Q1 2026",
+   "date": "2026-04-01",
+   "raw": 6073289871000.0,
+   "display": "6,073,289,871,000",
+   "period": "Q2 2026",
    "flash": false
   },
   "household_liabilities_q": {
@@ -13609,8 +13609,36 @@
    "page": "housing.html",
    "text": "House price to rent ratio, Canada for Q3 2026 revised to 157.9, from 158.0.",
    "at": "2026-11-20T23:30:07+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "fsi_nfc_debt",
+   "page": "financial.html",
+   "text": "Nonfinancial corporations' debt (FSI) for 2025 revised to 1,923,858,963,000, from 1,931,698,101,000.",
+   "at": "2026-11-21T16:48:29+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "fsi_nfc_balance_sheet",
+   "page": "financial.html",
+   "text": "Nonfinancial corporations' balance sheet total (FSI) for 2025 revised to 5,752,547,099,000, from 5,773,344,843,000.",
+   "at": "2026-11-21T16:48:29+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "fsi_q_nfc_debt",
+   "page": "financial.html",
+   "text": "Nonfinancial corporations' debt (FSI), quarterly: 1,969,365,311,000 in Q2 2026, after 1,989,860,722,000 in Q1 2026.",
+   "at": "2026-11-21T16:48:29+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "fsi_q_nfc_balance_sheet",
+   "page": "financial.html",
+   "text": "Nonfinancial corporations' balance sheet total (FSI), quarterly: 6,073,289,871,000 in Q2 2026, after 5,914,594,506,000 in Q1 2026.",
+   "at": "2026-11-21T16:48:29+00:00"
   }
  ],
- "updated_at": "2026-11-20T23:30:07+00:00",
+ "updated_at": "2026-11-21T16:48:29+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
