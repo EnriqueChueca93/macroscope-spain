@@ -1,14 +1,14 @@
 {
  "latest": {
-  "fingerprint": "1d56efc1d518",
+  "fingerprint": "22d129baf9f2",
   "as_of": {
-   "letras": "2026-11-06",
-   "bonds": "2026-10-31"
+   "letras": "2026-11-13",
+   "bonds": "2026-11-10"
   },
   "checked_by": "AI check (Claude)",
-  "checked_at": "2026-11-08",
+  "checked_at": "2026-11-22",
   "checked_against": "the Tesoro's page",
-  "note": "All 78 securities re-read independently from the page: the 12 Letras (maturity, amount) and the 66 Bonos and Obligaciones (type, coupon, maturity, amount, inflation-linked and green flags); totals (83,429.4 and 1,437,965.9 million euros) and each indexed amount (face value times coefficient) agree. Since the edition checked on 4 Nov only the Letras changed (now as of 6 Nov)."
+  "note": "All 78 securities re-read independently from the page: the 12 Letras (maturity, amount) and the 66 Bonos and Obligaciones (type, coupon, maturity, amount, inflation-linked and green flags); totals (85,031.5 and 1,444,059.0 million euros) and each indexed amount (face value times coefficient) agree. Since the edition checked on 8 Nov, two Letras and four bonds (one inflation-linked) grew with new issues."
  },
  "history": [
   {
@@ -43,6 +43,17 @@
    "checked_at": "2026-11-08",
    "checked_against": "the Tesoro's page",
    "note": "All 78 securities re-read independently from the page: the 12 Letras (maturity, amount) and the 66 Bonos and Obligaciones (type, coupon, maturity, amount, inflation-linked and green flags); totals (83,429.4 and 1,437,965.9 million euros) and each indexed amount (face value times coefficient) agree. Since the edition checked on 4 Nov only the Letras changed (now as of 6 Nov)."
+  },
+  {
+   "fingerprint": "22d129baf9f2",
+   "as_of": {
+    "letras": "2026-11-13",
+    "bonds": "2026-11-10"
+   },
+   "checked_by": "AI check (Claude)",
+   "checked_at": "2026-11-22",
+   "checked_against": "the Tesoro's page",
+   "note": "All 78 securities re-read independently from the page: the 12 Letras (maturity, amount) and the 66 Bonos and Obligaciones (type, coupon, maturity, amount, inflation-linked and green flags); totals (85,031.5 and 1,444,059.0 million euros) and each indexed amount (face value times coefficient) agree. Since the edition checked on 8 Nov, two Letras and four bonds (one inflation-linked) grew with new issues."
   }
  ]
 }

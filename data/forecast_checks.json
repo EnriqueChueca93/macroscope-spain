@@ -41,25 +41,31 @@
   "checked_against": "the projections table on the bank's report page of 9 Oct 2026, read separately"
  },
  "ec": {
-  "fingerprint": "f904ca5e140f",
-  "published": "2026-05-22",
+  "fingerprint": "d08ac18d8f0f",
+  "published": "2026-11-18",
   "checked_by": "AI check (Claude)",
-  "checked_at": "2026-11-01 05:12",
+  "checked_at": "2026-11-23 07:44",
   "values": {
    "2026": {
-    "gdp": 2.3962,
-    "inflation": 3.0451,
+    "gdp": 2.603,
+    "inflation": 3.9292,
     "unemployment": 9.9,
-    "balance": -2.4184
+    "balance": -2.6386
    },
    "2027": {
-    "gdp": 1.9497,
-    "inflation": 2.4529,
+    "gdp": 2.1491,
+    "inflation": 3.3497,
     "unemployment": 9.6,
-    "balance": -2.0209
+    "balance": -2.2209
+   },
+   "2028": {
+    "gdp": 1.9382,
+    "inflation": 2.2702,
+    "unemployment": 9.4,
+    "balance": -2.2074
    }
   },
-  "checked_against": "the Commission's Spain page for the Spring 2026 forecast of 21 May 2026"
+  "checked_against": "the forecast table on the Commission's page for Spain of 17 Nov 2026 (Autumn 2026 Economic Forecast), read separately; all eight figures for 2026 and 2027 agree to one decimal (the AMECO database behind the site was updated on 18 Nov)"
  },
  "funcas": {
   "fingerprint": "a2302df915c6",
