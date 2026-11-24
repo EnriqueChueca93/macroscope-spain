@@ -52,9 +52,9 @@ NAV = ([("index.html", "Home")] + [(f"{s}.html", t) for s, (t, _, _) in SECTION_
 COMMUNITIES_EXPLORER = ("budget-explorer.html#level=regions", "Budget explorer: the autonomous communities")
 # What each tab's dropdown lists besides the sections of a section page (anchors or other pages).
 NAV_EXTRA = {
-    "index.html": [("#latest", "Latest releases"), ("#key-indicators", "Key indicators"), ("#tour", "Inside Macroscope"),
-                   ("#chart-of-the-week", "Chart of the week"), ("#readings", "Macroscope readings"),
-                   ("#glance", "The economy at a glance"), ("#peers", "Spain and its peers"),
+    "index.html": [("#latest", "Latest releases"), ("#glance", "The economy at a glance"), ("#key-indicators", "Key indicators"),
+                   ("#hero-title", "The economy today"), ("#tour", "Inside Macroscope"),
+                   ("#chart-of-the-week", "Chart of the week"), ("#readings", "Macroscope readings"), ("#peers", "Spain and its peers"),
                    ("#outlook", "What forecasters expect"), ("#whats-new", "What's new"),
                    ("#four-questions", "The economy in four questions"), ("#charts", "Charts")],
     "tools.html": [("#trend", "Economy vs pre-COVID trend"), ("#taylor", "Taylor rule"), ("#rates", "Interest rate decomposer"),

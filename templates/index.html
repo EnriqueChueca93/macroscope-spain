@@ -81,13 +81,119 @@
 {%- endmacro %}
 
 {% block content %}
-  {# The opening (econpulse/hero.py): a headline written from the data, the long line of both scores and four big
+  {# The page opens with the one-line intro (the page's title for screen readers), then the figures: the latest
+     releases, the economy at a glance and the key indicators; the hero and the tour follow. #}
+  <h1 class="visually-hidden">{{ brand }}</h1>
+  <p class="lede">{{ _("A running read on the health of the Spanish economy.") }}</p>
+
+  {# Since your last visit: off until the reader turns it on (static/app.js), so it shows only with a script. #}
+  <div class="since-visit" id="since-visit" hidden data-build="{{ built_at }}"
+       data-first="{{ _("On. From your next visit, this page will mark the figures that are new since this one.") }}"
+       data-some="{{ _("Since your last visit ({when}): new or revised figures in {what}, marked below.") }}"
+       data-none="{{ _("Nothing new since your last visit ({when}).") }}"
+       data-tile-one="{{ _("1 key indicator") }}" data-tile-many="{{ _("{n} key indicators") }}"
+       data-card-one="{{ _("1 of the latest releases") }}" data-card-many="{{ _("{n} of the latest releases") }}"
+       data-and="{{ _("and") }}" data-badge="{{ _("Since your last visit") }}"
+       data-turn-on="{{ _("Turn it on") }}" data-turn-off="{{ _("Turn off") }}">
+    <span class="since-text" role="status">{{ _("Coming back? This page can mark what is new since each of your visits. Only this browser keeps the date.") }}</span>
+    <button type="button" class="since-toggle">{{ _("Turn it on") }}</button>
+  </div>
+
+  {% if latest %}
+  <section aria-labelledby="latest">
+    <h2 id="latest">{{ _("Latest releases") }}</h2>
+    <div class="latest">
+      {% for r in latest %}
+      <a class="card latest-card" href="{{ r.page }}"{% if r.changed %} data-changed="{{ r.changed }}"{% endif %}>
+        <span class="latest-when">{{ r.day }} &middot; {{ r.release }}</span>
+        <span class="latest-label">{{ r.label }}, {{ r.period }}</span>
+        <span class="latest-value">{{ r.value }}{% if r.unit %}<span class="tile-unit"> {{ r.unit }}</span>{% endif %}
+          {%- if r.flash %} <span class="badge badge-info">{{ _("flash estimate") }}</span>{% endif %}</span>
+        {% if r.spark %}{{ spark(r.spark) }}{% endif %}
+        {% if r.context %}<span class="latest-context">{{ r.context }}</span>{% endif %}
+        {% for o in r.others %}<span class="latest-other">{{ o }}</span>{% endfor %}
+      </a>
+      {% endfor %}
+    </div>
+    <p class="note">{{ _("Releases of the past two weeks, newest first. Each line shows the past few years: hover over it for the range.") }}
+      <a class="more" href="calendar.html">{{ _("Release calendar") }} <span aria-hidden="true">&rarr;</span></a></p>
+  </section>
+  {% endif %}
+
+  {% if glance.heatmap or glance.records %}
+  <section aria-labelledby="glance">
+    <h2 id="glance">{{ _("The economy at a glance") }}</h2>
+    {% if glance.heatmap %}
+    {% set hm = glance.heatmap %}
+    <h3>{{ _("The past twelve months against normal") }}</h3>
+    <div class="table-scroll glance-scroll">
+      <table class="glance-map">
+        <caption class="visually-hidden">{{ _("Activity and inflation readings by month, to %(month)s, shaded by how far each is from its normal since 2013", month=hm.through) }}</caption>
+        <thead>
+          <tr><th scope="col"><span class="visually-hidden">{{ _("Reading") }}</span></th>
+            {% for m in hm.months %}<th scope="col">{% if m.year %}<span class="gl-year">{{ m.year }}</span>{% endif %}{{ m.mon }}</th>{% endfor %}</tr>
+        </thead>
+        {% for b in hm.blocks %}
+        <tbody>
+          {% if not loop.first %}<tr class="gl-gap" aria-hidden="true"><td colspan="{{ hm.months | length + 1 }}"></td></tr>{% endif %}
+          <tr class="gl-overall"><th scope="row">{{ b.overall.label }}</th>
+            {% for c in b.overall.cells %}<td class="gl gl-{{ c.shade }}"{% if c.title %} title="{{ c.title }}"{% endif %}>{{ c.text }}</td>{% endfor %}</tr>
+          {% for r in b.rows %}
+          <tr><th scope="row">{% if r.url %}<a href="{{ r.url }}" target="_blank" rel="noopener" title="{{ r.label_es }}">{{ r.label }}</a>{% else %}<span title="{{ r.label_es }}">{{ r.label }}</span>{% endif %}</th>
+            {% for c in r.cells %}<td class="gl gl-{{ c.shade }}"{% if c.span > 1 %} colspan="{{ c.span }}"{% endif %} title="{{ c.title }}">{{ c.text }}</td>{% endfor %}</tr>
+          {% endfor %}
+        </tbody>
+        {% endfor %}
+      </table>
+    </div>
+    <div class="heat-legend">
+      <span>{{ _("Score against normal:") }}</span>
+      <span class="heat-key"><span class="heat-swatch gl-cool3"></span>&minus;2 {{ _("or less") }}</span>
+      <span class="heat-key"><span class="heat-swatch gl-cool2"></span>&minus;1 {{ _("to") }} &minus;2</span>
+      <span class="heat-key"><span class="heat-swatch gl-cool1"></span>&minus;0.5 {{ _("to") }} &minus;1</span>
+      <span class="heat-key"><span class="heat-swatch gl-mid"></span>{{ _("within ±0.5") }}</span>
+      <span class="heat-key"><span class="heat-swatch gl-hot1"></span>+0.5 {{ _("to") }} +1</span>
+      <span class="heat-key"><span class="heat-swatch gl-hot2"></span>+1 {{ _("to") }} +2</span>
+      <span class="heat-key"><span class="heat-swatch gl-hot3"></span>+2 {{ _("or more") }}</span>
+      <span class="heat-key"><span class="heat-swatch gl-none"></span>{{ _("not out yet") }}</span>
+    </div>
+    <p class="note">{{ _("Each month's reading is shaded by how far it is from its own normal since 2013, Covid years left out: warm colours above normal, cool colours below. For activity, above normal means stronger, and a fall in unemployment counts as stronger; for inflation, it means hotter. Quarterly figures span their quarter. Hover over a cell for the reading and its score.") }}
+      <a class="more" href="analysis.html#composites">{{ _("How the scores are made") }} <span aria-hidden="true">&rarr;</span></a></p>
+    {% endif %}
+    {% if glance.records %}
+    <h3 class="records-title">{{ _("At their highest or lowest in years") }}</h3>
+    <ul class="records">
+      {% for r in glance.records %}
+      <li class="card record">
+        <span class="record-arrow" aria-hidden="true">{{ "▲" if r.up else "▼" }}</span>
+        <span class="record-body">
+          <a class="record-label" href="{{ r.page }}">{{ r.label }}</a>
+          <span class="record-value">{{ r.value }} <span class="secondary">&middot; {{ r.when }}</span></span>
+          <span class="record-text">{{ r.text }}</span>
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="note">{{ _("Key figures whose latest reading, as shown, is the highest or lowest in at least two years.") }}</p>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  <section aria-labelledby="key-indicators">
+    <h2 id="key-indicators">{{ _("Key indicators") }}</h2>
+    <div class="tiles">
+      {% for item in tiles %}{{ tile(item) }}{% endfor %}
+    </div>
+    <p class="note">{{ _("Each tile links to its source, and its line shows the past few years. Hover for the official Spanish name.") }}</p>
+  </section>
+
+  {# The economy today (econpulse/hero.py): a headline written from the data, the long line of both scores and four big
      numbers. Drawn here as SVG and HTML; static/app.js draws the lines in, counts the numbers up and adds the
      hover. Without the scores the page opens with the plain line, as before. #}
   {% if hero %}
   <section class="hero" aria-labelledby="hero-title">
-    <p class="hero-kicker">{{ _("A running read on the health of the Spanish economy.") }}</p>
-    <h1 class="hero-title" id="hero-title">{{ hero.headline.text }}</h1>
+    <p class="hero-kicker">{{ _("The economy today") }}</p>
+    <h2 class="hero-title" id="hero-title">{{ hero.headline.text }}</h2>
     <p class="hero-sub">{{ hero.headline.sub }} <a href="{{ hero.headline.link }}">{{ hero.headline.link_text }}&nbsp;→</a></p>
     {% if hero.clock or hero.map %}
     <div class="hero-visuals{% if hero.clock and hero.map %} two{% endif %}">
@@ -203,51 +309,7 @@
     </div>
     {% endif %}
   </section>
-  {% else %}
-  <p class="lede">{{ _("A running read on the health of the Spanish economy.") }}</p>
   {% endif %}
-
-  {# Since your last visit: off until the reader turns it on (static/app.js), so it shows only with a script. #}
-  <div class="since-visit" id="since-visit" hidden data-build="{{ built_at }}"
-       data-first="{{ _("On. From your next visit, this page will mark the figures that are new since this one.") }}"
-       data-some="{{ _("Since your last visit ({when}): new or revised figures in {what}, marked below.") }}"
-       data-none="{{ _("Nothing new since your last visit ({when}).") }}"
-       data-tile-one="{{ _("1 key indicator") }}" data-tile-many="{{ _("{n} key indicators") }}"
-       data-card-one="{{ _("1 of the latest releases") }}" data-card-many="{{ _("{n} of the latest releases") }}"
-       data-and="{{ _("and") }}" data-badge="{{ _("Since your last visit") }}"
-       data-turn-on="{{ _("Turn it on") }}" data-turn-off="{{ _("Turn off") }}">
-    <span class="since-text" role="status">{{ _("Coming back? This page can mark what is new since each of your visits. Only this browser keeps the date.") }}</span>
-    <button type="button" class="since-toggle">{{ _("Turn it on") }}</button>
-  </div>
-
-  {% if latest %}
-  <section aria-labelledby="latest">
-    <h2 id="latest">{{ _("Latest releases") }}</h2>
-    <div class="latest">
-      {% for r in latest %}
-      <a class="card latest-card" href="{{ r.page }}"{% if r.changed %} data-changed="{{ r.changed }}"{% endif %}>
-        <span class="latest-when">{{ r.day }} &middot; {{ r.release }}</span>
-        <span class="latest-label">{{ r.label }}, {{ r.period }}</span>
-        <span class="latest-value">{{ r.value }}{% if r.unit %}<span class="tile-unit"> {{ r.unit }}</span>{% endif %}
-          {%- if r.flash %} <span class="badge badge-info">{{ _("flash estimate") }}</span>{% endif %}</span>
-        {% if r.spark %}{{ spark(r.spark) }}{% endif %}
-        {% if r.context %}<span class="latest-context">{{ r.context }}</span>{% endif %}
-        {% for o in r.others %}<span class="latest-other">{{ o }}</span>{% endfor %}
-      </a>
-      {% endfor %}
-    </div>
-    <p class="note">{{ _("Releases of the past two weeks, newest first. Each line shows the past few years: hover over it for the range.") }}
-      <a class="more" href="calendar.html">{{ _("Release calendar") }} <span aria-hidden="true">&rarr;</span></a></p>
-  </section>
-  {% endif %}
-
-  <section aria-labelledby="key-indicators">
-    <h2 id="key-indicators">{{ _("Key indicators") }}</h2>
-    <div class="tiles">
-      {% for item in tiles %}{{ tile(item) }}{% endfor %}
-    </div>
-    <p class="note">{{ _("Each tile links to its source, and its line shows the past few years. Hover for the official Spanish name.") }}</p>
-  </section>
 
   {# The tour (batches L4-L5): a chapter per area of the site, its chart drawn as it comes into view. #}
   {% if chapters %}
@@ -292,65 +354,6 @@
       {% endfor %}
     </div>
     <p class="note">{{ _("Our own calculations from the official data.") }} <a class="more" href="analysis.html">{{ _("How they are made") }} <span aria-hidden="true">&rarr;</span></a></p>
-  </section>
-  {% endif %}
-
-  {% if glance.heatmap or glance.records %}
-  <section aria-labelledby="glance">
-    <h2 id="glance">{{ _("The economy at a glance") }}</h2>
-    {% if glance.heatmap %}
-    {% set hm = glance.heatmap %}
-    <h3>{{ _("The past twelve months against normal") }}</h3>
-    <div class="table-scroll glance-scroll">
-      <table class="glance-map">
-        <caption class="visually-hidden">{{ _("Activity and inflation readings by month, to %(month)s, shaded by how far each is from its normal since 2013", month=hm.through) }}</caption>
-        <thead>
-          <tr><th scope="col"><span class="visually-hidden">{{ _("Reading") }}</span></th>
-            {% for m in hm.months %}<th scope="col">{% if m.year %}<span class="gl-year">{{ m.year }}</span>{% endif %}{{ m.mon }}</th>{% endfor %}</tr>
-        </thead>
-        {% for b in hm.blocks %}
-        <tbody>
-          {% if not loop.first %}<tr class="gl-gap" aria-hidden="true"><td colspan="{{ hm.months | length + 1 }}"></td></tr>{% endif %}
-          <tr class="gl-overall"><th scope="row">{{ b.overall.label }}</th>
-            {% for c in b.overall.cells %}<td class="gl gl-{{ c.shade }}"{% if c.title %} title="{{ c.title }}"{% endif %}>{{ c.text }}</td>{% endfor %}</tr>
-          {% for r in b.rows %}
-          <tr><th scope="row">{% if r.url %}<a href="{{ r.url }}" target="_blank" rel="noopener" title="{{ r.label_es }}">{{ r.label }}</a>{% else %}<span title="{{ r.label_es }}">{{ r.label }}</span>{% endif %}</th>
-            {% for c in r.cells %}<td class="gl gl-{{ c.shade }}"{% if c.span > 1 %} colspan="{{ c.span }}"{% endif %} title="{{ c.title }}">{{ c.text }}</td>{% endfor %}</tr>
-          {% endfor %}
-        </tbody>
-        {% endfor %}
-      </table>
-    </div>
-    <div class="heat-legend">
-      <span>{{ _("Score against normal:") }}</span>
-      <span class="heat-key"><span class="heat-swatch gl-cool3"></span>&minus;2 {{ _("or less") }}</span>
-      <span class="heat-key"><span class="heat-swatch gl-cool2"></span>&minus;1 {{ _("to") }} &minus;2</span>
-      <span class="heat-key"><span class="heat-swatch gl-cool1"></span>&minus;0.5 {{ _("to") }} &minus;1</span>
-      <span class="heat-key"><span class="heat-swatch gl-mid"></span>{{ _("within ±0.5") }}</span>
-      <span class="heat-key"><span class="heat-swatch gl-hot1"></span>+0.5 {{ _("to") }} +1</span>
-      <span class="heat-key"><span class="heat-swatch gl-hot2"></span>+1 {{ _("to") }} +2</span>
-      <span class="heat-key"><span class="heat-swatch gl-hot3"></span>+2 {{ _("or more") }}</span>
-      <span class="heat-key"><span class="heat-swatch gl-none"></span>{{ _("not out yet") }}</span>
-    </div>
-    <p class="note">{{ _("Each month's reading is shaded by how far it is from its own normal since 2013, Covid years left out: warm colours above normal, cool colours below. For activity, above normal means stronger, and a fall in unemployment counts as stronger; for inflation, it means hotter. Quarterly figures span their quarter. Hover over a cell for the reading and its score.") }}
-      <a class="more" href="analysis.html#composites">{{ _("How the scores are made") }} <span aria-hidden="true">&rarr;</span></a></p>
-    {% endif %}
-    {% if glance.records %}
-    <h3 class="records-title">{{ _("At their highest or lowest in years") }}</h3>
-    <ul class="records">
-      {% for r in glance.records %}
-      <li class="card record">
-        <span class="record-arrow" aria-hidden="true">{{ "▲" if r.up else "▼" }}</span>
-        <span class="record-body">
-          <a class="record-label" href="{{ r.page }}">{{ r.label }}</a>
-          <span class="record-value">{{ r.value }} <span class="secondary">&middot; {{ r.when }}</span></span>
-          <span class="record-text">{{ r.text }}</span>
-        </span>
-      </li>
-      {% endfor %}
-    </ul>
-    <p class="note">{{ _("Key figures whose latest reading, as shown, is the highest or lowest in at least two years.") }}</p>
-    {% endif %}
   </section>
   {% endif %}
 

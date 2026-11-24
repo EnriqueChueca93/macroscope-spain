@@ -884,9 +884,10 @@ body.search-on { overflow: hidden; }
 /* The home page's opening (batch L1, econpulse/hero.py): the headline, the long line of both scores and four big
    numbers. The line is SVG stretched to its box with HTML labels over it in %; with a script (html.js) the lines
    draw in from the left, the end dots land and the numbers count up, once, as each comes into view. */
-.hero { margin: 26px 0 8px; }
+.hero { margin: 44px 0 8px; padding-top: 28px; border-top: 2px solid var(--text); }
 .hero-kicker { margin: 0 0 10px; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--text-2); }
-.hero-title { font: 600 34px/1.18 var(--serif); letter-spacing: -.01em; margin: 0 0 12px; max-width: 920px; text-wrap: balance; }
+.hero-title { font: 600 34px/1.18 var(--serif); letter-spacing: -.01em; margin: 0 0 12px; max-width: 920px; text-wrap: balance;
+  padding: 0; border: 0; }      /* a section heading (h2) that reads as the opening line */
 .hero-sub { margin: 0 0 22px; max-width: 820px; font-size: 15px; line-height: 1.5; color: var(--text-2); }
 .hero-sub a { color: var(--text); font-weight: 600; white-space: nowrap; }
 

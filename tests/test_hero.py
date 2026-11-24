@@ -112,9 +112,12 @@ def _site(tmp_path):
 def test_the_page_opens_with_the_hero(tmp_path, monkeypatch):
     fake_scores(monkeypatch, ending(0.19), ending(1.42))
     en, es = _site(tmp_path)
-    assert '<h1 class="hero-title" id="hero-title">Spain&#39;s economy is running close to its normal pace' in en
+    assert '<h2 class="hero-title" id="hero-title">Spain&#39;s economy is running close to its normal pace' in en
     assert en.count('class="hl-line hl-') == 2 and 'class="hero-line" data-reveal data-hover="' in en
-    assert '<p class="lede">' not in en
+    # the page opens with the intro and the figures (latest releases, the economy at a glance, key indicators);
+    # the hero follows them
+    assert '<h1 class="visually-hidden">' in en and '<p class="lede">' in en
+    assert en.index('<p class="lede">') < en.index('aria-labelledby="key-indicators"') < en.index('class="hero"') < en.index('class="tour"')
     assert "La economía española avanza cerca de su ritmo normal" in es and "Rango normal" in es
 
 

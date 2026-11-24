@@ -1583,7 +1583,7 @@
 
   // ---------------------------------------------------------------- section links and back to top
   // A "#" after each section heading links to it (and copies the link).
-  Array.prototype.forEach.call(document.querySelectorAll("main h2[id]"), function (h) {
+  Array.prototype.forEach.call(document.querySelectorAll("main h2[id]:not(.hero-title)"), function (h) {
     var a = document.createElement("a");
     a.className = "anchor";
     a.href = "#" + h.id;

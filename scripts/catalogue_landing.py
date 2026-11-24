@@ -246,3 +246,8 @@ PAIRS.update({
     "IMF-style tables for every sector, and a workbook": "Tablas al estilo del FMI para cada sector, y un libro de Excel",
     "Every series, with its source, to download": "Todas las series, con su fuente, para descargar",
 })
+
+# ---------------------------------------------------------------- the page's order (24 Nov 2026)
+PAIRS.update({
+    "The economy today": "La economía hoy",
+})
