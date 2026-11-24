@@ -1,4 +1,5 @@
-"""The opening of the home page (batch L1): a headline written from the data, four big numbers and a long line.
+"""The opening of the home page (batches L1 and L2): a headline written from the data, the cycle clock, a long line
+and four big numbers.
 
 - The headline says what Macroscope's two scores (the Analysis page's composites: activity and inflation against
   their history since 2013, Covid years left out) say this month, in words: "Spain's economy is running close to
@@ -12,6 +13,11 @@
   shaded. The lines draw themselves from left to right when the page opens (CSS; still for readers who ask for
   reduced motion), and the labels are HTML placed over the drawing in percentages, so the drawing can stretch to
   any width without stretching the text. Hovering gives each month's two scores (static/app.js).
+- The cycle clock (L2) follows the activity score's three-month average across (below or above normal) and its
+  change over six months up (falling or rising), so its four quarters are expansion, slowdown, downturn and
+  recovery. The past 24 months draw in as a trail, older months fainter, ending in a large dot. The scale is fixed
+  at ±1.25, not the ±2.5 first planned: the average has stayed within ±0.5 since 2023, and on ±2.5 the trail was a
+  speck in the middle. A month beyond the scale (2020's) sits on the edge, hollow.
 """
 
 import json
@@ -192,9 +198,85 @@ def score_line(data: Data) -> dict | None:
     }
 
 
+# ---------------------------------------------------------------- L2: the cycle clock
+CLOCK_LIMIT = 1.25      # the clock's fixed scale, each way; a month beyond it sits on the edge, drawn hollow
+CLOCK_SMOOTH = 3        # months in the average the clock follows, so one month's noise doesn't send it round
+CLOCK_STEP = 6          # momentum: the change in that average over this many months
+CLOCK_TRAIL = 24        # months drawn
+# (rising, above normal) -> the phase, as the four quarters of the clock name it
+PHASES = {(True, True): "Expansion", (False, True): "Slowdown", (False, False): "Downturn", (True, False): "Recovery"}
+PHASE_KEYS = {"Expansion": "expansion", "Slowdown": "slowdown", "Downturn": "downturn", "Recovery": "recovery"}
+PHASE_WORDS = {"Expansion": "above normal and rising", "Slowdown": "above normal but falling",
+               "Downturn": "below normal and falling", "Recovery": "below normal but rising"}
+
+
+def phase(level: float, momentum: float) -> str:
+    return PHASES[(momentum >= 0, level >= 0)]
+
+
+def _pct(v: float, flip: bool = False) -> float:
+    v = max(-CLOCK_LIMIT, min(CLOCK_LIMIT, v))
+    return round(((CLOCK_LIMIT - v) if flip else (v + CLOCK_LIMIT)) / (2 * CLOCK_LIMIT) * 100, 2)
+
+
+def cycle_clock(data: Data) -> dict | None:
+    """The activity score's three-month average across (below or above normal) against its change over six months up
+    (falling or rising): the past 24 months as a trail in a 100 × 100 box, older months fainter, and where it is now."""
+    scores = _scores(data)
+    if scores is None:
+        return None
+    level = scores[0].rolling(CLOCK_SMOOTH).mean()
+    both = pd.DataFrame({"level": level, "momentum": level - level.shift(CLOCK_STEP)}).dropna()
+    if len(both) < CLOCK_TRAIL:
+        return None
+    trail = both.tail(CLOCK_TRAIL)
+    points = []
+    for k, (month, row) in enumerate(trail.iterrows()):
+        lv, mo = float(row["level"]), float(row["momentum"])
+        name = phase(lv, mo)
+        points.append({"month": i18n.month_year(month), "x": _pct(lv), "y": _pct(mo, flip=True),
+                       "out": abs(lv) > CLOCK_LIMIT or abs(mo) > CLOCK_LIMIT, "phase": _(name), "key": PHASE_KEYS[name],
+                       "level": _signed(lv), "momentum": _signed(mo),
+                       "opacity": round(0.18 + 0.82 * k / (len(trail) - 1), 2)})
+    now = points[-1]
+    segments = [{"x1": a["x"], "y1": a["y"], "x2": b["x"], "y2": b["y"], "opacity": b["opacity"], "i": k}
+                for k, (a, b) in enumerate(zip(points, points[1:]))]
+    mo_now = float(trail["momentum"].iloc[-1])
+    name = phase(float(trail["level"].iloc[-1]), mo_now)
+    earlier = []
+    for months_back, words in ((6, "Six months earlier"), (12, "A year earlier")):
+        if months_back < len(points):
+            p = points[-1 - months_back]
+            earlier.append(_("{when} ({month}): {phase}").format(when=_(words), month=p["month"], phase=p["phase"].lower()))
+    quadrants = [{"key": PHASE_KEYS[n], "name": _(n), "words": _(PHASE_WORDS[n]), "now": n == name}
+                 for n in ("Recovery", "Expansion", "Downturn", "Slowdown")]       # in reading order, top left first
+    return {
+        "points": points, "segments": segments, "now": now, "phase": _(name), "key": PHASE_KEYS[name],
+        "normal": {"x": _pct(-NORMAL), "w": round(_pct(NORMAL) - _pct(-NORMAL), 2)},
+        "grid": [_pct(v) for v in (-1.0, -NORMAL, NORMAL, 1.0)],
+        "label_side": "left" if now["x"] > 62 else "right",
+        "title": _("The cycle clock"),
+        "reading": _("{month}: {phase}. Activity is {words}: its three-month average is {level}, {change} over six "
+                     "months.").format(month=now["month"], phase=_(name), words=_(PHASE_WORDS[name]), level=now["level"],
+                                       change=(_("up {n}") if mo_now >= 0 else _("down {n}")).format(n=f"{abs(mo_now):.1f}")),
+        "earlier": earlier,
+        "quadrants": quadrants,
+        "how": _("The activity score's three-month average across, and its change over six months up, for the past "
+                 "24 months; a fixed scale (±{limit}), so the clock doesn't rescale from month to month, and a month "
+                 "beyond it sits on the edge, hollow.").format(limit=CLOCK_LIMIT),
+        "label": _("Cycle clock: the past 24 months of Macroscope's activity score, from {start} to {end}, ending in "
+                   "{phase}.").format(start=points[0]["month"], end=now["month"], phase=_(name).lower()),
+        "axis": {"left": _("Below normal"), "right": _("Above normal"), "up": _("Rising"), "down": _("Falling")},
+        "hover": json.dumps([[p["month"], p["x"], p["y"], p["phase"], p["level"], p["momentum"]] for p in points],
+                            ensure_ascii=False, separators=(",", ":")),
+        "hover_words": json.dumps({"level": _("Three-month average"), "momentum": _("Over six months")},
+                                  ensure_ascii=False, separators=(",", ":")),
+    }
+
+
 def hero(data: Data, indicators: dict[str, dict]) -> dict | None:
     """Everything the opening needs, or None when the scores can't be worked out (the page then opens as before)."""
     head = headline(data)
     if head is None:
         return None
-    return {"headline": head, "numbers": numbers(data, indicators), "line": score_line(data)}
+    return {"headline": head, "numbers": numbers(data, indicators), "line": score_line(data), "clock": cycle_clock(data)}

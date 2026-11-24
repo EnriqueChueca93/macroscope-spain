@@ -122,3 +122,50 @@ def test_without_the_scores_the_page_opens_as_before(tmp_path):
     en, _es = _site(tmp_path)          # no data behind the scores
     assert '<p class="lede">A running read on the health of the Spanish economy.</p>' in en
     assert 'class="hero"' not in en
+
+
+# ---------------------------------------------------------------- L2: the cycle clock
+
+def test_the_four_phases():
+    assert [hero.phase(lv, mo) for lv, mo in ((0.2, 0.4), (0.2, -0.1), (-0.3, -0.2), (-0.3, 0.1), (0.0, 0.0))] == \
+        ["Expansion", "Slowdown", "Downturn", "Recovery", "Expansion"]
+
+
+def test_the_clock_follows_the_three_month_average_and_its_change(monkeypatch):
+    step = 2 / (N - 1)
+    a = months(np.linspace(-1, 1, N))                    # rising steadily to +1
+    fake_scores(monkeypatch, a, ending(1.0))
+    c = hero.cycle_clock(None)
+    assert len(c["points"]) == 24 and len(c["segments"]) == 23
+    assert c["points"][0]["month"] == "Nov 2024" and c["points"][0]["opacity"] == 0.18 and c["now"]["opacity"] == 1.0
+    level, momentum = 1 - step, 6 * step                   # the last three months' average, and its rise over six
+    assert c["now"]["x"] == round((level + 1.25) / 2.5 * 100, 2) and c["now"]["y"] == round((1.25 - momentum) / 2.5 * 100, 2)
+    assert c["key"] == "expansion" and c["phase"] == "Expansion" and c["label_side"] == "left"   # near the right edge
+    assert c["reading"] == ("Oct 2026: Expansion. Activity is above normal and rising: its three-month average is "
+                            "+1.0, up 0.1 over six months.")
+    assert c["earlier"] == ["Six months earlier (Apr 2026): expansion", "A year earlier (Oct 2025): expansion"]
+    assert [q["key"] for q in c["quadrants"]] == ["recovery", "expansion", "downturn", "slowdown"]
+    assert [q["now"] for q in c["quadrants"]] == [False, True, False, False]
+    assert c["normal"] == {"x": 30.0, "w": 40.0} and c["grid"] == [10.0, 30.0, 70.0, 90.0]
+    assert json.loads(c["hover"])[-1][:4] == ["Oct 2026", c["now"]["x"], c["now"]["y"], "Expansion"]
+    # a month beyond the fixed scale sits on the edge, hollow
+    a[a.index[-3:]] = 3.0
+    c = hero.cycle_clock(None)
+    assert c["now"]["out"] and c["now"]["x"] == 100.0 and c["now"]["y"] == 0.0
+    # falling from above normal: a slowdown, and the reading says "down"
+    fake_scores(monkeypatch, months(np.r_[np.zeros(N - 12), np.linspace(0.2, 1.2, 6), np.linspace(1.0, 0.4, 6)]), ending(1.0))
+    c = hero.cycle_clock(None)
+    assert c["phase"] == "Slowdown" and c["reading"].endswith("its three-month average is +0.5, down 0.5 over six months.")
+    with i18n.using("es"):
+        es = hero.cycle_clock(None)
+    assert es["phase"] == "Desaceleración" and es["reading"].startswith("oct 2026: Desaceleración. La actividad está por "
+                                                                           "encima de lo normal pero bajando")
+    assert "y ha bajado 0." in es["reading"] and es["axis"]["up"] == "Subiendo"
+
+
+def test_the_page_has_the_clock(tmp_path, monkeypatch):
+    fake_scores(monkeypatch, months(np.linspace(-1, 1, N)), ending(1.42))
+    en, es = _site(tmp_path)
+    assert 'class="hero-clock" data-reveal' in en and en.count('class="hc-seg"') == 23
+    assert 'class="hc-q hc-q-expansion is-now"' in en and '<span class="hc-label hc-label-left"' in en
+    assert "El reloj del ciclo" in es and "Expansión" in es

@@ -2029,6 +2029,37 @@
       area.addEventListener("pointerdown", show);
       area.addEventListener("pointerleave", function () { cross.hidden = true; });
     });
+    // The clock's hover: the month nearest the pointer (within 28 px), ringed, with its phase and both readings.
+    Array.prototype.forEach.call(document.querySelectorAll(".hero-clock[data-hover]"), function (fig) {
+      var pts, words;
+      try { pts = JSON.parse(fig.getAttribute("data-hover")); words = JSON.parse(fig.getAttribute("data-words")); } catch (e) { return; }
+      var area = fig.querySelector(".hc-area"), ring = fig.querySelector(".hc-ring"), tip = fig.querySelector(".hc-tip");
+      if (!area || !ring || !tip || !pts.length) return;
+      function hide() { ring.hidden = true; tip.hidden = true; }
+      function show(event) {
+        var box = area.getBoundingClientRect(), best = null, nearest = 28 * 28;
+        pts.forEach(function (p) {           // [month, x %, y %, phase, level, momentum], oldest first: ties go to the newer
+          var dx = box.left + p[1] / 100 * box.width - event.clientX, dy = box.top + p[2] / 100 * box.height - event.clientY;
+          if (dx * dx + dy * dy <= nearest) { nearest = dx * dx + dy * dy; best = p; }
+        });
+        if (!best) { hide(); return; }
+        ring.style.left = tip.style.left = best[1] + "%";
+        ring.style.top = tip.style.top = best[2] + "%";
+        tip.textContent = "";
+        var head = document.createElement("b");
+        head.textContent = best[0] + " \u00b7 " + best[3];
+        tip.appendChild(head);
+        [[words.level, best[4]], [words.momentum, best[5]]].forEach(function (row) {
+          tip.appendChild(document.createElement("br"));
+          tip.appendChild(document.createTextNode(row[0] + " " + row[1]));
+        });
+        tip.classList.toggle("flip", best[1] > 55);
+        ring.hidden = tip.hidden = false;
+      }
+      area.addEventListener("pointermove", show);
+      area.addEventListener("pointerdown", show);
+      area.addEventListener("pointerleave", hide);
+    });
   })();
 
   // Redraw after a resize settles: whether end labels fit depends on the chart's width.

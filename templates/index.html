@@ -10,6 +10,50 @@
     <p class="hero-kicker">{{ _("A running read on the health of the Spanish economy.") }}</p>
     <h1 class="hero-title" id="hero-title">{{ hero.headline.text }}</h1>
     <p class="hero-sub">{{ hero.headline.sub }} <a href="{{ hero.headline.link }}">{{ hero.headline.link_text }}&nbsp;→</a></p>
+    {% if hero.clock %}{% set c = hero.clock %}
+    <div class="hero-visuals">
+      <figure class="hero-clock" data-reveal data-hover="{{ c.hover }}" data-words="{{ c.hover_words }}">
+        <figcaption class="hl-head"><span class="hl-title">{{ c.title }}</span></figcaption>
+        <div class="hc-body">
+          <div class="hc-area">
+            <svg class="hc-svg" viewBox="0 0 100 100" role="img" aria-label="{{ c.label }}">
+              {% for q, x, y in (("recovery", 0, 0), ("expansion", 50, 0), ("downturn", 0, 50), ("slowdown", 50, 50)) %}
+              <rect class="hc-q hc-q-{{ q }}{% if q == c.key %} is-now{% endif %}" x="{{ x }}" y="{{ y }}" width="50" height="50"/>
+              {% endfor %}
+              <rect class="hc-normal" x="{{ c.normal.x }}" y="0" width="{{ c.normal.w }}" height="100"/>
+              {% for g in c.grid %}<line class="hc-grid" x1="{{ g }}" x2="{{ g }}" y1="0" y2="100" vector-effect="non-scaling-stroke"/><line class="hc-grid" x1="0" x2="100" y1="{{ g }}" y2="{{ g }}" vector-effect="non-scaling-stroke"/>{% endfor %}
+              <line class="hc-axis-line" x1="50" x2="50" y1="0" y2="100" vector-effect="non-scaling-stroke"/>
+              <line class="hc-axis-line" x1="0" x2="100" y1="50" y2="50" vector-effect="non-scaling-stroke"/>
+              {% for s in c.segments %}<line class="hc-seg" x1="{{ s.x1 }}" y1="{{ s.y1 }}" x2="{{ s.x2 }}" y2="{{ s.y2 }}" style="--o:{{ s.opacity }};--i:{{ s.i }}" vector-effect="non-scaling-stroke"/>{% endfor %}
+              {% for p in c.points[:-1] %}<circle class="hc-dot{% if p.out %} out{% endif %}" cx="{{ p.x }}" cy="{{ p.y }}" r="0.9" style="--o:{{ p.opacity }};--i:{{ loop.index0 }}"/>{% endfor %}
+              <circle class="hc-pulse" cx="{{ c.now.x }}" cy="{{ c.now.y }}" r="2.2"/>
+              <circle class="hc-now{% if c.now.out %} out{% endif %}" cx="{{ c.now.x }}" cy="{{ c.now.y }}" r="2.2"/>
+            </svg>
+            <span class="hc-qname hc-tl{% if c.key == 'recovery' %} is-now{% endif %}" aria-hidden="true">{{ c.quadrants[0].name }}</span>
+            <span class="hc-qname hc-tr{% if c.key == 'expansion' %} is-now{% endif %}" aria-hidden="true">{{ c.quadrants[1].name }}</span>
+            <span class="hc-qname hc-bl{% if c.key == 'downturn' %} is-now{% endif %}" aria-hidden="true">{{ c.quadrants[2].name }}</span>
+            <span class="hc-qname hc-br{% if c.key == 'slowdown' %} is-now{% endif %}" aria-hidden="true">{{ c.quadrants[3].name }}</span>
+            <span class="hc-ax hc-ax-left" aria-hidden="true">← {{ c.axis.left }}</span>
+            <span class="hc-ax hc-ax-right" aria-hidden="true">{{ c.axis.right }} →</span>
+            <span class="hc-ax hc-ax-up" aria-hidden="true">↑ {{ c.axis.up }}</span>
+            <span class="hc-ax hc-ax-down" aria-hidden="true">↓ {{ c.axis.down }}</span>
+            <span class="hc-label hc-label-{{ c.label_side }}" style="left:{{ c.now.x }}%;top:{{ c.now.y }}%" aria-hidden="true"><b>{{ c.now.month }}</b>{{ c.phase }}</span>
+            <span class="hc-ring" hidden aria-hidden="true"></span>
+            <div class="hc-tip" hidden aria-hidden="true"></div>
+          </div>
+          <div class="hc-text">
+            <p class="hc-phase"><span class="hc-chip hc-q-{{ c.key }}"></span>{{ c.phase }}</p>
+            <p class="hc-reading">{{ c.reading }}</p>
+            {% if c.earlier %}<ul class="hc-earlier">{% for e in c.earlier %}<li>{{ e }}</li>{% endfor %}</ul>{% endif %}
+            <dl class="hc-guide">
+              {% for q in c.quadrants %}<div{% if q.now %} class="is-now"{% endif %}><dt><span class="hc-chip hc-q-{{ q.key }}"></span>{{ q.name }}</dt><dd>{{ q.words }}</dd></div>{% endfor %}
+            </dl>
+            <p class="hc-how">{{ c.how }} <a href="{{ hero.headline.link }}">{{ hero.headline.link_text }}&nbsp;→</a></p>
+          </div>
+        </div>
+      </figure>
+    </div>
+    {% endif %}
     {% if hero.line %}{% set l = hero.line %}
     <figure class="hero-line" data-reveal data-hover="{{ l.hover }}">
       <figcaption class="hl-head">

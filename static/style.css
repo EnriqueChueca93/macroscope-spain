@@ -963,6 +963,74 @@ body.search-on { overflow: hidden; }
   .hero-number { padding: 12px 10px; }
 }
 
+/* The cycle clock (batch L2): four quarters, each lightly tinted (the current one more), the "normal" stripe of the
+   long line, the trail of the past 24 months fading in from the oldest, and the current month as a large dot. Laid
+   out beside its reading when its card is wide, under it when narrow (a container query: the map joins it in L3). */
+.hero-visuals { display: grid; gap: 16px; margin: 0 0 16px; }
+.hero-clock { margin: 0; padding: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  container-type: inline-size; }
+.hc-body { display: grid; gap: 18px; }
+@container (min-width: 760px) { .hc-body { grid-template-columns: minmax(0, 420px) minmax(0, 1fr); align-items: start; } }
+@container (min-width: 560px) and (max-width: 759.98px) { .hero-clock .hc-guide { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.hc-area { position: relative; aspect-ratio: 1; width: 100%; max-width: 420px; touch-action: pan-y; }
+.hc-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.hc-q { opacity: .07; }
+.hc-q.is-now { opacity: .16; }
+.hc-q-recovery { fill: var(--series-1); background: var(--series-1); }
+.hc-q-expansion { fill: var(--series-3); background: var(--series-3); }
+.hc-q-slowdown { fill: var(--series-4); background: var(--series-4); }
+.hc-q-downturn { fill: var(--series-2); background: var(--series-2); }
+.hc-normal { fill: none; stroke: color-mix(in srgb, var(--text) 18%, transparent); stroke-width: 1; stroke-dasharray: 2 3;
+  vector-effect: non-scaling-stroke; }
+.hc-grid { stroke: var(--grid); stroke-width: 1; }
+.hc-axis-line { stroke: var(--axis); stroke-width: 1.5; }
+.hc-seg { stroke: var(--series-1); stroke-width: 2; stroke-linecap: round; opacity: var(--o); }
+.hc-dot { fill: var(--series-1); opacity: var(--o); }
+.hc-dot.out, .hc-now.out { fill: var(--surface); stroke: var(--series-1); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.hc-now { fill: var(--series-1); stroke: var(--surface); stroke-width: 2.5; vector-effect: non-scaling-stroke;
+  transform-box: fill-box; transform-origin: center; }
+.hc-pulse { fill: none; stroke: var(--series-1); stroke-width: 2; vector-effect: non-scaling-stroke; opacity: 0;
+  transform-box: fill-box; transform-origin: center; }
+.hc-qname { position: absolute; font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--text-2); pointer-events: none; }
+.hc-qname.is-now { color: var(--text); }
+.hc-tl { top: 8px; left: 8px; } .hc-tr { top: 8px; right: 8px; }
+.hc-bl { bottom: 8px; left: 8px; } .hc-br { bottom: 8px; right: 8px; }
+.hc-ax { position: absolute; font-size: 11px; color: var(--muted); pointer-events: none; white-space: nowrap; }
+.hc-ax-left { left: 6px; top: 50%; transform: translateY(3px); }
+.hc-ax-right { right: 6px; top: 50%; transform: translateY(3px); }
+.hc-ax-up { left: 50%; top: 30px; transform: translateX(6px); }
+.hc-ax-down { left: 50%; bottom: 30px; transform: translateX(6px); }
+.hc-label { position: absolute; transform: translate(14px, -50%); padding: 3px 7px; font-size: 12px; line-height: 1.3;
+  white-space: nowrap; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; pointer-events: none; }
+.hc-label-left { transform: translate(calc(-100% - 14px), -50%); }
+.hc-label b { display: block; font-variant-numeric: tabular-nums; }
+.hc-ring { position: absolute; width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--text);
+  transform: translate(-50%, -50%); pointer-events: none; }
+.hc-tip { position: absolute; transform: translate(12px, calc(-100% - 10px)); padding: 5px 8px; white-space: nowrap;
+  font-size: 12px; line-height: 1.4; background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .12); pointer-events: none; font-variant-numeric: tabular-nums; z-index: 1; }
+.hc-tip.flip { transform: translate(calc(-100% - 12px), calc(-100% - 10px)); }
+.hc-text { font-size: 14px; line-height: 1.5; }
+.hc-phase { display: flex; align-items: center; gap: 8px; margin: 0 0 6px; font: 600 28px/1.15 var(--serif); }
+.hc-chip { display: inline-block; flex: none; width: 12px; height: 12px; border-radius: 3px; }
+.hc-phase .hc-chip { width: 16px; height: 16px; }
+.hc-reading { margin: 0 0 8px; }
+.hc-earlier { margin: 0 0 14px; padding: 0; list-style: none; color: var(--text-2); font-size: 13px; }
+.hc-guide { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px; margin: 0 0 12px; }
+.hc-guide div { padding: 7px 9px; border-radius: 6px; border: 1px solid transparent; }
+.hc-guide div.is-now { border-color: var(--border); background: var(--hover); }
+.hc-guide dt { display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 13px; }
+.hc-guide dd { margin: 2px 0 0; font-size: 12px; color: var(--text-2); }
+.hc-how { margin: 0; font-size: 12px; color: var(--text-2); }
+.hc-how a { color: var(--text); }
+@media (max-width: 600px) {
+  .hero-clock { padding: 12px 10px; margin-left: -6px; margin-right: -6px; }
+  .hc-area { max-width: none; }
+  .hc-phase { font-size: 24px; }
+  .hc-qname { font-size: 10px; }
+}
+
 /* the motion, only with a script and only for readers who haven't asked for less */
 @media (prefers-reduced-motion: no-preference) {
   .js .hero-line .hl-draw { clip-path: inset(0 100% 0 0); }
@@ -975,6 +1043,21 @@ body.search-on { overflow: hidden; }
   .js .hero-numbers.is-in .hero-number:nth-child(2) { transition-delay: .1s; }
   .js .hero-numbers.is-in .hero-number:nth-child(3) { transition-delay: .2s; }
   .js .hero-numbers.is-in .hero-number:nth-child(4) { transition-delay: .3s; }
+  .js .hero-clock .hc-seg, .js .hero-clock .hc-dot, .js .hero-clock .hc-now, .js .hero-clock .hc-label { opacity: 0; }
+  .js .hero-clock.is-in .hc-seg, .js .hero-clock.is-in .hc-dot { animation: hc-in .35s calc(.3s + var(--i) * 70ms) both; }
+  .js .hero-clock.is-in .hc-now { animation: hc-land .7s 1.95s both; }
+  .js .hero-clock.is-in .hc-pulse { animation: hc-pulse 1.6s 2.5s 3 ease-out both; }
+  .js .hero-clock.is-in .hc-label { opacity: 1; transition: opacity .5s 2.3s; }
+}
+@keyframes hc-in { from { opacity: 0; } to { opacity: var(--o); } }
+@keyframes hc-land {
+  0% { opacity: 0; transform: scale(0); }
+  60% { opacity: 1; transform: scale(1.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes hc-pulse {
+  0% { opacity: .7; transform: scale(1); }
+  100% { opacity: 0; transform: scale(3.2); }
 }
 @keyframes hl-land {
   0% { opacity: 0; transform: translate(-50%, -50%) scale(0); }
@@ -982,5 +1065,5 @@ body.search-on { overflow: hidden; }
   100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
 @media print {
-  .hl-cross { display: none !important; }
+  .hl-cross, .hc-tip, .hc-ring { display: none !important; }
 }

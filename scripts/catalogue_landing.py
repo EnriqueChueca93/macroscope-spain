@@ -45,3 +45,35 @@ PAIRS.update({
 PAIRS.update({
     "Spirits and liquors": "Bebidas espirituosas y licores",     # a basket item, where a chart's legend names it
 })
+
+# ---------------------------------------------------------------- L2: the cycle clock
+PAIRS.update({
+    "The cycle clock": "El reloj del ciclo",
+    "Expansion": "Expansión",
+    "Slowdown": "Desaceleración",
+    "Downturn": "Contracción",
+    "Recovery": "Recuperación",
+    "above normal and rising": "por encima de lo normal y subiendo",
+    "above normal but falling": "por encima de lo normal pero bajando",
+    "below normal and falling": "por debajo de lo normal y bajando",
+    "below normal but rising": "por debajo de lo normal pero subiendo",
+    "{month}: {phase}. Activity is {words}: its three-month average is {level}, {change} over six months.":
+        "{month}: {phase}. La actividad está {words}: su media de tres meses es {level} y {change} en seis meses.",
+    "up {n}": "ha subido {n}",
+    "down {n}": "ha bajado {n}",
+    "{when} ({month}): {phase}": "{when} ({month}): {phase}",
+    "Six months earlier": "Seis meses antes",
+    "Above normal": "Por encima de lo normal",
+    "Below normal": "Por debajo de lo normal",
+    "Rising": "Subiendo",
+    "Falling": "Bajando",
+    "Three-month average": "Media de tres meses",
+    "Over six months": "En seis meses",
+    "The activity score's three-month average across, and its change over six months up, for the past 24 months; a fixed scale (±{limit}), so the clock doesn't rescale from month to month, and a month beyond it sits on the edge, hollow.":
+        "La media de tres meses de la puntuación de actividad en horizontal y su variación en seis meses en vertical, "
+        "en los últimos 24 meses; con una escala fija (±{limit}), para que el reloj no cambie de escala de un mes a "
+        "otro, y un mes que se sale de ella queda en el borde, hueco.",
+    "Cycle clock: the past 24 months of Macroscope's activity score, from {start} to {end}, ending in {phase}.":
+        "Reloj del ciclo: los últimos 24 meses de la puntuación de actividad de Macroscope, de {start} a {end}, que "
+        "terminan en {phase}.",
+})

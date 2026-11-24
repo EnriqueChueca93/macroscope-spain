@@ -331,6 +331,7 @@ About and methods: Acerca del sitio y métodos
 About the data: Sobre los datos
 Above 2%: Por encima del 2%
 Above 5%: Por encima del 5%
+Above normal: Por encima de lo normal
 Accept: Aceptar
 Accommodation: Servicios de alojamiento
 Accommodation and food services: Hostelería
@@ -535,6 +536,7 @@ Before notaries: Ante notario
 ? 'Behind the unemployment rate, people move all the time: some of the unemployed find work or give up looking, and some of the employed lose their jobs or leave the labour force. Eurostat follows the same people from one quarter to the next in the labour force survey. More of the unemployed find a job each quarter than before the pandemic, and fewer workers lose theirs.'
 : 'Detrás de la tasa de paro, la gente se mueve todo el tiempo: algunos parados encuentran trabajo o dejan de buscarlo, y algunos ocupados pierden su empleo o salen de la población activa. Eurostat sigue a las mismas personas de un trimestre al siguiente en la encuesta de población activa. Cada trimestre encuentran empleo más parados que antes de la pandemia, y menos ocupados pierden el suyo.'
 Belgium: Bélgica
+Below normal: Por debajo de lo normal
 Benefit ratio (average pension against average wage): Tasa de beneficio (pensión media sobre el salario medio)
 Benefits: Prestaciones
 Beveridge curve: Curva de Beveridge
@@ -801,6 +803,7 @@ Cut: Bajada
 Cuts in hours: Reducciones de jornada
 Cuts in working hours (ERTE): Reducciones de jornada (ERTE)
 Cutting: Bajando
+'Cycle clock: the past 24 months of Macroscope''s activity score, from {start} to {end}, ending in {phase}.': 'Reloj del ciclo: los últimos 24 meses de la puntuación de actividad de Macroscope, de {start} a {end}, que terminan en {phase}.'
 Czech National Bank: Banco Nacional Checo
 DBnomics: DBnomics
 DSA 1: DSA 1
@@ -881,6 +884,7 @@ Domestic demand, past four quarters: Demanda interna, últimos cuatro trimestres
 Doubtful loans, % of lending to households and firms: Créditos dudosos, % del crédito a hogares y empresas
 Download the data of the chart %(title)s as a CSV file: Descargar los datos del gráfico %(title)s en un archivo CSV
 Downside risks to inflation: Riesgos a la baja para la inflación
+Downturn: Contracción
 Drinks and tobacco: Bebidas y tabaco
 Due in the next 12 months: Vence en los próximos 12 meses
 ECB: BCE
@@ -1035,6 +1039,7 @@ Everything else: Todo lo demás
 Excel workbook: Libro de Excel (en inglés)
 Excludes unprocessed food and energy (INE definition).: Excluye los alimentos no elaborados y la energía (definición del INE).
 Executive Board: Comité Ejecutivo
+Expansion: Expansión
 Expectations: Expectativas
 Expenditure: Gasto total
 Expense: Gasto
@@ -1081,6 +1086,7 @@ FRED: FRED
 FUNCAS: FUNCAS
 FUNCAS Panel: Panel de FUNCAS
 FUNCAS Panel (consensus): Panel de FUNCAS (consenso)
+Falling: Bajando
 False alarms: Falsas alarmas
 ? Faster money growth is meant to show up in prices a year or two later. Here broad money is drawn two years after it was measured, so the lines would move together if it did.
 : Se supone que un crecimiento más rápido del dinero acaba en los precios uno o dos años después. Aquí el dinero en sentido amplio se dibuja dos años después de medirse, así que, si fuera así, las líneas irían juntas.
@@ -1891,6 +1897,7 @@ Over Germany: Sobre Alemania
 Over a week: En una semana
 Over a year: En un año
 Over deposit rate: Sobre el tipo de depósito
+Over six months: En seis meses
 Over the past decade: En la última década
 Over time: Evolución
 Overall balance: Saldo presupuestario
@@ -2180,6 +2187,7 @@ Recession probability (Michez): Probabilidad de recesión (Michez)
 'Recession signals: the Sahm and Michez rules': 'Señales de recesión: las reglas de Sahm y de Michez'
 ? Recessions as dated by the Spanish Economic Association's dating committee, from the quarter after the peak to the trough. A signal is the first month (or quarter) a rule reaches its threshold after a year below it; a negative number means before the recession began. A signal up to a year early counts as detecting the recession; one that no recession followed within a year is a false alarm. The Michez rule needs vacancy data, which start in 2001, and its Spanish thresholds are set so that it gives no false alarm over 2003-2021; from 2022 it is out of sample.
 : Recesiones fechadas por el comité de fechado de la Asociación Española de Economía, del trimestre siguiente al pico hasta el valle. Una señal es el primer mes (o trimestre) en que una regla alcanza su umbral tras un año por debajo; un número negativo indica que fue antes de que empezara la recesión. Una señal hasta un año antes cuenta como detección de la recesión; una que no va seguida de una recesión en el plazo de un año es una falsa alarma. La regla de Michez necesita datos de vacantes, que empiezan en 2001, y sus umbrales para España se fijan para que no dé ninguna falsa alarma en 2003-2021; desde 2022 está fuera de la muestra.
+Recovery: Recuperación
 Recreation and culture: Ocio y cultura
 Red Eléctrica: Red Eléctrica
 Region: Comunidad
@@ -2244,6 +2252,7 @@ Revenue, spending and the balances of the general government, from Eurostat's ac
 Revision: Revisión
 Rise agreed in collective agreements, this year: Subida pactada en convenios colectivos, este año
 Rises agreed in collective agreements: Subidas pactadas en los convenios colectivos
+Rising: Subiendo
 Rising fastest: Las que más suben
 Rising fastest and slowest · {month}: Las que más y menos suben · {month}
 Rising slowest or falling: Las que menos suben o bajan
@@ -2337,10 +2346,12 @@ Since your last visit: Desde su última visita
 'Since your last visit ({when}): new or revised figures in {what}, marked below.': 'Desde su última visita ({when}): datos nuevos o revisados en {what}, marcados abajo.'
 Since {year}, after inflation: Desde {year}, descontada la inflación
 Since {year}, after inflation %: Desde {year}, descontada la inflación %
+Six months earlier: Seis meses antes
 Skip to content: Ir al contenido
 Slack (SA): Holgura (desest.)
 Slack and unemployment: Holgura y paro
 Slack and vacancies: Holgura y vacantes
+Slowdown: Desaceleración
 Slowest rise: Menor subida
 Social Security: Seguridad Social
 ? Social Security only; with civil servants' (Clases Pasivas) and non-contributory pensions, {share} of GDP in {year} ({source})
@@ -2556,6 +2567,8 @@ The State (central government): El Estado (Administración central)
 The State and its agencies (Administración central), without the Social Security.: El Estado y sus organismos (Administración central), sin la Seguridad Social.
 The State's debt, security by security: La deuda del Estado, valor a valor
 'The State''s debt: what falls due each year': 'La deuda del Estado: lo que vence cada año'
+? The activity score's three-month average across, and its change over six months up, for the past 24 months; a fixed scale (±{limit}), so the clock doesn't rescale from month to month, and a month beyond it sits on the edge, hollow.
+: La media de tres meses de la puntuación de actividad en horizontal y su variación en seis meses en vertical, en los últimos 24 meses; con una escala fija (±{limit}), para que el reloj no cambie de escala de un mes a otro, y un mes que se sale de ella queda en el borde, hueco.
 The autonomous communities: Las comunidades autónomas
 ? The average of %(who)s, with AI-checked figures only. Each grey dot is a forecaster, the dark tick their average and the blue dot Macroscope's own estimate (hover over them for the figures). Inflation is the HICP for some forecasters and the CPI for others.
 : La media de %(who)s, solo con cifras comprobadas por IA. Cada punto gris es un analista, la marca oscura su media y el punto azul la estimación propia de Macroscope (pase el cursor por encima para ver las cifras). La inflación es el IPCA para unos analistas y el IPC para otros.
@@ -2572,6 +2585,7 @@ The credit impulse with growth a quarter later: El impulso crediticio con el cre
 The credit-to-GDP gap: La brecha de crédito sobre PIB
 The current account: La balanza por cuenta corriente
 The current account and its parts: La cuenta corriente y sus componentes
+The cycle clock: El reloj del ciclo
 The deposit rate since 1999: El tipo de depósito desde 1999
 The economy against its history: La economía frente a su historia
 The economy at a glance: La economía de un vistazo
@@ -2647,6 +2661,7 @@ Thousands, by measure: Miles, por medida
 Thousands, seasonally adjusted by Macroscope: Miles, desestacionalizados por Macroscope
 Thousands, seasonally adjusted by the Social Security; agriculture is in the table: Miles, desestacionalizados por la Seguridad Social; la agricultura está en la tabla
 Thousands; average change per month, seasonally adjusted by Macroscope for 1 and 3 months: Miles; variación media mensual, desestacionalizada por Macroscope para 1 y 3 meses
+Three-month average: Media de tres meses
 Tier 1 capital: Capital de nivel 1
 Tier 1 capital to total assets 1/: Capital de nivel 1 / activos totales 1/
 Time: Hora
@@ -2904,6 +2919,8 @@ a year's rent over the price · {period}; 10-year bond {bond}: un año de alquil
 about 123% of GDP; ageing adds about 52 points, 33.9 of them from pensions: en torno al 123% del PIB; el envejecimiento añade unos 52 puntos, 33.9 de ellos por las pensiones
 about {n} thousand registrations of {what}: unos {n} mil afiliados de {what}
 above expectations: por encima de lo esperado
+above normal and rising: por encima de lo normal y subiendo
+above normal but falling: por encima de lo normal pero bajando
 additional measures will very probably be needed; relying only on higher contributions could harm jobs and competitiveness: muy probablemente harán falta medidas adicionales; confiar solo en cotizaciones más altas podría dañar el empleo y la competitividad
 additional provision 2 of the decree: disposición adicional 2.ª del decreto
 additional provision 53: disposición adicional 53.ª
@@ -2921,6 +2938,8 @@ average of {n}; range {low} to {high}: media de {n}; entre {low} y {high}
 average without the 15% extremes at each end: media sin el 15% de los extremos de cada lado
 awaiting AI check: pendiente de verificación por IA
 below expectations: por debajo de lo esperado
+below normal and falling: por debajo de lo normal y bajando
+below normal but rising: por debajo de lo normal pero subiendo
 below {x}: menos de {x}
 bn: mm
 bp: pb
@@ -2940,6 +2959,7 @@ deposit rate minus the euro-area rule: tipo de depósito menos la regla de la zo
 'disposable income: savings and investments less debts · {period}': 'la renta disponible: ahorro e inversiones menos deudas · {period}'
 'disposable income: savings and investments less debts · {period}; the highest since {year}': 'la renta disponible: ahorro e inversiones menos deudas · {period}; la más alta desde {year}'
 dovish: acomodaticio
+down {n}: ha bajado {n}
 download the Excel workbook: descargue el libro de Excel (en inglés)
 each age group's rate today, weighted as in {year}: la tasa actual de cada grupo de edad, ponderada como en {year}
 'energy alone: {amount}': 'solo la energía: {amount}'
@@ -3122,6 +3142,7 @@ transitional provision 42: disposición transitoria 42.ª
 transitional provision 43: disposición transitoria 43.ª
 unanimous: por unanimidad
 up 1.1 points of GDP, with over a million more pensions: 1.1 puntos de PIB más, con más de un millón de pensiones adicionales
+up {n}: ha subido {n}
 vehicles: vehículos
 via {source}: vía {source}
 vs {value} a year ago: frente al {value} hace un año
@@ -3171,6 +3192,7 @@ z-score: Puntuación z
 '{low} to {high}': '{low} a {high}'
 '{measure}, {year}': '{measure}, {year}'
 '{month} average': media de {month}
+'{month}: {phase}. Activity is {words}: its three-month average is {level}, {change} over six months.': '{month}: {phase}. La actividad está {words}: su media de tres meses es {level} y {change} en seis meses.'
 '{names} and {last}': '{names} y {last}'
 '{names} figures are taken from the FUNCAS Panel''s reference table, which lists each with the month it was published.': Las cifras de {names} proceden de la tabla de referencia del Panel de FUNCAS, que indica el mes en que se publicó cada una.
 '{name}, projected': '{name}, proyección'
@@ -3222,6 +3244,7 @@ z-score: Puntuación z
 '{value} at the {year} peak': '{value} en el máximo de {year}'
 '{verdict}, {month}; {above} of {total} recent figures above': '{verdict}, {month}; {above} de {total} datos recientes por encima'
 '{what}, seasonally adjusted by Macroscope': '{what}; datos desestacionalizados por Macroscope'
+'{when} ({month}): {phase}': '{when} ({month}): {phase}'
 '{x} or less': '{x} o menos'
 '{x} or more': '{x} o más'
 '{years} years': '{years} años'
