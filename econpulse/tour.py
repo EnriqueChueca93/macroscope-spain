@@ -506,7 +506,7 @@ SCATTER_BOX = (300.0, 220.0)    # the scatter's size on a phone, px: dots closer
 DOT_ROOM = 27.0
 
 
-def _spread(dots: list[dict], rounds: int = 60) -> None:
+def _spread(dots: list[dict], rounds: int = 200) -> None:
     """Nudge overlapping dots apart (in place) so each label shows; each moves only as far as it must, and its title
     keeps its exact figures."""
     w, h = SCATTER_BOX
@@ -525,6 +525,8 @@ def _spread(dots: list[dict], rounds: int = 60) -> None:
                     pos[a][0] -= ux * push; pos[a][1] -= uy * push
                     pos[b][0] += ux * push; pos[b][1] += uy * push
                     moved = True
+        for q in pos:                      # kept inside the box every round, so the others move round a dot at the edge
+            q[0], q[1] = min(w, max(0.0, q[0])), min(h, max(0.0, q[1]))
         if not moved:
             break
     for d, (x, y) in zip(dots, pos):
