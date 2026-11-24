@@ -1,6 +1,51 @@
 {% extends "base.html" %}
 {% from "macros.html" import tile, chart_card, spark, dots %}
 
+{# A tour chapter's chart (econpulse/tour.py): lines or stacked bars drawn as SVG stretched to their box, with the
+   labels over them in %, or a small treemap as boxes in %. CSS draws them in when their chapter comes into view. #}
+{% macro tour_chart(c) -%}
+<figure class="ch-chart ch-{{ c.kind }}">
+  <figcaption class="hl-head"><span class="hl-title">{{ c.title }}</span><span class="hl-sub">{{ c.subtitle }}</span></figcaption>
+  {% if c.kind in ("lines", "bars") %}
+  <div class="tc-plot{% if c.kind == 'bars' %} no-ends{% endif %}">
+    <div class="tc-area">
+      <svg class="tc-back" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true">
+        {% for t in c.ticks %}<line class="hl-grid" x1="0" x2="1000" y1="{{ t.y }}" y2="{{ t.y }}" vector-effect="non-scaling-stroke"/>{% endfor %}
+        {% if c.zero is not none %}<line class="hl-grid hl-zero" x1="0" x2="1000" y1="{{ c.zero }}" y2="{{ c.zero }}" vector-effect="non-scaling-stroke"/>{% endif %}
+      </svg>
+      {% if c.kind == "lines" %}
+      <div class="tc-draw">
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" role="img" aria-label="{{ c.title }}: {{ c.subtitle }}">
+          {% for ln in c.lines %}<polyline class="tc-line s-{{ ln.slot }}{% if ln.dashed %} dashed{% endif %}" points="{{ ln.points }}" vector-effect="non-scaling-stroke"/>{% endfor %}
+        </svg>
+      </div>
+      {% for e in c.ends %}<span class="tc-dot s-{{ e.slot }}" style="left:{{ e.x }}%;top:{{ e.y }}%" aria-hidden="true"></span>{% endfor %}
+      {% else %}
+      <svg class="tc-bars" viewBox="0 0 1000 100" preserveAspectRatio="none" role="img" aria-label="{{ c.title }}: {{ c.subtitle }}">
+        {% for r in c.rects %}<rect class="tc-bar s-{{ r.slot }}{% if r.neg %} neg{% endif %}" x="{{ r.x }}" y="{{ r.y }}" width="{{ r.w }}" height="{{ r.h }}" style="--i:{{ r.i }}"><title>{{ r.title }}</title></rect>{% endfor %}
+        {% if c.line %}<polyline class="tc-line tc-total s-ink" points="{{ c.line }}" vector-effect="non-scaling-stroke"/>{% endif %}
+      </svg>
+      {% endif %}
+      {% for t in c.ticks %}<span class="hl-tick" style="top:{{ t.y }}%" aria-hidden="true">{{ t.label }}</span>{% endfor %}
+    </div>
+    {% if c.kind == "lines" %}
+    <div class="tc-ends">{% for e in c.ends %}<span class="tc-end" style="top:{{ e.label_y }}%"><b><i class="sw s-{{ e.slot }}"></i>{{ e.name }}</b><span>{{ e.text }}</span></span>{% endfor %}</div>
+    {% endif %}
+    <div class="hl-years" aria-hidden="true">{% for y in c.years %}<span class="{% if y.wide %}wide{% endif %}{% if y.narrow %} narrow{% endif %}" style="left:{{ y.x }}%">{{ y.label }}</span>{% endfor %}</div>
+  </div>
+  {% if c.legend %}<p class="tc-legend">{% for l in c.legend %}<span><i class="sw s-{{ l.slot }}{% if l.line %} line{% endif %}"></i>{{ l.name }}</span>{% endfor %}</p>{% endif %}
+  {% if c.kind == "lines" and c.lines | length > 1 %}<p class="tc-legend tc-phone" aria-hidden="true">{% for ln in c.lines %}<span><i class="sw line s-{{ ln.slot }}{% if ln.dashed %} dashed{% endif %}"></i>{{ ln.name }}</span>{% endfor %}</p>{% endif %}
+  {% elif c.kind == "treemap" %}
+  <div class="tc-tree" role="list" aria-label="{{ c.title }}">
+    {% for b in c.boxes %}<div class="tc-box gl-{{ b.shade }}{% if b.small %} small{% endif %}{% if b.tiny %} tiny{% endif %}" role="listitem" title="{{ b.title }}" aria-label="{{ b.title }}"
+      style="left:{{ b.left }}%;top:{{ b.top }}%;width:{{ b.width }}%;height:{{ b.height }}%;--i:{{ b.i }}"><b>{{ b.name }}</b><span>{{ b.rate }}</span></div>{% endfor %}
+  </div>
+  <p class="tc-legend rm-key"><span>{{ c.legend.below }}</span><span class="rm-scale" aria-hidden="true"><i class="gl-cool3"></i><i class="gl-cool2"></i><i class="gl-cool1"></i><i class="gl-mid"></i><i class="gl-hot1"></i><i class="gl-hot2"></i><i class="gl-hot3"></i></span><span>{{ c.legend.above }}</span></p>
+  {% endif %}
+  <p class="hl-foot">{{ _("Source:") }} {{ c.source }}</p>
+</figure>
+{%- endmacro %}
+
 {% block content %}
   {# The opening (econpulse/hero.py): a headline written from the data, the long line of both scores and four big
      numbers. Drawn here as SVG and HTML; static/app.js draws the lines in, counts the numbers up and adds the
@@ -169,6 +214,28 @@
     </div>
     <p class="note">{{ _("Each tile links to its source, and its line shows the past few years. Hover for the official Spanish name.") }}</p>
   </section>
+
+  {# The tour (batches L4-L5): a chapter per area of the site, its chart drawn as it comes into view. #}
+  {% if chapters %}
+  <section class="tour" aria-labelledby="tour">
+    <h2 id="tour">{{ _("Inside Macroscope") }}</h2>
+    <p class="block-intro">{{ _("A taste of each part of the site: the figure that matters most there today, and the chart that tells its story.") }}</p>
+    {% for ch in chapters %}
+    <article class="chapter" id="tour-{{ ch.id }}" data-reveal>
+      <div class="ch-text">
+        <h3 class="ch-kicker"><span class="ch-n">{{ ch.n }}</span>{{ ch.area }}</h3>
+        <p class="ch-big">{{ ch.big }}{% if ch.big_unit %} <span class="ch-unit">{{ ch.big_unit }}</span>{% endif %}</p>
+        <p class="ch-label">{{ ch.big_label }}</p>
+        {% if ch.sentence %}<p class="ch-sentence">{{ ch.sentence }}</p>{% endif %}
+        {% if ch.facts %}<ul class="ch-facts">{% for f in ch.facts %}<li>{{ f }}</li>{% endfor %}</ul>{% endif %}
+        {% if ch.links %}<p class="ch-links">{% for href, title in ch.links %}<a href="{{ href }}">{{ title }}</a>{% endfor %}</p>{% endif %}
+        <a class="ch-explore" href="{{ ch.page }}">{{ ch.explore }}&nbsp;→</a>
+      </div>
+      {{ tour_chart(ch.chart) }}
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
 
   {% if week %}
   <section aria-labelledby="chart-of-the-week">

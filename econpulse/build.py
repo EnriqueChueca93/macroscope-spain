@@ -16,7 +16,7 @@ from pathlib import Path
 import pandas as pd
 from jinja2 import ChoiceLoader, Environment, FileSystemLoader, select_autoescape
 
-from . import __version__, analytics, budget, changes, disclaimer, ecbspeak, feed, fiscal, glance, hero, homepage, i18n, industries, peers, schedule, scoreboard, search, sectortables, stance, surprises, tools, trade
+from . import __version__, analytics, budget, changes, disclaimer, ecbspeak, feed, fiscal, glance, hero, homepage, i18n, industries, peers, schedule, scoreboard, search, sectortables, stance, surprises, tools, tour, trade
 from .i18n import _
 from .charts import build_home_charts
 from .config import GA_MEASUREMENT_ID, SITE_CONTACT, SITE_DIR, SITE_OWNER, SITE_URL, STATIC_DIR, TEMPLATES_DIR
@@ -52,7 +52,7 @@ NAV = ([("index.html", "Home")] + [(f"{s}.html", t) for s, (t, _, _) in SECTION_
 COMMUNITIES_EXPLORER = ("budget-explorer.html#level=regions", "Budget explorer: the autonomous communities")
 # What each tab's dropdown lists besides the sections of a section page (anchors or other pages).
 NAV_EXTRA = {
-    "index.html": [("#latest", "Latest releases"), ("#key-indicators", "Key indicators"),
+    "index.html": [("#latest", "Latest releases"), ("#key-indicators", "Key indicators"), ("#tour", "Inside Macroscope"),
                    ("#chart-of-the-week", "Chart of the week"), ("#readings", "Macroscope readings"),
                    ("#glance", "The economy at a glance"), ("#peers", "Spain and its peers"),
                    ("#outlook", "What forecasters expect"), ("#whats-new", "What's new"),
@@ -261,9 +261,13 @@ def _build_language(indicators: list[Indicator], store: Store, site_root: Path, 
         note["text"] = changes.note_text(note, registry.get(note["id"]))
     for key in ("at", "updated_at", "started_at"):
         whats_new[key] = _madrid_time(whats_new[key], zone=False) if whats_new[key] else None
-    opening = hero.hero(readings_data, {i["id"]: i for i in snapshot["indicators"]})
+    snap_by_id = {i["id"]: i for i in snapshot["indicators"]}
+    opening = hero.hero(readings_data, snap_by_id)
+    # The tour (batches L4-L5): a chapter per area, linking to the first sections of its page.
+    tour_links = {s: [(f"{s}.html#{b['id']}", _(b["title"])) for b in section_pages[s]["blocks"]] for s in section_pages}
+    chapters = tour.chapters(readings_data, snap_by_id, SECTION_PAGES, tour_links)
     index = render("index.html", "index.html", tiles=tiles, latest=latest, week=week, built_at=snapshot["generated_at"], glance=at_a_glance,
-                   hero=opening,
+                   hero=opening, chapters=chapters,
                    peers=scoreboard.peer_table(readings_data), outlook=scoreboard.outlook(readings_data),
                    questions=snapshot["questions"], charts=charts, readings=snapshot["readings"],
                    whats_new=whats_new)
