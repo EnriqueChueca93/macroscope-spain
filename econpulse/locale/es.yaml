@@ -770,6 +770,7 @@ Countries drawn beside Spain on the charts: Países que se dibujan junto a Espa�
 Countries outside the EU: Países de fuera de la UE
 Country: País
 Coupon: Cupón
+Covid years: Años de la covid
 Credit and deposits (annual percent change, December): Crédito y depósitos (variación porcentual anual, diciembre)
 Credit and deposits (percent change on a year earlier): Crédito y depósitos (variación porcentual interanual)
 Credit and nominal growth: Crédito y crecimiento nominal
@@ -1363,6 +1364,7 @@ How price rises are spread across the basket: Cómo se reparten las subidas de p
 ? How the ECB's interest rate reaches what Spanish banks charge borrowers and pay savers. The banks' rates are on new business, so they show where pricing is now, not what existing loans and deposits pay.
 : Cómo llega el tipo de interés del BCE a lo que los bancos españoles cobran a quienes piden prestado y pagan a quienes ahorran. Los tipos de los bancos son de nuevas operaciones, así que muestran los precios de ahora, no lo que pagan los préstamos y depósitos ya existentes.
 How the scores are made: Cómo se calculan las puntuaciones
+How the scores work: Cómo se calculan las puntuaciones
 How they are made: Cómo se hacen
 How widespread: Cuán extendidas
 How widespread are price rises?: ¿Cuán extendidas están las subidas de precios?
@@ -1448,6 +1450,7 @@ Industry confidence: Confianza industrial
 : La industria, el comercio minorista, las encuestas de confianza, el turismo, la demanda eléctrica, las cuentas exteriores y los cuadros de balanza de pagos y deuda externa al estilo del FMI; el comercio de bienes y servicios tiene su propia página.
 Industry, shops and electricity: Industria, comercio y electricidad
 Inflation: Inflación
+Inflation (CPI): Inflación (IPC)
 Inflation (GDP deflator; percent): Inflación (deflactor del PIB; porcentaje)
 Inflation (HICP): Inflación (IPCA)
 Inflation by region: Inflación por comunidades
@@ -1566,6 +1569,8 @@ Lending to credit institutions (monetary policy operations): Crédito a entidade
 'Less: central government deposits': 'Menos: depósitos de la Administración central'
 Letras, Bonos and Obligaciones: Letras, Bonos y Obligaciones
 Level: Nivel
+? 'Line chart of Macroscope''s activity and inflation scores, monthly from {start} to {end}. In {end}: activity {activity}, inflation {inflation}.'
+: 'Gráfico de líneas de las puntuaciones de actividad e inflación de Macroscope, mensuales de {start} a {end}. En {end}: actividad {activity}, inflación {inflation}.'
 Lines published only once a year are left out; {na} not yet published.: Se omiten las líneas que solo se publican una vez al año; {na} aún no publicado.
 Liquid fuels: Combustibles líquidos
 Living alone: Sin cónyuge (unidad económica unipersonal)
@@ -1612,6 +1617,9 @@ Macroscope seasonal adjustment: desestacionalización de Macroscope
 : 'Lecturas y estimaciones propias de Macroscope: cálculos con datos públicos y métodos sencillos y documentados, no estadísticas oficiales, previsiones de referencia ni asesoramiento de inversión. Las cifras de los organismos de previsión son suyas, tal como las publicaron.'
 ? 'Macroscope''s own readings: the economy against its history, data surprises, a GDP nowcast, what forecasters expect, the 10-year yield split in two, and Taylor rules.'
 : 'Las lecturas propias de Macroscope: la economía frente a su historia, las sorpresas en los datos, una estimación en tiempo real del PIB, lo que esperan los analistas, la rentabilidad a 10 años dividida en dos y las reglas de Taylor.'
+? 'Macroscope''s scores for {month}: activity {activity}, inflation {inflation}, where zero is normal for 2013 to today (Covid years left out).'
+: 'Puntuaciones de Macroscope en {month}: actividad {activity}, inflación {inflation}, donde cero es lo normal entre 2013 y hoy (sin los años de la covid).'
+Macroscope's scores, monthly since {start}; the band is the normal range: Puntuaciones de Macroscope, mensuales desde {start}; la franja es el rango normal
 'Macroscope''s text and charts:': 'Textos y gráficos de Macroscope:'
 Macroscope, {year} GDP: Macroscope, PIB de {year}
 'Macroscope: INE''s quarters + nowcast': 'Macroscope: trimestres del INE + estimación adelantada'
@@ -1797,6 +1805,7 @@ Nonperforming loans (percent of GDP): Préstamos en mora (porcentaje del PIB)
 Nonperforming loans to total gross loans: Préstamos en mora / total de préstamos brutos
 Nonperforming loans to total loans: Préstamos en mora / total de préstamos
 Norges Bank: Norges Bank
+Normal range: Rango normal
 Norway: Noruega
 ? Not seasonally adjusted. Banks' shares of loans come from the Banco de España's financial soundness indicators, whose definitions changed in 2017 and 2022.
 : Sin desestacionalizar. Las proporciones del crédito bancario proceden de los indicadores de solidez financiera del Banco de España, cuyas definiciones cambiaron en 2017 y 2022.
@@ -2380,6 +2389,11 @@ Spain's 10-year yield over Germany's, basis points, daily; it peaked at 636 bp i
 Spain's 10-year yield, in two parts: La rentabilidad a 10 años de España, en dos partes
 ? Spain's 17 autonomous communities differ widely in unemployment, house prices and income per head. Regional figures come from INE's labour force survey, house price index, CPI and regional accounts.
 : Las 17 comunidades autónomas de España difieren mucho en paro, precios de la vivienda y renta per cápita. Las cifras regionales proceden de la encuesta de población activa, el índice de precios de vivienda, el IPC y la contabilidad regional del INE.
+Spain's economy is running above its normal pace: La economía española avanza por encima de su ritmo normal
+Spain's economy is running below its normal pace: La economía española avanza por debajo de su ritmo normal
+Spain's economy is running close to its normal pace: La economía española avanza cerca de su ritmo normal
+Spain's economy is running well above its normal pace: La economía española avanza muy por encima de su ritmo normal
+Spain's economy is running well below its normal pace: La economía española avanza muy por debajo de su ritmo normal
 ? Spain's exports and imports of services by type, from the balance of payments. Tourism is the largest single item, but the other services together bring in more than half of exports.
 : Las exportaciones e importaciones de servicios de España por tipo, según la balanza de pagos. El turismo es la mayor partida, pero los demás servicios juntos aportan más de la mitad de las exportaciones.
 Spain's gross public pension spending, 2022: Gasto público bruto en pensiones de España, 2022
@@ -2415,6 +2429,7 @@ Spending by function: Gasto por funciones
 : 'El gasto depende del flujo de crédito nuevo más que de su saldo, así que es la variación de ese flujo, el impulso crediticio, la que se mueve con la demanda. Desde {start}, sin 2020 ni 2021, la correlación es de {r}: {link}. En 2020 los préstamos avalados por el ICO elevaron el impulso mientras la demanda se hundía.'
 Spending net of the revenue measures, against the limit: Gasto neto de las medidas de ingresos, frente al límite
 Spending rule, checked by AIReF every three years from March 2025: Regla de gasto, evaluada por la AIReF cada tres años desde marzo de 2025
+Spirits and liquors: Bebidas espirituosas y licores
 Split: Opiniones divididas
 Spread over Germany: Diferencial con Alemania
 Start work: Empiezan a trabajar
@@ -2564,6 +2579,7 @@ The economy in four questions: La economía en cuatro preguntas
 The employed: Los ocupados
 The euro against the dollar: El euro frente al dólar
 The euro, per euro: El euro, por euro
+The full chart and the readings behind it: El gráfico completo y los datos que hay detrás
 ? The general government (state, regions, local councils and social security) as reported to the European Commission. EU rules set reference values of a 3% deficit and 60% debt.
 : Las Administraciones públicas (Estado, comunidades autónomas, corporaciones locales y Seguridad Social), según lo notificado a la Comisión Europea. Las reglas de la UE fijan valores de referencia de un 3% de déficit y un 60% de deuda.
 The government's deficit figures leave out the extraordinary spending after the DANA floods.: Las cifras de déficit del Gobierno no incluyen el gasto extraordinario tras las inundaciones de la DANA.
@@ -2948,12 +2964,16 @@ in {n} day: dentro de {n} día
 in {n} days: dentro de {n} días
 'in {year}, an estimate: pensions × the average pension × {payments} payments': 'en {year}, estimación: número de pensiones × pensión media × {payments} pagas'
 industrial goods, {month} on a year earlier: bienes industriales, {month}, variación interanual
+inflation is close to normal: la inflación está cerca de lo normal
+inflation is running below normal: la inflación está por debajo de lo normal
+inflation is running well below normal: la inflación está muy por debajo de lo normal
 job vacancies over the labour force · {q}: puestos vacantes sobre la población activa · {q}
 ? lower, falling, declining, easing, moderating, subdued or downward near inflation, prices or wages; and inflation “coming down”, “below target” or “on track to return”
 : más baja, en descenso, a la baja, moderándose, contenida o descendente junto a inflación, precios o salarios; e inflación que «baja», «está por debajo del objetivo» o «va camino de volver» a él
 lowest to highest: de la más baja a la más alta
 m/m: m/m
 met formally, but no guarantee of sustainability; AIReF proposes redesigning it: se cumple formalmente, pero no garantiza la sostenibilidad; la AIReF propone rediseñarla
+million: millones
 missed: no la detectó
 mn: mill.
 mn hours: mill. de horas
@@ -3024,6 +3044,8 @@ pension spending from 13% of GDP in 2025 to 16.4% in 2050: gasto en pensiones de
 persons: personas
 petrol in Spain against the euro-area average: la gasolina en España frente a la media de la zona del euro
 pp: pp
+prices are rising faster than normal: los precios suben más deprisa de lo normal
+prices are rising much faster than normal: los precios suben mucho más deprisa de lo normal
 proj.: proy.
 projected: proyección
 q/q: t/t
@@ -3110,6 +3132,7 @@ weak and positive: débil y positiva
 weaker than normal: más débil de lo normal
 what households' homes are worth · {period}: lo que valen las viviendas de los hogares · {period}
 what households' homes are worth · {period}; {times} times their disposable income ({peak} at the {year} peak): lo que valen las viviendas de los hogares · {period}; {times} veces su renta disponible ({peak} en el máximo de {year})
+while: mientras que
 with Spain's thresholds · {q}: con los umbrales de España · {q}
 within ±0.5: entre −0.5 y +0.5
 y/y: a/a
@@ -3132,9 +3155,11 @@ z-score: Puntuación z
 '{change} on a year': '{change} en un año'
 '{change} on a year earlier': '{change} interanual'
 '{change} on a year earlier · {month}': '{change} interanual · {month}'
+'{change} on the quarter': '{change} en el trimestre'
 '{change}% on a year earlier': '{change}% interanual'
 '{cut} cut · {hold} hold · {hike} hike': '{cut} bajada · {hold} sin cambios · {hike} subida'
 '{date}': '{date}'
+'{economy}, {joiner} {prices}.': '{economy}, {joiner} {prices}.'
 '{first} than a year earlier in {prev} and {second} in {quarter}': '{first} que un año antes en {prev} y {second} en {quarter}'
 '{first} than a year earlier in {quarter}': '{first} que un año antes en {quarter}'
 '{label} for {period} revised to {now}, from {before}.': '{label}, {period}: revisado a {now}, desde {before}.'
@@ -3165,6 +3190,7 @@ z-score: Puntuación z
 '{n} of {total}': '{n} de {total}'
 '{n} quarter ahead': '{n} trimestre después'
 '{n} quarters ahead': '{n} trimestres después'
+'{period}, on a year earlier': '{period}, interanual'
 '{period}: {value}. {context}.': '{period}: {value}. {context}.'
 '{quarter}; {then} on average in 2019': '{quarter}; {then} de media en 2019'
 '{rank} fastest of {n}': el {rank}.º más rápido de los {n}
@@ -3192,6 +3218,7 @@ z-score: Puntuación z
 '{unit} · actual data to {year}': '{unit} · datos observados hasta {year}'
 '{unit} · monthly data to {period}': '{unit} · datos mensuales hasta {period}'
 '{unit} · quarterly data to {period}': '{unit} · datos trimestrales hasta {period}'
+'{value} a year earlier': '{value} un año antes'
 '{value} at the {year} peak': '{value} en el máximo de {year}'
 '{verdict}, {month}; {above} of {total} recent figures above': '{verdict}, {month}; {above} de {total} datos recientes por encima'
 '{what}, seasonally adjusted by Macroscope': '{what}; datos desestacionalizados por Macroscope'

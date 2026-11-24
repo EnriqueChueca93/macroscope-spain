@@ -654,9 +654,10 @@ from catalogue_money import PAIRS as MONEY             # noqa: E402  Batch 35
 from catalogue_money_links import PAIRS as MONEY_LINKS # noqa: E402  Batch 35b
 from catalogue_recession import PAIRS as RECESSION     # noqa: E402  Batch 36
 from catalogue_disclaimer import PAIRS as DISCLAIMER   # noqa: E402  disclaimer
+from catalogue_landing import PAIRS as LANDING         # noqa: E402  batches L1-L5
 
 for part in (SECTIONS_1, SECTIONS_2, ANALYSIS, TRADE, HOUSING, PENSIONS, INTERNATIONAL, IMF_A, IMF_B, DEBT, EQUITIES, GDP,
-             SITE, TOOLS, SPEAK, BUDGET, MONEY, MONEY_LINKS, RECESSION, DISCLAIMER):
+             SITE, TOOLS, SPEAK, BUDGET, MONEY, MONEY_LINKS, RECESSION, DISCLAIMER, LANDING):
     add(part)
 
 

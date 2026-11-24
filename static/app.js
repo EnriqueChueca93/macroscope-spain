@@ -1954,6 +1954,83 @@
     });
   })();
 
+  // ---------------------------------------------------------------- the home page's opening (batch L1)
+  // Each [data-reveal] block gets "is-in" the first time it comes into view, which draws the long line in (CSS);
+  // the big numbers in it count up from zero; and the long line names both scores of the month under the pointer.
+  (function () {
+    var blocks = document.querySelectorAll("[data-reveal]");
+    if (!blocks.length) return;
+    var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function withCommas(s) {
+      var parts = s.split(".");
+      parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      return parts.join(".");
+    }
+    function countUp(el) {
+      var target = parseFloat(el.getAttribute("data-count")), decimals = +el.getAttribute("data-decimals") || 0,
+        suffix = el.getAttribute("data-suffix") || "", final = el.textContent, began = null, ms = 1400;
+      if (isNaN(target) || still) return;
+      function frame(now) {
+        if (began === null) began = now;
+        var t = Math.min(1, (now - began) / ms), v = target * (1 - Math.pow(1 - t, 3));
+        el.textContent = t < 1 ? (v < 0 ? "\u2212" : "") + withCommas(Math.abs(v).toFixed(decimals)) + suffix : final;
+        if (t < 1) requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    }
+    function reveal(block) {
+      if (block.classList.contains("is-in")) return;
+      block.classList.add("is-in");
+      Array.prototype.forEach.call(block.querySelectorAll("[data-count]"), countUp);
+    }
+    if ("IntersectionObserver" in window) {
+      var seen = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { seen.unobserve(e.target); reveal(e.target); } });
+      }, { threshold: 0.2 });
+      Array.prototype.forEach.call(blocks, function (b) { seen.observe(b); });
+    } else {
+      Array.prototype.forEach.call(blocks, reveal);
+    }
+
+    // The long line's hover: a line down the chart at the nearest month, with both scores.
+    Array.prototype.forEach.call(document.querySelectorAll(".hero-line[data-hover]"), function (fig) {
+      var data;
+      try { data = JSON.parse(fig.getAttribute("data-hover")); } catch (e) { return; }
+      var area = fig.querySelector(".hl-area"), cross = fig.querySelector(".hl-cross"), tip = fig.querySelector(".hl-tip");
+      var months = data.months, n = months.length;
+      if (!area || !cross || !tip || n < 2) return;
+      var colours = ["var(--series-1)", "var(--series-2)"];
+      function signed(v) {
+        if (v === null || v === undefined) return "\u2013";
+        var r = Math.round(v * 10) / 10;
+        return (r > 0 ? "+" : r < 0 ? "\u2212" : "") + Math.abs(r).toFixed(1);
+      }
+      function show(event) {
+        var box = area.getBoundingClientRect();
+        var k = Math.max(0, Math.min(n - 1, Math.round((event.clientX - box.left) / box.width * (n - 1))));
+        var row = months[k], at = k / (n - 1);
+        cross.style.left = (at * 100) + "%";
+        tip.textContent = "";
+        var head = document.createElement("b");
+        head.textContent = row[0];
+        tip.appendChild(head);
+        [1, 2].forEach(function (j) {
+          tip.appendChild(document.createElement("br"));
+          var key = document.createElement("i");
+          key.style.background = colours[j - 1];
+          tip.appendChild(key);
+          tip.appendChild(document.createTextNode(data.names[j - 1] + " " + signed(row[j])));
+        });
+        tip.classList.toggle("flip", at > 0.62);
+        cross.hidden = false;
+      }
+      area.addEventListener("pointermove", show);
+      area.addEventListener("pointerdown", show);
+      area.addEventListener("pointerleave", function () { cross.hidden = true; });
+    });
+  })();
+
   // Redraw after a resize settles: whether end labels fit depends on the chart's width.
   var resizeTimer;
   window.addEventListener("resize", function () {

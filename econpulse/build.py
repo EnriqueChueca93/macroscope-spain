@@ -16,7 +16,7 @@ from pathlib import Path
 import pandas as pd
 from jinja2 import ChoiceLoader, Environment, FileSystemLoader, select_autoescape
 
-from . import __version__, analytics, budget, changes, disclaimer, ecbspeak, feed, fiscal, glance, homepage, i18n, industries, peers, schedule, scoreboard, search, sectortables, stance, surprises, tools, trade
+from . import __version__, analytics, budget, changes, disclaimer, ecbspeak, feed, fiscal, glance, hero, homepage, i18n, industries, peers, schedule, scoreboard, search, sectortables, stance, surprises, tools, trade
 from .i18n import _
 from .charts import build_home_charts
 from .config import GA_MEASUREMENT_ID, SITE_CONTACT, SITE_DIR, SITE_OWNER, SITE_URL, STATIC_DIR, TEMPLATES_DIR
@@ -261,7 +261,9 @@ def _build_language(indicators: list[Indicator], store: Store, site_root: Path, 
         note["text"] = changes.note_text(note, registry.get(note["id"]))
     for key in ("at", "updated_at", "started_at"):
         whats_new[key] = _madrid_time(whats_new[key], zone=False) if whats_new[key] else None
+    opening = hero.hero(readings_data, {i["id"]: i for i in snapshot["indicators"]})
     index = render("index.html", "index.html", tiles=tiles, latest=latest, week=week, built_at=snapshot["generated_at"], glance=at_a_glance,
+                   hero=opening,
                    peers=scoreboard.peer_table(readings_data), outlook=scoreboard.outlook(readings_data),
                    questions=snapshot["questions"], charts=charts, readings=snapshot["readings"],
                    whats_new=whats_new)

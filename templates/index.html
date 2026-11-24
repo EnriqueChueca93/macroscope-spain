@@ -2,7 +2,62 @@
 {% from "macros.html" import tile, chart_card, spark, dots %}
 
 {% block content %}
+  {# The opening (econpulse/hero.py): a headline written from the data, the long line of both scores and four big
+     numbers. Drawn here as SVG and HTML; static/app.js draws the lines in, counts the numbers up and adds the
+     hover. Without the scores the page opens with the plain line, as before. #}
+  {% if hero %}
+  <section class="hero" aria-labelledby="hero-title">
+    <p class="hero-kicker">{{ _("A running read on the health of the Spanish economy.") }}</p>
+    <h1 class="hero-title" id="hero-title">{{ hero.headline.text }}</h1>
+    <p class="hero-sub">{{ hero.headline.sub }} <a href="{{ hero.headline.link }}">{{ hero.headline.link_text }}&nbsp;→</a></p>
+    {% if hero.line %}{% set l = hero.line %}
+    <figure class="hero-line" data-reveal data-hover="{{ l.hover }}">
+      <figcaption class="hl-head">
+        <span class="hl-title">{{ l.title }}</span>
+        <span class="hl-sub">{{ l.subtitle }}</span>
+      </figcaption>
+      <div class="hl-plot">
+        <div class="hl-area">
+          <svg class="hl-back" viewBox="0 0 {{ l.w }} 100" preserveAspectRatio="none" aria-hidden="true">
+            {% if l.covid %}<rect class="hl-covid" x="{{ l.covid.x }}" y="0" width="{{ l.covid.w }}" height="100"/>{% endif %}
+            <rect class="hl-band" x="0" y="{{ l.band.top }}" width="{{ l.w }}" height="{{ (l.band.bottom - l.band.top) | round(2) }}"/>
+            {% for t in l.ticks %}<line class="hl-grid{% if t.label == '0' %} hl-zero{% endif %}" x1="0" x2="{{ l.w }}" y1="{{ t.y }}" y2="{{ t.y }}" vector-effect="non-scaling-stroke"/>{% endfor %}
+          </svg>
+          <div class="hl-draw">
+            <svg viewBox="0 0 {{ l.w }} 100" preserveAspectRatio="none" role="img" aria-label="{{ l.label }}">
+              {% for line in l.lines %}<polyline class="hl-line hl-{{ line.key }}" points="{{ line.points }}" vector-effect="non-scaling-stroke"/>{% endfor %}
+            </svg>
+          </div>
+          {% for t in l.ticks %}<span class="hl-tick" style="top:{{ t.y }}%" aria-hidden="true">{{ t.label }}</span>{% endfor %}
+          <span class="hl-note hl-normal" style="top:{{ l.band.top }}%" aria-hidden="true">{{ l.normal }}</span>
+          {% if l.covid %}<span class="hl-note hl-covid-label" style="left:{{ l.covid.left }}%;width:{{ l.covid.width }}%" aria-hidden="true">{{ l.covid_label }}</span>{% endif %}
+          {% for line in l.lines %}<span class="hl-dot hl-{{ line.key }}" style="left:{{ line.x }}%;top:{{ line.y }}%" aria-hidden="true"></span>{% endfor %}
+          <div class="hl-cross" hidden aria-hidden="true"><span class="hl-tip"></span></div>
+        </div>
+        <div class="hl-ends">
+          {% for line in l.lines %}<span class="hl-end hl-{{ line.key }}" style="top:{{ line.label_y }}%"><b>{{ line.name }} {{ line.value }}</b><span>{{ line.words }}</span></span>{% endfor %}
+        </div>
+        <div class="hl-years" aria-hidden="true">{% for y in l.years %}<span class="every-{{ y.every }}" style="left:{{ y.x }}%">{{ y.label }}</span>{% endfor %}</div>
+      </div>
+      <p class="hl-foot">{{ _("Source:") }} {{ l.source }} · <a href="{{ l.link }}">{{ l.link_text }}&nbsp;→</a></p>
+    </figure>
+    {% endif %}
+    {% if hero.numbers %}
+    <div class="hero-numbers" data-reveal>
+      {% for n in hero.numbers %}
+      <a class="hero-number" href="{{ n.page }}">
+        <span class="hn-label">{{ n.label }}</span>
+        <span class="hn-value"><span data-count="{{ n.value }}" data-decimals="{{ n.decimals }}" data-suffix="{{ n.suffix }}">{{ n.display }}</span>{% if n.unit %} <span class="hn-unit">{{ n.unit }}</span>{% endif %}</span>
+        <span class="hn-period">{{ n.period }}</span>
+        {% if n.note %}<span class="hn-note">{{ n.note }}</span>{% endif %}
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </section>
+  {% else %}
   <p class="lede">{{ _("A running read on the health of the Spanish economy.") }}</p>
+  {% endif %}
 
   {# Since your last visit: off until the reader turns it on (static/app.js), so it shows only with a script. #}
   <div class="since-visit" id="since-visit" hidden data-build="{{ built_at }}"

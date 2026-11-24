@@ -6,7 +6,8 @@
   <title>{% block title %}{{ brand }}{% endblock %}</title>
   <meta name="description" content="{% block description %}{{ _("A running read on the health of the Spanish economy.") }}{% endblock %}">
   <script>
-    // Apply a saved light/dark choice before the page paints.
+    // Apply a saved light/dark choice before the page paints, and say a script runs (html.js: the home page's motion).
+    document.documentElement.classList.add("js");
     try { var t = localStorage.getItem("ep-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
   </script>
   <meta property="og:type" content="website">
