@@ -331,6 +331,7 @@ About and methods: Acerca del sitio y métodos
 About the data: Sobre los datos
 Above 2%: Por encima del 2%
 Above 5%: Por encima del 5%
+Above Spain: Por encima de España
 Above normal: Por encima de lo normal
 Accept: Aceptar
 Accommodation: Servicios de alojamiento
@@ -395,6 +396,7 @@ All registrations: Toda la afiliación
 All registrations (general scheme and self-employed): Toda la afiliación (régimen general y autónomos)
 All retirement pensions in force: Todas las pensiones de jubilación en vigor
 All services: Todos los servicios
+All the regions: Todas las regiones
 All vacancies: Todas las vacantes
 All, 15–64: Total, 15–64
 Among the {items} detailed items with data, those with at least 0.2% of the basket. Eurostat's item names.: Entre las {items} partidas detalladas con datos, las que pesan al menos un 0.2% de la cesta. Nombres de las partidas traducidos de los de Eurostat.
@@ -536,6 +538,7 @@ Before notaries: Ante notario
 ? 'Behind the unemployment rate, people move all the time: some of the unemployed find work or give up looking, and some of the employed lose their jobs or leave the labour force. Eurostat follows the same people from one quarter to the next in the labour force survey. More of the unemployed find a job each quarter than before the pandemic, and fewer workers lose theirs.'
 : 'Detrás de la tasa de paro, la gente se mueve todo el tiempo: algunos parados encuentran trabajo o dejan de buscarlo, y algunos ocupados pierden su empleo o salen de la población activa. Eurostat sigue a las mismas personas de un trimestre al siguiente en la encuesta de población activa. Cada trimestre encuentran empleo más parados que antes de la pandemia, y menos ocupados pierden el suyo.'
 Belgium: Bélgica
+Below Spain: Por debajo de España
 Below normal: Por debajo de lo normal
 Benefit ratio (average pension against average wage): Tasa de beneficio (pensión media sobre el salario medio)
 Benefits: Prestaciones
@@ -605,6 +608,7 @@ CPI: IPC
 CPI and HICP, full data: IPC e IPCA, datos completos
 CPI flash estimate: Avance del IPC
 CPI inflation: Inflación del IPC
+CPI inflation, % on a year earlier: inflación del IPC, interanual en %
 CPI rents, % change on a year earlier: Alquileres en el IPC, variación interanual, %
 CPI, % change on a year earlier: IPC, variación interanual, %
 Calendar: Calendario
@@ -1341,6 +1345,7 @@ Housing loans, growth on a year earlier: Crédito para vivienda, variación inte
 Housing wealth: Riqueza inmobiliaria
 Housing wealth, % of disposable income: Riqueza inmobiliaria, % de la renta disponible
 Housing wealth, € bn: Riqueza inmobiliaria, mm €
+Hover over or tap a community; click it for the Regions page.: Pase el ratón o toque una comunidad; haga clic para ir a la página de Regiones.
 Hover over or tap a tile for its figures.: Pase el cursor por una casilla o tóquela para ver sus cifras.
 Hover over or tap a tile for its figures. Click a category to open it.: Pase el cursor por una casilla o tóquela para ver sus cifras. Pulse una categoría para abrirla.
 Hover over or tap the chart for each period's figures. Pick a category to see its items.: Pase el cursor por el gráfico o tóquelo para ver las cifras de cada periodo. Elija una categoría para ver sus artículos.
@@ -1427,6 +1432,7 @@ In a hiking cycle (rule): En un ciclo de subidas (regla)
 ? In the four quarters to {quarter}, pay per worker ranged from {low_pay} a month in {low} to {high_pay} in {high}, {times} times as much.
 : En los cuatro trimestres hasta {quarter}, el coste salarial por trabajador fue desde {low_pay} al mes en {low} hasta {high_pay} en {high}, {times} veces más.
 In {year} it was still on from the previous recession, as unemployment kept rising between the two.: En {year} seguía activa desde la recesión anterior, porque el paro siguió subiendo entre ambas.
+Income per head: Renta por habitante
 Index: Índice
 Index (0 to 1) or %: Índice (de 0 a 1) o %
 Index or balance: Índice o saldo
@@ -2423,6 +2429,7 @@ Spain's vacancy rate: La tasa de vacantes de España
 ? Spain's yield is the German yield plus the prima de riesgo, so the two parts add up to the total. A rising Bund means rates are rising across the euro area; a rising prima de riesgo is about Spain.
 : La rentabilidad española es la alemana más la prima de riesgo, así que las dos partes suman el total. Si sube el Bund, suben los tipos en toda la zona del euro; si sube la prima de riesgo, la causa está en España.
 Spain, average price on Mondays, € a litre; dashed, before taxes: España, precio medio de los lunes, € por litro; a trazos, antes de impuestos
+'Spain: {value} ({period})': 'España: {value} ({period})'
 Spanish: Españoles
 ? Spanish bond yields and the prima de riesgo, Euribor, the IBEX 35, the euro and commodities, and the IMF-style financial soundness indicators.
 : La rentabilidad de la deuda española y la prima de riesgo, el euríbor, el IBEX 35, el euro y las materias primas, y los indicadores de solidez financiera al estilo del FMI.
@@ -2629,6 +2636,7 @@ The reference rate for most Spanish variable-rate mortgages.: El índice de refe
 : 'La reforma de marzo de 2023 añadió ingresos en lugar de recortar pensiones: una cotización finalista creciente (el MEI) que nutre el Fondo de Reserva, una base máxima de cotización más alta, una nueva cotización de solidaridad sobre el salario que la supera y una regla de gasto que la AIReF evalúa cada tres años. Sus cifras se introducen a mano a partir del decreto publicado en el Boletín Oficial del Estado.'
 ? 'The regional administration of {name}: spending by function from 2012, revenue and spending by type from 2000, taxes one by one from 2012.'
 : 'La administración autonómica de {name}: gasto por funciones desde 2012, ingresos y gasto por tipo desde 2000 e impuestos uno a uno desde 2012.'
+The regions: Las regiones
 ? The registers record a sale when its deed is registered, usually a month or two after it is signed, and the two sources count a home as new differently, so their split differs. Before 2007 the registered sales came quarterly from the registrars.
 : Los registros anotan una compraventa cuando se inscribe su escritura, normalmente uno o dos meses después de firmarla, y las dos fuentes definen la vivienda nueva de forma distinta, así que su desglose difiere. Antes de 2007 las compraventas inscritas procedían de los registradores, con periodicidad trimestral.
 The risk premium with growth in the same quarter: La prima de riesgo con el crecimiento del mismo trimestre
@@ -2664,6 +2672,7 @@ Thousands; average change per month, seasonally adjusted by Macroscope for 1 and
 Three-month average: Media de tres meses
 Tier 1 capital: Capital de nivel 1
 Tier 1 capital to total assets 1/: Capital de nivel 1 / activos totales 1/
+Tile map of Spain's 17 autonomous communities: Mapa en cuadrados de las 17 comunidades autónomas
 Time: Hora
 Time deposits: Depósitos a plazo
 Today: Hoy
@@ -2978,6 +2987,7 @@ hold: sin cambios
 homes: viviendas
 hotter than normal: más alta de lo normal
 hours: horas
+house prices, % change on a year earlier: precios de la vivienda, variación interanual en %
 'import prices without energy: {change}': 'precios de importación sin energía: {change}'
 in line with expectations: en línea con lo esperado
 in {n} day: dentro de {n} día
@@ -3124,6 +3134,7 @@ the one-size-fits-all gap: la brecha del tipo único para todos
 ? the rule says a recession has likely started at 0.5. Of Spain's {n} recessions since 1987 it signalled {k} within a year before or during them.
 : la regla dice que probablemente ha empezado una recesión en 0.5. De las {n} recesiones de España desde 1987, señaló {k} en el año previo o durante ellas.
 the same as: lo mismo que
+the same as Spain: igual que España
 the second highest of the {n} countries: la segunda más alta de los {n} países
 the third highest of the {n} countries: la tercera más alta de los {n} países
 the {rank}th highest of the {n} countries: la {rank}.ª más alta de los {n} países
@@ -3197,8 +3208,10 @@ z-score: Puntuación z
 '{names} figures are taken from the FUNCAS Panel''s reference table, which lists each with the month it was published.': Las cifras de {names} proceden de la tabla de referencia del Panel de FUNCAS, que indica el mes en que se publicó cada una.
 '{name}, projected': '{name}, proyección'
 '{name}, total': '{name}, total'
+'{name}, {period}: {value}, {gap}': '{name}, {period}: {value}, {gap}'
 '{name}: each item''s share of the category''s spending, %, year by year': '{name}: peso de cada artículo en el gasto de la categoría, %, año a año'
 '{name}: its items'' contributions to annual HICP inflation, percentage points': '{name}: contribuciones de sus artículos a la inflación interanual del IPCA, puntos porcentuales'
+'{name}: no figure yet': '{name}: aún sin dato'
 ? '{na} not available: the IMF''s database does not publish the line. After the {report}; past years differ where the data have been revised since.'
 : '{na} no disponible: la base de datos del FMI no publica la línea. Con el formato del {report}; los años anteriores difieren cuando los datos se han revisado desde entonces.'
 '{n} cut': 'bajada: {n}'
@@ -3210,6 +3223,8 @@ z-score: Puntuación z
 '{n} million': '{n} millones'
 '{n} of the latest releases': '{n} de las últimas publicaciones'
 '{n} of {total}': '{n} de {total}'
+'{n} points above Spain': '{n} puntos por encima de España'
+'{n} points below Spain': '{n} puntos por debajo de España'
 '{n} quarter ahead': '{n} trimestre después'
 '{n} quarters ahead': '{n} trimestres después'
 '{period}, on a year earlier': '{period}, interanual'

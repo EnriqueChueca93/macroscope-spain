@@ -169,3 +169,33 @@ def test_the_page_has_the_clock(tmp_path, monkeypatch):
     assert 'class="hero-clock" data-reveal' in en and en.count('class="hc-seg"') == 23
     assert 'class="hc-q hc-q-expansion is-now"' in en and '<span class="hc-label hc-label-left"' in en
     assert "El reloj del ciclo" in es and "Expansión" in es
+
+
+# ---------------------------------------------------------------- L3: the map of Spain
+
+def regional_store(tmp_path):
+    store = Store(tmp_path / "data")
+    quarters = pd.date_range("2024-01-01", "2026-07-01", freq="QS")
+    store.save_series("unemployment_epa", pd.Series(10.0, index=quarters))
+    rates = {slug: 10.0 for slug in hero.TILES} | {"andalucia": 15.0, "baleares": 4.6, "madrid": 9.5, "galicia": 11.2}
+    for slug, rate in rates.items():
+        store.save_series(f"unemployment_{slug}", pd.Series(rate, index=quarters))
+    return store
+
+
+def test_the_map_shades_each_community_by_its_gap_to_spain(tmp_path):
+    m = hero.region_map(Data(load_registry(), regional_store(tmp_path)))
+    assert [x["key"] for x in m["measures"]] == ["unemp"]            # the other measures have no data here
+    assert m["measures"][0]["legend"] == "Spain: 10.00% (Q3 2026)" and (m["cols"], m["rows"]) == (6, 5)
+    tiles = {t["code"]: t for t in m["tiles"]}
+    assert len(tiles) == 17 and (tiles["GA"]["col"], tiles["GA"]["row"]) == (1, 1) and (tiles["CN"]["col"], tiles["CN"]["row"]) == (1, 5)
+    shades = {code: t["by"]["unemp"]["shade"] for code, t in tiles.items()}
+    assert (shades["AN"], shades["IB"], shades["MD"], shades["GA"], shades["CT"]) == ("hot3", "cool3", "mid", "hot1", "mid")
+    assert tiles["AN"]["by"]["unemp"]["text"] == "15.0"
+    assert tiles["AN"]["by"]["unemp"]["title"] == "Andalucía, Q3 2026: 15.0%, 5.0 points above Spain"
+    assert tiles["CT"]["by"]["unemp"]["title"] == "Cataluña, Q3 2026: 10.0%, the same as Spain"
+    with i18n.using("es"):
+        es = hero.region_map(Data(load_registry(), regional_store(tmp_path)))
+    an = next(t for t in es["tiles"] if t["code"] == "AN")
+    assert an["by"]["unemp"]["title"] == "Andalucía, T3 2026: 15.0%, 5.0 puntos por encima de España"
+    assert es["title"] == "Las regiones" and es["measures"][0]["legend"] == "España: 10.00% (T3 2026)"

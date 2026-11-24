@@ -1031,6 +1031,37 @@ body.search-on { overflow: hidden; }
   .hc-qname { font-size: 10px; }
 }
 
+/* The map of Spain (batch L3): the 17 communities as squares placed roughly where they are, shaded by their gap to
+   Spain's figure in the heat map's colours (warm above, cool below); a switch picks the measure (with a script). */
+@media (min-width: 1000px) {
+  .hero-visuals.two { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; }
+  .hero-visuals.two .hc-guide { display: none; }      /* side by side, the clock's own corners name the phases */
+}
+.hero-map { margin: 0; padding: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+.rm-switch { display: none; margin: 0 0 12px; width: fit-content; max-width: 100%; }
+.js .rm-switch { display: inline-flex; flex-wrap: wrap; }
+.rm-switch button { font-size: 12px; padding: 3px 9px; }
+.rm-grid { display: grid; grid-template-columns: repeat(var(--cols), minmax(0, 1fr)); grid-template-rows: repeat(var(--rows), auto);
+  gap: 4px; max-width: 480px; }
+.rm-tile { aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
+  border-radius: 4px; color: var(--text); text-decoration: none; font-variant-numeric: tabular-nums; line-height: 1.15; }
+.rm-tile b { font-size: 12px; letter-spacing: .03em; }
+.rm-tile .rm-v { font-size: 13px; }
+.rm-tile:hover, .rm-tile:focus-visible { outline: 2px solid var(--text); outline-offset: 1px; }
+.rm-tile.gl-none { outline: 1px dashed var(--muted); outline-offset: -1px; }
+.rm-detail { min-height: 2.8em; margin: 10px 0 6px; font-size: 13px; color: var(--text-2); }
+.rm-legend { display: flex; flex-direction: column; gap: 6px; max-width: 480px; font-size: 12px; color: var(--text-2); }
+.rm-key { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+.rm-scale { display: flex; gap: 2px; }
+.rm-scale i { width: 16px; height: 10px; border-radius: 2px; }
+.rm-spain { font-weight: 600; color: var(--text); }
+@media (max-width: 600px) {
+  .hero-map { padding: 12px 10px; margin-left: -6px; margin-right: -6px; }
+  .rm-tile b { font-size: 11px; }
+  .rm-tile .rm-v { font-size: 11px; }
+  .rm-grid { gap: 3px; }
+}
+
 /* the motion, only with a script and only for readers who haven't asked for less */
 @media (prefers-reduced-motion: no-preference) {
   .js .hero-line .hl-draw { clip-path: inset(0 100% 0 0); }
@@ -1049,6 +1080,13 @@ body.search-on { overflow: hidden; }
   .js .hero-clock.is-in .hc-pulse { animation: hc-pulse 1.6s 2.5s 3 ease-out both; }
   .js .hero-clock.is-in .hc-label { opacity: 1; transition: opacity .5s 2.3s; }
 }
+@media (prefers-reduced-motion: no-preference) {
+  .js .hero-map .rm-tile { opacity: 0; transform: scale(.6); }
+  .js .hero-map.is-in .rm-tile { opacity: 1; transform: none; transition: opacity .4s, transform .4s cubic-bezier(.3, 1.4, .5, 1);
+    transition-delay: calc(.2s + var(--i) * 90ms); }
+  .js .hero-map .rm-tile.swap { animation: rm-swap .45s ease-out; }
+}
+@keyframes rm-swap { 0% { transform: scale(.85); } 100% { transform: scale(1); } }
 @keyframes hc-in { from { opacity: 0; } to { opacity: var(--o); } }
 @keyframes hc-land {
   0% { opacity: 0; transform: scale(0); }

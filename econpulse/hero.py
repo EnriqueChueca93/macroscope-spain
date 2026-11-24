@@ -274,9 +274,109 @@ def cycle_clock(data: Data) -> dict | None:
     }
 
 
+# ---------------------------------------------------------------- L3: the map of Spain
+# Each community as one square, placed roughly where it is (column, row), with its ISO 3166-2 code. Ceuta and Melilla
+# are left out, as on the Regions page (their survey samples are small).
+TILES = {
+    "galicia": ("GA", 0, 0), "asturias": ("AS", 1, 0), "cantabria": ("CB", 2, 0), "pais_vasco": ("PV", 3, 0),
+    "navarra": ("NC", 4, 0), "castilla_leon": ("CL", 2, 1), "rioja": ("RI", 3, 1), "aragon": ("AR", 4, 1),
+    "cataluna": ("CT", 5, 1), "extremadura": ("EX", 1, 2), "madrid": ("MD", 2, 2), "castilla_mancha": ("CM", 3, 2),
+    "valenciana": ("VC", 4, 2), "baleares": ("IB", 5, 2), "andalucia": ("AN", 2, 3), "murcia": ("MC", 3, 3),
+    "canarias": ("CN", 0, 4),
+}
+# (key, name, the community's series, Spain's, transform, unit, decimals, steps for the shades of the gap to Spain)
+MEASURES = [
+    ("unemp", "Unemployment", "unemployment_{slug}", "unemployment_epa", "level", "%", 1, (1.0, 3.0, 5.0)),
+    ("prices", "House prices", "house_prices_{slug}", "house_prices", "yoy", "%", 1, (1.5, 3.0, 6.0)),
+    ("cpi", "Inflation", "cpi_{slug}", "cpi", "level", "%", 1, (0.2, 0.5, 1.0)),
+    ("income", "Income per head", "gdp_per_head_{slug}", "gdp_per_head_spain", "level", "index", 0, (5.0, 15.0, 30.0)),
+]
+MEASURE_NOTES = {"unemp": "% of the labour force (EPA)", "prices": "house prices, % change on a year earlier",
+                 "cpi": "CPI inflation, % on a year earlier", "income": "GDP per head, Spain = 100"}
+
+
+def _shade(gap: float, steps: tuple[float, float, float]) -> str:
+    """Above or below Spain, in three steps each way: hot1-3 above, cool1-3 below, mid close to it."""
+    size = sum(abs(gap) >= s for s in steps)
+    return "mid" if size == 0 else ("hot" if gap > 0 else "cool") + str(size)
+
+
+def _latest(data: Data, ind_id: str, transform: str) -> tuple[float, pd.Timestamp] | None:
+    s = data.raw(ind_id) if ind_id in data.by_id else None
+    if s is None or s.dropna().empty:
+        return None
+    from . import transforms
+    try:
+        s = transforms.apply(transform, s.dropna(), data.by_id[ind_id].freq).dropna()
+    except ValueError:
+        return None
+    return (float(s.iloc[-1]), s.index[-1]) if not s.empty else None
+
+
+def region_map(data: Data) -> dict | None:
+    """The 17 communities on four measures, each shaded by its gap to Spain's figure."""
+    from .pages import REGIONS
+    names = dict(REGIONS)
+    measures = []
+    for key, label, pattern, spain_id, transform, unit, decimals, steps in MEASURES:
+        spain = _latest(data, spain_id, transform)
+        if spain is None:
+            continue
+        values = {}
+        for slug in TILES:
+            got = _latest(data, pattern.format(slug=slug), transform)
+            if got is not None:
+                values[slug] = got
+        if len(values) < len(TILES) - 2:
+            continue
+        freq = data.by_id[spain_id].freq
+        write = (lambda v, u=unit, d=decimals: fmt_value(v, u, d))
+        own = max(decimals, data.by_id[spain_id].decimals or 0) if unit == "%" else decimals   # Spain as its tile has it
+        measures.append({"key": key, "name": _(label), "note": _(MEASURE_NOTES[key]), "steps": steps,
+                         "spain": fmt_value(spain[0], unit, own), "period": period_label(spain[1], freq),
+                         "spain_value": spain[0], "values": values, "write": write, "freq": freq, "unit": unit,
+                         "decimals": decimals})
+    if not measures:
+        return None
+    tiles = []
+    for k, (slug, (code, col, row)) in enumerate(TILES.items()):
+        tile = {"slug": slug, "code": code, "name": names.get(slug, slug), "col": col + 1, "row": row + 1,
+                "i": col + row, "by": {}}
+        for m in measures:
+            got = m["values"].get(slug)
+            if got is None:
+                tile["by"][m["key"]] = {"text": "–", "shade": "none", "title": _("{name}: no figure yet").format(name=tile["name"])}
+                continue
+            value, when = got
+            gap = value - m["spain_value"]
+            if m["unit"] == "index":
+                gap_text = _("{n} points above Spain").format(n=f"{abs(gap):.0f}") if gap >= 0.5 else \
+                    _("{n} points below Spain").format(n=f"{abs(gap):.0f}") if gap <= -0.5 else _("the same as Spain")
+            else:
+                n = f"{abs(gap):.{m['decimals']}f}"
+                gap_text = _("{n} points above Spain").format(n=n) if round(gap, m["decimals"]) > 0 else \
+                    _("{n} points below Spain").format(n=n) if round(gap, m["decimals"]) < 0 else _("the same as Spain")
+            tile["by"][m["key"]] = {
+                "text": f"{value:.{m['decimals']}f}", "shade": _shade(gap, m["steps"]),
+                "title": _("{name}, {period}: {value}, {gap}").format(name=tile["name"], period=period_label(when, m["freq"]),
+                                                                    value=m["write"](value), gap=gap_text)}
+        tiles.append(tile)
+    first = measures[0]["key"]
+    for m in measures:
+        for drop in ("values", "write", "spain_value", "freq", "unit", "decimals"):
+            m.pop(drop)
+        m["legend"] = _("Spain: {value} ({period})").format(value=m["spain"], period=m["period"])
+    return {"title": _("The regions"), "measures": measures, "first": first, "tiles": tiles,
+            "cols": 1 + max(c for _c, c, _r in TILES.values()), "rows": 1 + max(r for _c, _c2, r in TILES.values()),
+            "below": _("Below Spain"), "above": _("Above Spain"), "pick": _("Show"),
+            "hint": _("Hover over or tap a community; click it for the Regions page."),
+            "link": "regions.html", "link_text": _("All the regions"), "label": _("Tile map of Spain's 17 autonomous communities")}
+
+
 def hero(data: Data, indicators: dict[str, dict]) -> dict | None:
     """Everything the opening needs, or None when the scores can't be worked out (the page then opens as before)."""
     head = headline(data)
     if head is None:
         return None
-    return {"headline": head, "numbers": numbers(data, indicators), "line": score_line(data), "clock": cycle_clock(data)}
+    return {"headline": head, "numbers": numbers(data, indicators), "line": score_line(data), "clock": cycle_clock(data),
+            "map": region_map(data)}

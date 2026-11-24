@@ -2060,6 +2060,37 @@
       area.addEventListener("pointerdown", show);
       area.addEventListener("pointerleave", hide);
     });
+    // The map of Spain: the switch shows another measure (each tile carries all four: "text|shade|title"), and the
+    // line under the map names the community under the pointer or keyboard focus.
+    Array.prototype.forEach.call(document.querySelectorAll(".hero-map"), function (fig) {
+      var tiles = fig.querySelectorAll(".rm-tile"), detail = fig.querySelector(".rm-detail"), hint = detail ? detail.textContent : "";
+      var note = fig.querySelector(".rm-note"), spain = fig.querySelector(".rm-spain");
+      function part(tile, key, i) { return (tile.getAttribute("data-" + key) || "").split("|")[i] || ""; }
+      Array.prototype.forEach.call(fig.querySelectorAll("[data-rm]"), function (button) {
+        button.addEventListener("click", function () {
+          var key = button.getAttribute("data-rm");
+          fig.setAttribute("data-measure", key);
+          Array.prototype.forEach.call(fig.querySelectorAll("[data-rm]"), function (b) { b.setAttribute("aria-pressed", String(b === button)); });
+          Array.prototype.forEach.call(tiles, function (tile) {
+            tile.className = "rm-tile gl-" + part(tile, key, 1);
+            tile.querySelector(".rm-v").textContent = part(tile, key, 0);
+            tile.title = part(tile, key, 2);
+            tile.setAttribute("aria-label", tile.title);
+            void tile.offsetWidth;                      // restart the little pulse that marks the change
+            tile.classList.add("swap");
+          });
+          if (note) note.textContent = button.getAttribute("data-note");
+          if (spain) spain.textContent = button.getAttribute("data-legend");
+          if (detail) detail.textContent = hint;
+        });
+      });
+      Array.prototype.forEach.call(tiles, function (tile) {
+        function say() { if (detail) detail.textContent = tile.title; }
+        tile.addEventListener("pointerenter", say);
+        tile.addEventListener("focus", say);
+      });
+      fig.querySelector(".rm-grid").addEventListener("pointerleave", function () { if (detail) detail.textContent = hint; });
+    });
   })();
 
   // Redraw after a resize settles: whether end labels fit depends on the chart's width.

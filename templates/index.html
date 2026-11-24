@@ -10,8 +10,9 @@
     <p class="hero-kicker">{{ _("A running read on the health of the Spanish economy.") }}</p>
     <h1 class="hero-title" id="hero-title">{{ hero.headline.text }}</h1>
     <p class="hero-sub">{{ hero.headline.sub }} <a href="{{ hero.headline.link }}">{{ hero.headline.link_text }}&nbsp;→</a></p>
-    {% if hero.clock %}{% set c = hero.clock %}
-    <div class="hero-visuals">
+    {% if hero.clock or hero.map %}
+    <div class="hero-visuals{% if hero.clock and hero.map %} two{% endif %}">
+      {% if hero.clock %}{% set c = hero.clock %}
       <figure class="hero-clock" data-reveal data-hover="{{ c.hover }}" data-words="{{ c.hover_words }}">
         <figcaption class="hl-head"><span class="hl-title">{{ c.title }}</span></figcaption>
         <div class="hc-body">
@@ -52,6 +53,30 @@
           </div>
         </div>
       </figure>
+      {% endif %}
+      {% if hero.map %}{% set m = hero.map %}{% set first = m.measures[0] %}
+      <figure class="hero-map" data-reveal data-measure="{{ m.first }}">
+        <figcaption class="hl-head"><span class="hl-title">{{ m.title }}</span><span class="hl-sub rm-note">{{ first.note }}</span></figcaption>
+        <div class="rm-switch range-buttons" role="group" aria-label="{{ m.pick }}">
+          {% for x in m.measures %}<button type="button" data-rm="{{ x.key }}" data-note="{{ x.note }}" data-legend="{{ x.legend }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ x.name }}</button>{% endfor %}
+        </div>
+        <div class="rm-grid" style="--cols:{{ m.cols }};--rows:{{ m.rows }}" role="list" aria-label="{{ m.label }}">
+          {% for tile in m.tiles %}{% set now = tile.by[m.first] %}
+          <a class="rm-tile gl-{{ now.shade }}" role="listitem" href="{{ m.link }}" style="grid-column:{{ tile.col }};grid-row:{{ tile.row }};--i:{{ tile.i }}"
+             title="{{ now.title }}" aria-label="{{ now.title }}"
+             {% for key, v in tile.by.items() %} data-{{ key }}="{{ v.text }}|{{ v.shade }}|{{ v.title }}"{% endfor %}>
+            <b>{{ tile.code }}</b><span class="rm-v">{{ now.text }}</span>
+          </a>
+          {% endfor %}
+        </div>
+        <p class="rm-detail" aria-live="polite">{{ m.hint }}</p>
+        <div class="rm-legend">
+          <span class="rm-key"><span>{{ m.below }}</span><span class="rm-scale" aria-hidden="true"><i class="gl-cool3"></i><i class="gl-cool2"></i><i class="gl-cool1"></i><i class="gl-mid"></i><i class="gl-hot1"></i><i class="gl-hot2"></i><i class="gl-hot3"></i></span><span>{{ m.above }}</span></span>
+          <span class="rm-spain">{{ first.legend }}</span>
+        </div>
+        <p class="hl-foot"><a href="{{ m.link }}">{{ m.link_text }}&nbsp;→</a></p>
+      </figure>
+      {% endif %}
     </div>
     {% endif %}
     {% if hero.line %}{% set l = hero.line %}

@@ -77,3 +77,23 @@ PAIRS.update({
         "Reloj del ciclo: los últimos 24 meses de la puntuación de actividad de Macroscope, de {start} a {end}, que "
         "terminan en {phase}.",
 })
+
+# ---------------------------------------------------------------- L3: the map of Spain
+PAIRS.update({
+    "The regions": "Las regiones",
+    "Income per head": "Renta por habitante",
+    "house prices, % change on a year earlier": "precios de la vivienda, variación interanual en %",
+    "CPI inflation, % on a year earlier": "inflación del IPC, interanual en %",
+    "Spain: {value} ({period})": "España: {value} ({period})",
+    "Below Spain": "Por debajo de España",
+    "Above Spain": "Por encima de España",
+    "{n} points above Spain": "{n} puntos por encima de España",
+    "{n} points below Spain": "{n} puntos por debajo de España",
+    "the same as Spain": "igual que España",
+    "{name}, {period}: {value}, {gap}": "{name}, {period}: {value}, {gap}",
+    "{name}: no figure yet": "{name}: aún sin dato",
+    "Hover over or tap a community; click it for the Regions page.":
+        "Pase el ratón o toque una comunidad; haga clic para ir a la página de Regiones.",
+    "All the regions": "Todas las regiones",
+    "Tile map of Spain's 17 autonomous communities": "Mapa en cuadrados de las 17 comunidades autónomas",
+})
