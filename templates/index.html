@@ -22,7 +22,7 @@
       {% for e in c.ends %}<span class="tc-dot s-{{ e.slot }}" style="left:{{ e.x }}%;top:{{ e.y }}%" aria-hidden="true"></span>{% endfor %}
       {% else %}
       <svg class="tc-bars" viewBox="0 0 1000 100" preserveAspectRatio="none" role="img" aria-label="{{ c.title }}: {{ c.subtitle }}">
-        {% for r in c.rects %}<rect class="tc-bar s-{{ r.slot }}{% if r.neg %} neg{% endif %}" x="{{ r.x }}" y="{{ r.y }}" width="{{ r.w }}" height="{{ r.h }}" style="--i:{{ r.i }}"><title>{{ r.title }}</title></rect>{% endfor %}
+        {% for r in c.rects %}<rect class="tc-bar s-{{ r.slot }}{% if r.neg %} neg{% endif %}{% if r.est %} est{% endif %}" x="{{ r.x }}" y="{{ r.y }}" width="{{ r.w }}" height="{{ r.h }}" style="--i:{{ r.i }}"><title>{{ r.title }}</title></rect>{% endfor %}
         {% if c.line %}<polyline class="tc-line tc-total s-ink" points="{{ c.line }}" vector-effect="non-scaling-stroke"/>{% endif %}
       </svg>
       {% endif %}
@@ -33,8 +33,42 @@
     {% endif %}
     <div class="hl-years" aria-hidden="true">{% for y in c.years %}<span class="{% if y.wide %}wide{% endif %}{% if y.narrow %} narrow{% endif %}" style="left:{{ y.x }}%">{{ y.label }}</span>{% endfor %}</div>
   </div>
-  {% if c.legend %}<p class="tc-legend">{% for l in c.legend %}<span><i class="sw s-{{ l.slot }}{% if l.line %} line{% endif %}"></i>{{ l.name }}</span>{% endfor %}</p>{% endif %}
+  {% if c.legend %}<p class="tc-legend">{% for l in c.legend %}<span><i class="sw s-{{ l.slot }}{% if l.line %} line{% endif %}{% if l.est %} est{% endif %}"></i>{{ l.name }}</span>{% endfor %}</p>{% endif %}
   {% if c.kind == "lines" and c.lines | length > 1 %}<p class="tc-legend tc-phone" aria-hidden="true">{% for ln in c.lines %}<span><i class="sw line s-{{ ln.slot }}{% if ln.dashed %} dashed{% endif %}"></i>{{ ln.name }}</span>{% endfor %}</p>{% endif %}
+  {% elif c.kind == "hbars" %}
+  <div class="tc-hbars" role="list" aria-label="{{ c.title }}">
+    {% for r in c.rows %}<div class="tc-hrow{% if r.mark %} mark{% endif %}{% if r.ref %} ref{% endif %}" role="listitem" style="--i:{{ r.i }}">
+      <span class="tc-hname">{{ r.name }}</span>
+      <span class="tc-htrack"><span class="tc-hzero" style="left:{{ c.zero }}%"></span><span class="tc-hbar{% if r.neg %} neg{% endif %}" style="left:{{ r.left }}%;width:{{ r.width }}%"></span></span>
+      <span class="tc-hval">{{ r.text }}</span>
+    </div>{% endfor %}
+  </div>
+  {% elif c.kind == "scatter" %}
+  <div class="tc-scatter">
+    <div class="tc-sarea">
+      {% for t in c.y_ticks %}<span class="tc-sgrid y" style="top:{{ t.y }}%"></span><span class="hl-tick" style="top:{{ t.y }}%" aria-hidden="true">{{ t.label }}</span>{% endfor %}
+      {% for t in c.x_ticks %}<span class="tc-sgrid x" style="left:{{ t.x }}%"></span><span class="tc-xtick" style="left:{{ t.x }}%" aria-hidden="true">{{ t.label }}</span>{% endfor %}
+      {% if c.ref %}<span class="tc-sref" style="left:{{ c.ref.left }}%;top:{{ c.ref.top }}%" title="{{ c.ref.title }}"><i></i>{{ c.ref.title }}</span>{% endif %}
+      {% for d in c.dots %}<span class="tc-sdot" style="left:{{ d.left }}%;top:{{ d.top }}%;--i:{{ d.i }}" title="{{ d.title }}" role="img" aria-label="{{ d.title }}"><b>{{ d.code }}</b></span>{% endfor %}
+    </div>
+    <p class="tc-saxes"><span>↑ {{ c.y_name }}</span><span>{{ c.x_name }} →</span></p>
+  </div>
+  {% elif c.kind == "tools" %}
+  <div class="tc-tools">
+    {% for t in c.cards %}<a class="tc-tool" href="{{ t.href }}" style="--i:{{ t.i }}">
+      <svg class="tc-icon" viewBox="0 0 48 32" aria-hidden="true">
+        {% if t.icon == "fan" %}<path class="i-line" d="M4 24 L20 18"/><path class="i-dash" d="M20 18 L44 10 M20 18 L44 16 M20 18 L44 24"/>
+        {% elif t.icon == "bars" %}<rect class="i-fill a" x="6" y="14" width="7" height="14"/><rect class="i-fill b" x="6" y="8" width="7" height="6"/><rect class="i-fill a" x="20" y="10" width="7" height="18"/><rect class="i-fill b" x="20" y="4" width="7" height="6"/><rect class="i-fill a" x="34" y="12" width="7" height="16"/><rect class="i-fill b" x="34" y="6" width="7" height="6"/>
+        {% elif t.icon == "trend" %}<path class="i-dash" d="M4 24 L44 6"/><path class="i-line" d="M4 24 L16 19 L20 26 L28 17 L44 12"/>
+        {% elif t.icon == "rule" %}<path class="i-line" d="M4 22 C14 22 18 8 28 10 S40 18 44 14"/><path class="i-line b" d="M4 26 L14 26 L14 18 L30 18 L30 12 L44 12"/>
+        {% elif t.icon == "speech" %}<path class="i-line" d="M6 6 H42 V22 H20 L12 28 V22 H6 Z"/><path class="i-line b" d="M12 12 H36 M12 17 H28"/>
+        {% elif t.icon == "calendar" %}<rect class="i-line" x="6" y="6" width="36" height="22" rx="2"/><path class="i-line" d="M6 12 H42"/><rect class="i-fill a" x="11" y="16" width="5" height="4"/><rect class="i-fill b" x="21" y="16" width="5" height="4"/><rect class="i-fill a" x="31" y="21" width="5" height="4"/>
+        {% elif t.icon == "table" %}<rect class="i-line" x="6" y="5" width="36" height="23" rx="2"/><path class="i-line" d="M6 11 H42 M6 17 H42 M6 23 H42 M18 5 V28"/>
+        {% else %}<path class="i-line" d="M24 5 V20 M17 14 L24 21 L31 14 M10 26 H38"/>{% endif %}
+      </svg>
+      <b>{{ t.name }}</b><span>{{ t.text }}</span>
+    </a>{% endfor %}
+  </div>
   {% elif c.kind == "treemap" %}
   <div class="tc-tree" role="list" aria-label="{{ c.title }}">
     {% for b in c.boxes %}<div class="tc-box gl-{{ b.shade }}{% if b.small %} small{% endif %}{% if b.tiny %} tiny{% endif %}" role="listitem" title="{{ b.title }}" aria-label="{{ b.title }}"
@@ -42,7 +76,7 @@
   </div>
   <p class="tc-legend rm-key"><span>{{ c.legend.below }}</span><span class="rm-scale" aria-hidden="true"><i class="gl-cool3"></i><i class="gl-cool2"></i><i class="gl-cool1"></i><i class="gl-mid"></i><i class="gl-hot1"></i><i class="gl-hot2"></i><i class="gl-hot3"></i></span><span>{{ c.legend.above }}</span></p>
   {% endif %}
-  <p class="hl-foot">{{ _("Source:") }} {{ c.source }}</p>
+  {% if c.source %}<p class="hl-foot">{{ _("Source:") }} {{ c.source }}</p>{% endif %}
 </figure>
 {%- endmacro %}
 

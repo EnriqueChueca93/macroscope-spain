@@ -72,8 +72,8 @@ def test_a_chapter_is_written_from_the_data(tmp_path):
     snap = {"afiliados": {"values": [{"transform": "diff_yoy", "display": "+784.6k"}]}}
     links = {"labour": [("labour.html#a", "A"), ("labour.html#b", "B")]}
     got = tour.chapters(data, snap, SECTION_PAGES, links)
-    assert [c["id"] for c in got] == ["labour", "ecb"]          # the others have no data here and are left out
-    labour, ecb = got
+    assert [c["id"] for c in got] == ["labour", "ecb", "tools"]   # the others have no data here and are left out
+    labour, ecb, _tools = got
     assert labour["n"] == "01" and labour["area"] == "Labour market" and labour["page"] == "labour.html"
     assert labour["big"] == "22.62" and labour["big_unit"] == "million" and labour["links"] == links["labour"]
     assert labour["sentence"] == "Social Security registrations reached a record in Oct 2026, +784.6k on a year earlier."
@@ -83,3 +83,42 @@ def test_a_chapter_is_written_from_the_data(tmp_path):
         es = tour.chapters(data, snap, SECTION_PAGES, links)
     assert es[0]["sentence"].startswith("La afiliación a la Seguridad Social marcó un récord en oct 2026")
     assert es[1]["sentence"] == "Subido 0.25 puntos el 16 sept 2026." or es[1]["sentence"].startswith("Subido 0.25 puntos el 16 ")
+
+
+# ---------------------------------------------------------------- L5
+
+def test_ranked_bars_grow_from_one_zero_line():
+    c = tour.hbar_chart([{"name": "A", "value": 10.0}, {"name": "Spain", "value": 5.0, "mark": True},
+                         {"name": "B", "value": -5.0, "ref": True}], "%", 1)
+    rows = c["rows"]
+    assert [r["name"] for r in rows] == ["A", "Spain", "B"] and c["zero"] == round(5 / 15 * 100, 2)
+    assert rows[0]["left"] == c["zero"] and rows[0]["width"] == round(10 / 15 * 100, 2) and rows[0]["text"] == "+10.0%"
+    assert rows[2]["neg"] and abs(rows[2]["left"] + rows[2]["width"] - c["zero"]) < 0.02
+    assert rows[1]["mark"] and rows[2]["ref"] and rows[2]["text"] == "−5.0%"
+
+
+def test_overlapping_dots_are_spread_but_stay_in_the_box():
+    pts = [{"code": c, "x": 80.0 + k * 0.1, "y": 11.0, "title": c} for k, c in enumerate(["CN", "CM", "MC", "VC"])]
+    pts += [{"code": "MD", "x": 138.0, "y": 8.2, "title": "MD"}, {"code": "AN", "x": 76.0, "y": 14.9, "title": "AN"}]
+    c = tour.scatter_chart(pts, "x", "y", str, str)
+    w, h = tour.SCATTER_BOX
+    dots = c["dots"]
+    for a in range(len(dots)):
+        for b in range(a + 1, len(dots)):
+            dx = (dots[a]["left"] - dots[b]["left"]) / 100 * w
+            dy = (dots[a]["top"] - dots[b]["top"]) / 100 * h
+            assert (dx * dx + dy * dy) ** 0.5 >= tour.DOT_ROOM - 0.5, (dots[a]["code"], dots[b]["code"])
+    assert all(0 <= d["left"] <= 100 and 0 <= d["top"] <= 100 for d in dots)
+    assert {d["code"] for d in dots} == {"CN", "CM", "MC", "VC", "MD", "AN"}
+
+
+def test_the_tools_chapter_counts_the_series_and_links_every_tool(tmp_path):
+    data = Data(load_registry(), Store(tmp_path / "data"))
+    got = tour.chapters(data, {}, SECTION_PAGES, {})
+    tools = next(c for c in got if c["id"] == "tools")
+    assert tools["area"] == "Tools" and tools["big"] == f"{len(data.by_id):,}" and tools["big_unit"] == "series"
+    assert [c["href"] for c in tools["chart"]["cards"]][:2] == ["fiscal-explorer.html", "budget-explorer.html"]
+    assert len(tools["chart"]["cards"]) == len(tour.TOOLS) and tools["page"] == "tools.html"
+    with i18n.using("es"):
+        es = next(c for c in tour.chapters(data, {}, SECTION_PAGES, {}) if c["id"] == "tools")
+    assert es["area"] == "Herramientas" and es["explore"] == "Explorar Herramientas"

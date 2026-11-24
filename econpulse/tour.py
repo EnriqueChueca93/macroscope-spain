@@ -197,7 +197,7 @@ def bar_chart(periods: list[pd.Timestamp], stacks: list[dict], freq: str, unit: 
                 y0, y1 = yf(down), yf(down + v)
                 down += v
             rects.append({"x": round(x, 1), "y": round(y0, 2), "w": round(bar_w, 1), "h": round(y1 - y0, 2),
-                          "slot": s["slot"], "neg": v < 0, "i": k,
+                          "slot": s["slot"], "neg": v < 0, "i": k, "est": bool(s.get("est")),
                           "title": f"{s['name']}, {period_label(when, freq)}: {fmt_change(v, unit, decimals)}"})
     points = None
     if line:
@@ -208,7 +208,7 @@ def bar_chart(periods: list[pd.Timestamp], stacks: list[dict], freq: str, unit: 
         if freq == "Q" and when.month == 1 or freq == "A":
             labels.append({"label": when.year, "x": round((k * slot_w + slot_w / 2) / 10, 2), "wide": True,
                            "narrow": True})
-    legend = [{"name": s["name"], "slot": s["slot"]} for s in stacks] + ([{"name": line["name"], "slot": "ink", "line": True}] if line else [])
+    legend = [{"name": s["name"], "slot": s["slot"], "est": bool(s.get("est"))} for s in stacks] + ([{"name": line["name"], "slot": "ink", "line": True}] if line else [])
     return {"kind": "bars", "rects": rects, "line": points, "ticks": ticks, "zero": round(yf(0.0), 2),
             "years": labels, "legend": legend, "title": title, "subtitle": subtitle, "source": source}
 
@@ -483,6 +483,274 @@ CHAPTERS = [("gdp", _gdp), ("labour", _labour), ("wages", _wages), ("inflation",
             ("financial", _financial), ("ecb", _ecb), ("fiscal", _fiscal)]
 
 
+# ---------------------------------------------------------------- more charts (L5)
+
+def hbar_chart(rows: list[dict], unit: str, decimals: int, title: str = "", subtitle: str = "", source: str = "") -> dict | None:
+    """Ranked horizontal bars from a zero line (negative ones to its left). Each row: name, value, mark (the one that
+    matters, in the accent colour) and optionally ref (a benchmark, darker)."""
+    if not rows:
+        return None
+    lo, hi = min([r["value"] for r in rows] + [0.0]), max([r["value"] for r in rows] + [0.0])
+    span = (hi - lo) or 1.0
+    zero = round(-lo / span * 100, 2)
+    out = []
+    for i, r in enumerate(sorted(rows, key=lambda r: -r["value"])):
+        out.append({"name": r["name"], "text": fmt_change(r["value"], unit, decimals), "mark": bool(r.get("mark")),
+                    "ref": bool(r.get("ref")), "i": i, "neg": r["value"] < 0,
+                    "left": round(min(0.0, r["value"] - 0) / span * 100 + zero, 2) if r["value"] < 0 else zero,
+                    "width": round(abs(r["value"]) / span * 100, 2)})
+    return {"kind": "hbars", "rows": out, "zero": zero, "title": title, "subtitle": subtitle, "source": source}
+
+
+SCATTER_BOX = (300.0, 220.0)    # the scatter's size on a phone, px: dots closer than DOT_ROOM there are spread (further apart on wider screens)
+DOT_ROOM = 27.0
+
+
+def _spread(dots: list[dict], rounds: int = 60) -> None:
+    """Nudge overlapping dots apart (in place) so each label shows; each moves only as far as it must, and its title
+    keeps its exact figures."""
+    w, h = SCATTER_BOX
+    pos = [[d["left"] / 100 * w, d["top"] / 100 * h] for d in dots]
+    for _round in range(rounds):
+        moved = False
+        for a in range(len(pos)):
+            for b in range(a + 1, len(pos)):
+                dx, dy = pos[b][0] - pos[a][0], pos[b][1] - pos[a][1]
+                dist = math.hypot(dx, dy)
+                if dist < DOT_ROOM:
+                    if dist < 1e-6:
+                        dx, dy, dist = 1.0, 0.0, 1.0
+                    push = (DOT_ROOM - dist) / 2
+                    ux, uy = dx / dist, dy / dist
+                    pos[a][0] -= ux * push; pos[a][1] -= uy * push
+                    pos[b][0] += ux * push; pos[b][1] += uy * push
+                    moved = True
+        if not moved:
+            break
+    for d, (x, y) in zip(dots, pos):
+        d["left"], d["top"] = round(min(100, max(0, x / w * 100)), 2), round(min(100, max(0, y / h * 100)), 2)
+
+
+def scatter_chart(points: list[dict], x_name: str, y_name: str, x_fmt, y_fmt, ref: dict | None = None, title: str = "",
+                  subtitle: str = "", source: str = "") -> dict | None:
+    """Labelled dots: across and up in %, on round ticks, with an optional reference cross (Spain)."""
+    if len(points) < 3:
+        return None
+    xs = [p["x"] for p in points] + ([ref["x"]] if ref else [])
+    ys = [p["y"] for p in points] + ([ref["y"]] if ref else [])
+    x_lo, x_hi, x_ticks = _ticks(min(xs), max(xs), x_fmt)
+    y_lo, y_hi, y_ticks = _ticks(min(ys), max(ys), y_fmt)
+    px = lambda v: round((v - x_lo) / (x_hi - x_lo) * 100, 2)
+    py = lambda v: round((y_hi - v) / (y_hi - y_lo) * 100, 2)
+    for t in x_ticks:                      # across, the ticks' places are along the bottom
+        t["x"] = round(100 - t.pop("y"), 2)
+    dots = [{"code": p["code"], "title": p["title"], "left": px(p["x"]), "top": py(p["y"]), "i": i}
+            for i, p in enumerate(sorted(points, key=lambda p: p["x"]))]
+    _spread(dots)
+    return {"kind": "scatter", "dots": dots, "x_ticks": x_ticks, "y_ticks": y_ticks, "x_name": x_name, "y_name": y_name,
+            "ref": {"left": px(ref["x"]), "top": py(ref["y"]), "title": ref["title"]} if ref else None,
+            "title": title, "subtitle": subtitle, "source": source}
+
+
+# ---------------------------------------------------------------- the chapters (L5)
+
+def _activity(data: Data, snap: dict) -> dict | None:
+    tourists = _series(data, "tourist_arrivals")
+    if tourists is None or len(tourists) < 36:
+        return None
+    rolling = tourists.rolling(12).sum().dropna()
+    rolling = rolling[rolling.index >= "2015-12-01"]
+    latest = float(rolling.iloc[-1])
+    pre = float(rolling[pd.Timestamp("2019-12-01")]) if pd.Timestamp("2019-12-01") in rolling.index else None
+    record = latest >= float(rolling.max()) - 1e-9
+    month = rolling.index[-1]
+    sentence = (_("A record for any twelve months{vs}.") if record else _("International tourists in the twelve months to {month}{vs}.")).format(
+        month=i18n.month_year(month),
+        vs=_(", {change} on 2019, before Covid").format(change=fmt_change((latest / pre - 1) * 100, "%", 0)) if pre else "")
+    facts = []
+    for ind_id, words in (("industrial_production", "Industrial production {value} on a year earlier ({period})"),
+                          ("retail_sales", "Retail sales {value} on a year earlier ({period})")):
+        v = _value(snap, ind_id, "yoy")
+        if v:
+            facts.append(_(words).format(value=v["display"], period=v["period"]))
+    chart = line_chart([{"name": _("Tourists"), "s": rolling, "slot": 3, "end": f"{latest:.1f} {_('million')}"}], "", 0,
+                       zero=True, title=_("International tourists"),
+                       subtitle=_("Arrivals in the past twelve months, millions, since 2015"), source="INE")
+    return {"id": "activity", "big": f"{latest:.1f}", "big_unit": _("million"),
+            "big_label": _("International tourists in the twelve months to {month}").format(month=i18n.month_year(month)),
+            "sentence": sentence, "facts": facts, "chart": chart}
+
+
+def _housing(data: Data, snap: dict) -> dict | None:
+    prices, real, pay = _series(data, "house_prices"), _series(data, "real_house_prices"), _series(data, "wage_cost")
+    yoy = _value(snap, "house_prices", "yoy")
+    if prices is None or not yoy:
+        return None
+    base = pd.Timestamp("2015-01-01")
+
+    def rebased(s):
+        if s is None or base not in s.index:
+            return None
+        s = s[s.index >= base]
+        return s / float(s.iloc[0]) * 100
+    lines = [{"name": _("House prices"), "s": rebased(prices), "slot": 2},
+             {"name": _("Real house prices"), "s": rebased(real), "slot": 4},
+             {"name": _("Wage cost per worker"), "s": rebased(_quarterly(pay) if pay is not None else None), "slot": 1}]
+    chart = line_chart(lines, "", 0, title=_("Prices against pay"), subtitle=_("Index, 2015 = 100, quarterly"),
+                       source="INE")
+    if chart is None:
+        return None
+    up = rebased(prices)
+    sentence = _("House prices are up {n}% since 2015, more than pay.").format(n=f"{float(up.iloc[-1]) - 100:.0f}") \
+        if up is not None and rebased(pay) is not None and float(up.iloc[-1]) > float(rebased(_quarterly(pay)).iloc[-1]) else ""
+    facts = []
+    years = _series(data, "house_price_income")
+    if years is not None:
+        facts.append(_("A home costs {n} years of household income ({period})").format(
+            n=f"{float(years.iloc[-1]):.1f}", period=period_label(years.index[-1], "Q")))
+    rent = _series(data, "rental_yield")
+    if rent is not None:
+        facts.append(_("Gross rental yield {value} ({period})").format(value=_pct(float(rent.iloc[-1])),
+                                                                        period=period_label(rent.index[-1], "Q")))
+    return {"id": "housing", "big": fmt_change(float(yoy["value"]), "%", 1),
+            "big_label": _("House prices, {period}, on a year earlier").format(period=yoy["period"]),
+            "sentence": sentence, "facts": facts, "chart": chart}
+
+
+def _pensions(data: Data, snap: dict) -> dict | None:
+    from . import pensions
+    facts_all = {f["label"]: f for f in pensions.overview_facts(data)}
+    count = facts_all.get(_("Contributory pensions"))
+    yearly, monthly = pensions.workers_per_pension(data)
+    if not count or yearly is None or yearly.empty:
+        return None
+    series = pd.Series(yearly.values, index=[pd.Timestamp(int(y), 1, 1) for y in yearly.index])
+    if monthly is not None and not monthly.empty:
+        series[monthly.index[-1]] = float(monthly.iloc[-1])
+    series = series.sort_index()
+    facts = []
+    for label in (_("Average pension"), _("What they cost")):
+        f = facts_all.get(label)
+        if f:
+            facts.append(f"{f['label']}: {f['value']}")
+    chart = line_chart([{"name": _("Workers per pension"), "s": series, "slot": 5}], "", 2,
+                       fmt=lambda v: f"{v:.2f}", title=_("Workers per pension"),
+                       subtitle=_("Social Security registrations per contributory pension"), source=_("Seguridad Social"))
+    wpp = facts_all.get(_("Workers per pension"))
+    return {"id": "pensions", "big": count["value"].split(" ")[0], "big_unit": " ".join(count["value"].split(" ")[1:]),
+            "big_label": f"{count['label']}, {count['sub']}" if count.get("sub") else count["label"],
+            "sentence": _("{n} workers pay in for each pension.").format(n=wpp["value"]) if wpp else "",
+            "facts": facts, "chart": chart}
+
+
+PEER_NAMES = {"ea": "Euro area", "fr": "France", "de": "Germany", "it": "Italy", "nl": "Netherlands", "pt": "Portugal",
+              "pl": "Poland", "uk": "United Kingdom", "us": "United States", "ca": "Canada", "jp": "Japan"}
+
+
+def _international(data: Data, snap: dict) -> dict | None:
+    base = pd.Timestamp("2019-10-01")
+    rows = []
+    for slug, name, ind_id in [("es", "Spain", "gdp")] + [(s, n, f"gdp_level_{s}") for s, n in PEER_NAMES.items()]:
+        s = _series(data, ind_id)
+        if s is None or base not in s.index:
+            continue
+        rows.append({"name": _(name), "value": (float(s.iloc[-1]) / float(s[base]) - 1) * 100, "mark": slug == "es",
+                     "ref": slug == "ea", "slug": slug})
+    if len(rows) < 4 or not any(r["mark"] for r in rows):
+        return None
+    ranked = sorted(rows, key=lambda r: -r["value"])
+    place = next(k for k, r in enumerate(ranked) if r["mark"]) + 1
+    spain = next(r for r in rows if r["mark"])
+    ea = next((r for r in rows if r["ref"]), None)
+    chart = hbar_chart(rows, "%", 1, title=_("GDP since the end of 2019"),
+                       subtitle=_("Real GDP, % change from the last quarter of 2019 to the latest"), source=_("Eurostat; OECD"))
+    places = {1: _("the fastest-growing"), 2: _("the second fastest-growing"), 3: _("the third fastest-growing")}
+    sentence = _("Spain is {place} of the {n} economies here since the end of 2019.").format(
+        place=places.get(place) or _("the {k}th fastest-growing").format(k=place), n=len(rows))
+    facts = [_("Euro area {value}").format(value=fmt_change(ea["value"], "%", 1))] if ea else []
+    return {"id": "international", "big": fmt_change(spain["value"], "%", 1),
+            "big_label": _("Spain's real GDP since the end of 2019"), "sentence": sentence, "facts": facts, "chart": chart}
+
+
+def _regions(data: Data, snap: dict) -> dict | None:
+    from .hero import TILES
+    from .pages import REGIONS
+    names = dict(REGIONS)
+    points = []
+    for slug, (code, _c, _r) in TILES.items():
+        u, g = _series(data, f"unemployment_{slug}"), _series(data, f"gdp_per_head_{slug}")
+        if u is None or g is None:
+            continue
+        points.append({"code": code, "name": names.get(slug, slug), "x": float(g.iloc[-1]), "y": float(u.iloc[-1]),
+                       "title": _("{name}: income per head {x} (Spain = 100), unemployment {y}").format(
+                           name=names.get(slug, slug), x=f"{float(g.iloc[-1]):.0f}", y=_pct(float(u.iloc[-1])))})
+    if len(points) < 10:
+        return None
+    spain = _series(data, "unemployment_epa")
+    ref = {"x": 100.0, "y": float(spain.iloc[-1]), "title": _("Spain")} if spain is not None else None
+    low, high = min(points, key=lambda p: p["y"]), max(points, key=lambda p: p["y"])
+    poor, rich = min(points, key=lambda p: p["x"]), max(points, key=lambda p: p["x"])
+    chart = scatter_chart(points, _("Income per head, Spain = 100"), _("Unemployment, %"), lambda v: f"{v:.0f}",
+                          lambda v: f"{v:.0f}%", ref=ref, title=_("Richer regions, fewer jobless"),
+                          subtitle=_("Each community: GDP per head across, unemployment up"), source="INE")
+    return {"id": "regions", "big": f"{high['y'] - low['y']:.1f}", "big_unit": _("points"),
+            "big_label": _("Between the highest and lowest unemployment rates"),
+            "sentence": _("Unemployment runs from {low} in {low_name} to {high} in {high_name}.").format(
+                low=_pct(low["y"]), low_name=low["name"], high=_pct(high["y"]), high_name=high["name"]),
+            "facts": [_("Income per head from {poor} in {poor_name} to {rich} in {rich_name} (Spain = 100)").format(
+                poor=f"{poor['x']:.0f}", poor_name=poor["name"], rich=f"{rich['x']:.0f}", rich_name=rich["name"])],
+            "chart": chart}
+
+
+def _analysis(data: Data, snap: dict) -> dict | None:
+    from . import analytics
+    n = analytics.nowcast(data)
+    growth = _series(data, "gdp", "pop")
+    if not n or growth is None:
+        return None
+    past = growth.tail(8)
+    periods = list(past.index) + [n["quarter"]]
+    values = [float(v) for v in past.values]
+    chart = bar_chart(periods, [{"name": _("Real GDP, q/q"), "values": values + [None], "slot": 1},
+                                {"name": _("Macroscope's provisional nowcast"), "values": [None] * len(values) + [float(n["value"])],
+                                 "slot": 1, "est": True}],
+                      "Q", "%", 1, title=_("GDP growth and the nowcast"),
+                      subtitle=_("Real GDP, % change on the quarter, and Macroscope's estimate for the quarter under way"),
+                      source=_("INE; Macroscope calculation"))
+    facts = [f["label"] + ": " + f["value"] for f in analytics.composite_facts(data)]
+    return {"id": "analysis", "big": _pct(float(n["value"])),
+            "big_label": _("Macroscope's provisional nowcast of GDP growth, {quarter}, on the quarter").format(
+                quarter=period_label(n["quarter"], "Q")),
+            "sentence": _("A provisional estimate from Social Security registrations and industrial production (the "
+                          "model is still being worked on); typical error ±{e} points.").format(e=f"{float(n['rmse']):.1f}"),
+            "facts": facts, "chart": chart}
+
+
+TOOLS = [("fiscal-explorer.html", "Fiscal Explorer", "Spain's debt to 2070, with levers to pull", "fan"),
+         ("budget-explorer.html", "Budget explorer", "Every administration's spending and revenue since 1995", "bars"),
+         ("tools.html#trend", "Economy vs pre-COVID trend", "Where output would be on its old path", "trend"),
+         ("tools.html#taylor", "Taylor rule", "What rate the rule would set, with your own inputs", "rule"),
+         ("ecb-speak.html", "ECB-speak", "How hawkish or dovish the ECB's speakers sound", "speech"),
+         ("calendar.html", "Release calendar", "What comes out, and when", "calendar"),
+         ("sector-tables.html", "Sector tables", "IMF-style tables for every sector, and a workbook", "table"),
+         ("data.html", "Data", "Every series, with its source, to download", "download")]
+
+
+def _tools(data: Data, snap: dict) -> dict | None:
+    sources = {i.source_name for i in data.by_id.values()}
+    cards = [{"href": href, "name": _(name), "text": _(text), "icon": icon, "i": k}
+             for k, (href, name, text, icon) in enumerate(TOOLS)]
+    return {"id": "tools", "big": f"{len(data.by_id):,}", "big_unit": _("series"),
+            "big_label": _("from {n} publishers, updated twice a day").format(n=len(sources)),
+            "sentence": _("Explorers and calculators to try your own numbers, and every series behind the site to "
+                          "download."), "facts": [],
+            "chart": {"kind": "tools", "cards": cards, "title": _("Tools and data"), "subtitle": "", "source": ""}}
+
+
+CHAPTERS += [("activity", _activity), ("housing", _housing), ("pensions", _pensions), ("international", _international),
+             ("regions", _regions), ("analysis", _analysis), ("tools", _tools)]
+
+
 def chapters(data: Data, snapshot: dict, sections: dict, links: dict) -> list[dict]:
     """The tour: each area's chapter, numbered, with its page, title and section links. `sections` maps a section
     to its (title, intro) and `links` to its [(href, title)]."""
@@ -494,7 +762,7 @@ def chapters(data: Data, snapshot: dict, sections: dict, links: dict) -> list[di
             ch = None
         if not ch or not ch.get("chart"):
             continue
-        title = _(sections[key][0]) if key in sections else key
+        title = _(sections[key][0]) if key in sections else _("Tools") if key == "tools" else key
         ch.update({"n": f"{len(out) + 1:02d}", "area": title, "page": f"{key}.html",
                    "explore": _("Explore {area}").format(area=title), "links": links.get(key, [])[:4]})
         out.append(ch)

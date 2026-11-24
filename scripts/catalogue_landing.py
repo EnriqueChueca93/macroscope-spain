@@ -177,3 +177,72 @@ PAIRS.update({
         "% del PIB a final de año desde 2000, y la proyección de la Comisión",
     "Eurostat; European Commission": "Eurostat; Comisión Europea",
 })
+
+# ---------------------------------------------------------------- L5: the tour, last seven chapters
+PAIRS.update({
+    # Economic activity and trade
+    "International tourists in the twelve months to {month}": "Turistas internacionales en los doce meses hasta {month}",
+    "A record for any twelve months{vs}.": "Un récord para cualquier periodo de doce meses{vs}.",
+    "International tourists in the twelve months to {month}{vs}.": "Turistas internacionales en los doce meses hasta {month}{vs}.",
+    ", {change} on 2019, before Covid": ", {change} sobre 2019, antes de la covid",
+    "Industrial production {value} on a year earlier ({period})": "Producción industrial {value} interanual ({period})",
+    "Retail sales {value} on a year earlier ({period})": "Ventas minoristas {value} interanual ({period})",
+    "Arrivals in the past twelve months, millions, since 2015": "Llegadas en los últimos doce meses, millones, desde 2015",
+    # Housing
+    "House prices, {period}, on a year earlier": "Precios de la vivienda, {period}, interanual",
+    "House prices are up {n}% since 2015, more than pay.": "Los precios de la vivienda han subido un {n}% desde 2015, más que los salarios.",
+    "A home costs {n} years of household income ({period})": "Una vivienda cuesta {n} años de renta del hogar ({period})",
+    "Gross rental yield {value} ({period})": "Rentabilidad bruta del alquiler {value} ({period})",
+    "Prices against pay": "Precios frente a salarios",
+    "Index, 2015 = 100, quarterly": "Índice, 2015 = 100, trimestral",
+    # Pensions
+    "{n} workers pay in for each pension.": "{n} afiliados cotizan por cada pensión.",
+    "Social Security registrations per contributory pension": "Afiliados a la Seguridad Social por pensión contributiva",
+    # International
+    "Spain's real GDP since the end of 2019": "PIB real de España desde finales de 2019",
+    "Spain is {place} of the {n} economies here since the end of 2019.":
+        "España es {place} de las {n} economías de la lista desde finales de 2019.",
+    "the fastest-growing": "la que más ha crecido",
+    "the second fastest-growing": "la segunda que más ha crecido",
+    "the third fastest-growing": "la tercera que más ha crecido",
+    "the {k}th fastest-growing": "la {k}.ª que más ha crecido",
+    "Euro area {value}": "Zona del euro {value}",
+    "Real GDP, % change from the last quarter of 2019 to the latest": "PIB real, variación en % del último trimestre de 2019 al más reciente",
+    "Eurostat; OECD": "Eurostat; OCDE",
+    # Regions
+    "points": "puntos",
+    "Between the highest and lowest unemployment rates": "Entre la tasa de paro más alta y la más baja",
+    "Unemployment runs from {low} in {low_name} to {high} in {high_name}.":
+        "El paro va del {low} de {low_name} al {high} de {high_name}.",
+    "Income per head from {poor} in {poor_name} to {rich} in {rich_name} (Spain = 100)":
+        "Renta por habitante de {poor} en {poor_name} a {rich} en {rich_name} (España = 100)",
+    "{name}: income per head {x} (Spain = 100), unemployment {y}": "{name}: renta por habitante {x} (España = 100), paro {y}",
+    "Richer regions, fewer jobless": "Regiones más ricas, menos paro",
+    "Each community: GDP per head across, unemployment up": "Cada comunidad: PIB per cápita en horizontal, paro en vertical",
+    "Income per head, Spain = 100": "Renta por habitante, España = 100",
+    "Unemployment, %": "Paro, %",
+    # Analysis
+    "Macroscope's provisional nowcast of GDP growth, {quarter}, on the quarter":
+        "Estimación adelantada provisional de Macroscope del crecimiento del PIB, {quarter}, intertrimestral",
+    "A provisional estimate from Social Security registrations and industrial production (the model is still being worked on); typical error ±{e} points.":
+        "Una estimación provisional a partir de la afiliación a la Seguridad Social y la producción industrial (el "
+        "modelo aún se está afinando); error típico ±{e} puntos.",
+    "Macroscope's provisional nowcast": "Estimación provisional de Macroscope",
+    "GDP growth and the nowcast": "Crecimiento del PIB y la estimación adelantada",
+    "Real GDP, % change on the quarter, and Macroscope's estimate for the quarter under way":
+        "PIB real, variación intertrimestral en %, y la estimación de Macroscope para el trimestre en curso",
+    # Tools
+    "series": "series",
+    "from {n} publishers, updated twice a day": "de {n} fuentes, actualizadas dos veces al día",
+    "Explorers and calculators to try your own numbers, and every series behind the site to download.":
+        "Exploradores y calculadoras para probar sus propias cifras, y todas las series del sitio para descargar.",
+    "Tools and data": "Herramientas y datos",
+    "Spain's debt to 2070, with levers to pull": "La deuda de España hasta 2070, con palancas para mover",
+    "Every administration's spending and revenue since 1995": "El gasto y los ingresos de cada administración desde 1995",
+    "Where output would be on its old path": "Dónde estaría la producción en su senda anterior",
+    "What rate the rule would set, with your own inputs": "Qué tipo fijaría la regla, con sus propios datos",
+    "How hawkish or dovish the ECB's speakers sound": "Cuán duros o blandos suenan los discursos del BCE",
+    "What comes out, and when": "Qué se publica y cuándo",
+    "IMF-style tables for every sector, and a workbook": "Tablas al estilo del FMI para cada sector, y un libro de Excel",
+    "Every series, with its source, to download": "Todas las series, con su fuente, para descargar",
+})
