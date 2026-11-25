@@ -450,8 +450,8 @@
   },
   "electricity_demand": {
    "date": "2026-11-24",
-   "raw": 747.95106,
-   "display": "748.0 GWh",
+   "raw": 765.61863,
+   "display": "765.6 GWh",
    "period": "24 Nov 2026",
    "flash": false
   },
@@ -568,24 +568,24 @@
    "flash": false
   },
   "mortgages_homes": {
-   "date": "2026-08-01",
-   "raw": 33841.0,
+   "date": "2026-09-01",
+   "raw": 46469.0,
    "display": "2.3% y/y",
-   "period": "Aug 2026",
+   "period": "Sep 2026",
    "flash": false
   },
   "mortgage_lending_homes": {
-   "date": "2026-08-01",
-   "raw": 6134.856,
-   "display": "10.2% y/y",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 8287.835,
+   "display": "6.1% y/y",
+   "period": "Sep 2026",
    "flash": false
   },
   "average_mortgage": {
-   "date": "2026-08-01",
-   "raw": 181284.7138,
-   "display": "€181,285",
-   "period": "Aug 2026",
+   "date": "2026-09-01",
+   "raw": 178351.912,
+   "display": "€178,352",
+   "period": "Sep 2026",
    "flash": false
   },
   "home_permits": {
@@ -673,213 +673,213 @@
    "flash": false
   },
   "estr": {
-   "date": "2026-11-23",
-   "raw": 2.443,
-   "display": "2.443%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 2.444,
+   "display": "2.444%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_fwd_3m": {
-   "date": "2026-11-23",
-   "raw": 2.825631293,
-   "display": "2.83%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 2.835233228,
+   "display": "2.84%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_fwd_6m": {
-   "date": "2026-11-23",
-   "raw": 3.000904627,
-   "display": "3.00%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3.00718265,
+   "display": "3.01%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_fwd_9m": {
-   "date": "2026-11-23",
-   "raw": 3.089782973,
+   "date": "2026-11-24",
+   "raw": 3.088181469,
    "display": "3.09%",
-   "period": "23 Nov 2026",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_fwd_1y": {
-   "date": "2026-11-23",
-   "raw": 3.124957079,
-   "display": "3.12%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3.114423619,
+   "display": "3.11%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_fwd_2y": {
-   "date": "2026-11-23",
-   "raw": 3.079284665,
-   "display": "3.08%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3.047229912,
+   "display": "3.05%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_fwd_3y": {
-   "date": "2026-11-23",
-   "raw": 3.055375146,
-   "display": "3.06%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3.026353514,
+   "display": "3.03%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "euribor_3m": {
-   "date": "2026-11-23",
-   "raw": 2.809,
-   "display": "2.809%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 2.794,
+   "display": "2.794%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "euribor_12m": {
-   "date": "2026-11-23",
-   "raw": 3.37,
-   "display": "3.370%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3.376,
+   "display": "3.376%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "es_12m_bill": {
-   "date": "2026-11-20",
-   "raw": 3.056,
+   "date": "2026-11-23",
+   "raw": 3.063,
    "display": "3.06%",
-   "period": "20 Nov 2026",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "es_3y": {
-   "date": "2026-11-20",
-   "raw": 3.363,
-   "display": "3.36%",
-   "period": "20 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 3.371,
+   "display": "3.37%",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "es_5y": {
-   "date": "2026-11-20",
-   "raw": 3.47,
-   "display": "3.47%",
-   "period": "20 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 3.478,
+   "display": "3.48%",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "es_10y": {
-   "date": "2026-11-20",
-   "raw": 3.951,
-   "display": "3.95%",
-   "period": "20 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 3.909,
+   "display": "3.91%",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "es_15y": {
-   "date": "2026-11-20",
-   "raw": 4.215,
-   "display": "4.21%",
-   "period": "20 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 4.224,
+   "display": "4.22%",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "es_30y": {
-   "date": "2026-11-20",
-   "raw": 4.467,
-   "display": "4.47%",
-   "period": "20 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 4.455,
+   "display": "4.46%",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "de_10y": {
-   "date": "2026-11-24",
-   "raw": 3.33,
-   "display": "3.33%",
-   "period": "24 Nov 2026",
+   "date": "2026-11-25",
+   "raw": 3.3,
+   "display": "3.30%",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "aaa_1y": {
-   "date": "2026-11-23",
-   "raw": 2.942203205,
-   "display": "2.94%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 2.945247844,
+   "display": "2.95%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_3y": {
-   "date": "2026-11-23",
-   "raw": 3.037771797,
-   "display": "3.04%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3.020234231,
+   "display": "3.02%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_5y": {
-   "date": "2026-11-23",
-   "raw": 3.076297696,
-   "display": "3.08%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3.058552343,
+   "display": "3.06%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_10y": {
-   "date": "2026-11-23",
-   "raw": 3.320906906,
-   "display": "3.32%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3.312080957,
+   "display": "3.31%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_15y": {
-   "date": "2026-11-23",
-   "raw": 3.52081808,
-   "display": "3.52%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3.513782551,
+   "display": "3.51%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "aaa_30y": {
-   "date": "2026-11-23",
-   "raw": 3.61545734,
-   "display": "3.62%",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3.602527123,
+   "display": "3.60%",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "risk_premium": {
-   "date": "2026-11-23",
-   "raw": 59.7,
-   "display": "60 bp",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 58.3,
+   "display": "58 bp",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "ibex35": {
-   "date": "2026-11-23",
-   "raw": 19181.0,
-   "display": "19,181",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 19016.0,
+   "display": "19,016",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "eurusd": {
-   "date": "2026-11-24",
-   "raw": 1.0963,
-   "display": "1.0963",
-   "period": "24 Nov 2026",
+   "date": "2026-11-25",
+   "raw": 1.0935,
+   "display": "1.0935",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "eurgbp": {
-   "date": "2026-11-24",
-   "raw": 0.837,
-   "display": "0.8370",
-   "period": "24 Nov 2026",
+   "date": "2026-11-25",
+   "raw": 0.8373,
+   "display": "0.8373",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "eurchf": {
-   "date": "2026-11-24",
-   "raw": 0.9183,
-   "display": "0.9183",
-   "period": "24 Nov 2026",
+   "date": "2026-11-25",
+   "raw": 0.9085,
+   "display": "0.9085",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "eurjpy": {
-   "date": "2026-11-24",
-   "raw": 174.39,
-   "display": "174.39",
-   "period": "24 Nov 2026",
+   "date": "2026-11-25",
+   "raw": 174.22,
+   "display": "174.22",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "brent_usd": {
-   "date": "2026-11-17",
-   "raw": 92.94,
-   "display": "$92.9",
-   "period": "17 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 91.8,
+   "display": "$91.8",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "brent_eur": {
-   "date": "2026-11-17",
-   "raw": 84.575485,
-   "display": "84.6 €/bbl",
-   "period": "17 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 83.736204,
+   "display": "83.7 €/bbl",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "gas_eu": {
@@ -1688,17 +1688,17 @@
    "flash": false
   },
   "ciss_es": {
-   "date": "2026-11-23",
-   "raw": 0.01101950449,
-   "display": "0.011",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 0.01173115793,
+   "display": "0.012",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "ciss_ea": {
-   "date": "2026-11-23",
-   "raw": 0.02766268775,
-   "display": "0.028",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 0.02892918888,
+   "display": "0.029",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "npl_ratio": {
@@ -1751,10 +1751,10 @@
    "flash": false
   },
   "core_cpi_uk": {
-   "date": "2026-10-01",
+   "date": "2026-09-01",
    "raw": 3.1,
    "display": "3.1%",
-   "period": "Oct 2026",
+   "period": "Sep 2026",
    "flash": false
   },
   "unemployment_uk": {
@@ -6245,24 +6245,24 @@
    "flash": false
   },
   "youth_unemp_uk": {
-   "date": "2026-07-01",
-   "raw": 15.6,
-   "display": "15.6%",
-   "period": "Jul 2026",
+   "date": "2026-08-01",
+   "raw": 15.1,
+   "display": "15.1%",
+   "period": "Aug 2026",
    "flash": false
   },
   "youth_unemp_us": {
-   "date": "2026-09-01",
-   "raw": 9.9,
-   "display": "9.9%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 9.3,
+   "display": "9.3%",
+   "period": "Oct 2026",
    "flash": false
   },
   "youth_unemp_ca": {
-   "date": "2026-09-01",
-   "raw": 13.0,
-   "display": "13.0%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 13.7,
+   "display": "13.7%",
+   "period": "Oct 2026",
    "flash": false
   },
   "youth_unemp_ea": {
@@ -6323,8 +6323,8 @@
   },
   "emp_rate_us": {
    "date": "2026-07-01",
-   "raw": 71.98423,
-   "display": "72.0%",
+   "raw": 71.94911,
+   "display": "71.9%",
    "period": "Q3 2026",
    "flash": false
   },
@@ -7513,14 +7513,14 @@
   },
   "price_income_ca": {
    "date": "2026-07-01",
-   "raw": 138.4272085,
+   "raw": 138.3562509,
    "display": "138.4",
    "period": "Q3 2026",
    "flash": false
   },
   "price_income_jp": {
    "date": "2025-10-01",
-   "raw": 88.28060187,
+   "raw": 88.28122733,
    "display": "88.3",
    "period": "Q4 2025",
    "flash": false
@@ -7590,7 +7590,7 @@
   },
   "price_rent_jp": {
    "date": "2025-10-01",
-   "raw": 109.4140663,
+   "raw": 109.4123741,
    "display": "109.4",
    "period": "Q4 2025",
    "flash": false
@@ -8919,45 +8919,45 @@
    "flash": false
   },
   "petrol_price": {
-   "date": "2026-11-16",
-   "raw": 1.624214422,
-   "display": "1.624 €/l",
-   "period": "16 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 1.560072046,
+   "display": "1.560 €/l",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "diesel_price": {
-   "date": "2026-11-16",
-   "raw": 1.837213481,
-   "display": "1.837 €/l",
-   "period": "16 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 1.792259492,
+   "display": "1.792 €/l",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "petrol_price_pretax": {
-   "date": "2026-11-16",
-   "raw": 1.069635968,
-   "display": "1.070 €/l",
-   "period": "16 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 1.01662574,
+   "display": "1.017 €/l",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "diesel_price_pretax": {
-   "date": "2026-11-16",
-   "raw": 1.339358248,
-   "display": "1.339 €/l",
-   "period": "16 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 1.302206191,
+   "display": "1.302 €/l",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "petrol_price_ea": {
-   "date": "2026-11-16",
-   "raw": 1.910455432,
-   "display": "1.910 €/l",
-   "period": "16 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 1.857258629,
+   "display": "1.857 €/l",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "diesel_price_ea": {
-   "date": "2026-11-16",
-   "raw": 2.104792148,
-   "display": "2.105 €/l",
-   "period": "16 Nov 2026",
+   "date": "2026-11-23",
+   "raw": 2.056284043,
+   "display": "2.056 €/l",
+   "period": "23 Nov 2026",
    "flash": false
   },
   "vacancies_eurostat": {
@@ -8989,52 +8989,52 @@
    "flash": false
   },
   "madrid_general": {
-   "date": "2026-11-23",
-   "raw": 1897.0,
-   "display": "1,897.00",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 1881.0,
+   "display": "1,881.00",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "madrid_financials": {
-   "date": "2026-11-23",
-   "raw": 1533.1,
-   "display": "1,533.1",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 1505.8,
+   "display": "1,505.8",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "madrid_energy": {
-   "date": "2026-11-23",
-   "raw": 3235.3,
-   "display": "3,235.3",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 3240.2,
+   "display": "3,240.2",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "madrid_consumer_goods": {
-   "date": "2026-11-23",
-   "raw": 7454.4,
-   "display": "7,454.4",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 7425.7,
+   "display": "7,425.7",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "madrid_industry": {
-   "date": "2026-11-23",
-   "raw": 2588.9,
-   "display": "2,588.9",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 2530.6,
+   "display": "2,530.6",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "madrid_consumer_services": {
-   "date": "2026-11-23",
-   "raw": 1963.9,
-   "display": "1,963.9",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 1955.2,
+   "display": "1,955.2",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "madrid_tech": {
-   "date": "2026-11-23",
-   "raw": 666.2,
-   "display": "666.2",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 680.1,
+   "display": "680.1",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "ms_nfa": {
@@ -14029,8 +14029,113 @@
    "page": "international.html",
    "text": "Real GDP per person employed, United States: 1.8% y/y in 2028, after 1.8% y/y in 2027.",
    "at": "2026-11-25T01:43:23+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "petrol_price",
+   "page": "inflation.html",
+   "text": "Petrol (Euro-super 95): −3.9% since the last update, to 1.560 €/l.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "diesel_price",
+   "page": "inflation.html",
+   "text": "Diesel: −2.4% since the last update, to 1.792 €/l.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "petrol_price_pretax",
+   "page": "inflation.html",
+   "text": "Petrol before taxes: −5.0% since the last update, to 1.017 €/l.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "diesel_price_pretax",
+   "page": "inflation.html",
+   "text": "Diesel before taxes: −2.8% since the last update, to 1.302 €/l.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "petrol_price_ea",
+   "page": "inflation.html",
+   "text": "Petrol (Euro-super 95), euro area: −2.8% since the last update, to 1.857 €/l.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "diesel_price_ea",
+   "page": "inflation.html",
+   "text": "Diesel, euro area: −2.3% since the last update, to 2.056 €/l.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "mortgages_homes",
+   "page": "housing.html",
+   "text": "Mortgages on homes: 2.3% y/y in Sep 2026, after 2.3% y/y in Aug 2026.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "mortgage_lending_homes",
+   "page": "housing.html",
+   "text": "Mortgage lending on homes: 6.1% y/y in Sep 2026, after 10.2% y/y in Aug 2026.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "average_mortgage",
+   "page": "housing.html",
+   "text": "Average mortgage on a home: €178,352 in Sep 2026, after €181,285 in Aug 2026.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "madrid_industry",
+   "page": "financial.html",
+   "text": "Madrid exchange: basic materials, industry and construction: −2.3% since the last update, to 2,530.6.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "madrid_tech",
+   "page": "financial.html",
+   "text": "Madrid exchange: technology and telecommunications: +2.1% since the last update, to 680.1.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "youth_unemp_uk",
+   "page": "international.html",
+   "text": "Youth unemployment rate (15-24), United Kingdom: 15.1% in Aug 2026, after 15.6% in Jul 2026.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "youth_unemp_us",
+   "page": "international.html",
+   "text": "Youth unemployment rate (15-24), United States: 9.3% in Oct 2026, after 9.9% in Sep 2026.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "youth_unemp_ca",
+   "page": "international.html",
+   "text": "Youth unemployment rate (15-24), Canada: 13.7% in Oct 2026, after 13.0% in Sep 2026.",
+   "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "emp_rate_us",
+   "page": "international.html",
+   "text": "Employment rate (15-64), United States for Q3 2026 revised to 71.9%, from 72.0%.",
+   "at": "2026-11-25T19:18:03+00:00"
   }
  ],
- "updated_at": "2026-11-25T01:43:23+00:00",
+ "updated_at": "2026-11-25T19:18:03+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
