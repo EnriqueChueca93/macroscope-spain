@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-24",
-   "raw": 210.1348958,
-   "display": "210 €/MWh",
-   "period": "24 Nov 2026",
+   "date": "2026-11-25",
+   "raw": 110.8739583,
+   "display": "111 €/MWh",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -449,10 +449,10 @@
    "flash": false
   },
   "electricity_demand": {
-   "date": "2026-11-23",
-   "raw": 720.52691,
-   "display": "720.5 GWh",
-   "period": "23 Nov 2026",
+   "date": "2026-11-24",
+   "raw": 747.95106,
+   "display": "748.0 GWh",
+   "period": "24 Nov 2026",
    "flash": false
   },
   "electricity_demand_monthly": {
@@ -652,24 +652,24 @@
    "flash": false
   },
   "ecb_deposit_rate": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "24 Nov 2026",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "ecb_mro_rate": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "raw": 2.65,
    "display": "2.65%",
-   "period": "24 Nov 2026",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "ecb_mlf_rate": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "raw": 2.9,
    "display": "2.90%",
-   "period": "24 Nov 2026",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "estr": {
@@ -7141,10 +7141,10 @@
    "flash": false
   },
   "real_pay_us": {
-   "date": "2027-01-01",
-   "raw": 102.48088,
-   "display": "1.1% y/y",
-   "period": "2027",
+   "date": "2028-01-01",
+   "raw": 103.57001,
+   "display": "1.4% y/y",
+   "period": "2028",
    "flash": false
   },
   "real_pay_ca": {
@@ -7225,10 +7225,10 @@
    "flash": false
   },
   "productivity_us": {
-   "date": "2027-01-01",
-   "raw": 151.34873,
+   "date": "2028-01-01",
+   "raw": 153.68657,
    "display": "1.8% y/y",
-   "period": "2027",
+   "period": "2028",
    "flash": false
   },
   "productivity_ca": {
@@ -8968,24 +8968,24 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "raw": 1535.6773,
    "display": "€1,535.7 bn",
-   "period": "24 Nov 2026",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "raw": 2.367892917,
    "display": "2.37%",
-   "period": "24 Nov 2026",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-24",
-   "raw": 7.692190058,
+   "date": "2026-11-25",
+   "raw": 7.689452207,
    "display": "7.69 years",
-   "period": "24 Nov 2026",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "madrid_general": {
@@ -14001,8 +14001,36 @@
    "page": "financial.html",
    "text": "Deposits of other resident sectors: 1,608,915,484 € thousand in Sep 2026, after 1,600,815,106 € thousand in Aug 2026.",
    "at": "2026-11-24T20:15:04+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): −47.2% since the last update, to 111 €/MWh.",
+   "at": "2026-11-25T01:43:23+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_demand",
+   "page": "activity.html",
+   "text": "Electricity demand: +3.8% since the last update, to 748.0 GWh.",
+   "at": "2026-11-25T01:43:23+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "real_pay_us",
+   "page": "international.html",
+   "text": "Real compensation per employee, United States: 1.4% y/y in 2028, after 1.1% y/y in 2027.",
+   "at": "2026-11-25T01:43:23+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "productivity_us",
+   "page": "international.html",
+   "text": "Real GDP per person employed, United States: 1.8% y/y in 2028, after 1.8% y/y in 2027.",
+   "at": "2026-11-25T01:43:23+00:00"
   }
  ],
- "updated_at": "2026-11-24T20:15:04+00:00",
+ "updated_at": "2026-11-25T01:43:23+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
