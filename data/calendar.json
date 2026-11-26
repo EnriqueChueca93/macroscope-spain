@@ -1,6 +1,6 @@
 {
  "source": "https://www.ine.es/dynt3/Calendario/calendario.ics",
- "fetched_at": "2026-11-26T01:15:29+00:00",
+ "fetched_at": "2026-11-26T19:04:00+00:00",
  "events": [
   {
    "start": "2025-01-03T09:00",
@@ -1033,6 +1033,462 @@
   {
    "start": "2026-12-30T09:00",
    "title": "Índice de Precios de Consumo. Avance. Diciembre 2026"
+  },
+  {
+   "start": "2027-01-04T09:00",
+   "title": "Movimientos Turísticos en Fronteras. Noviembre 2026"
+  },
+  {
+   "start": "2027-01-04T09:00",
+   "title": "Encuesta de Gasto Turístico Mensual. Noviembre 2026"
+  },
+  {
+   "start": "2027-01-08T09:00",
+   "title": "Índice de Producción Industrial. Noviembre 2026"
+  },
+  {
+   "start": "2027-01-14T09:00",
+   "title": "Índice de Precios de Consumo. Diciembre 2026"
+  },
+  {
+   "start": "2027-01-14T09:00",
+   "title": "Índice de Precios de Consumo. Medias anuales. Año 2026"
+  },
+  {
+   "start": "2027-01-18T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Noviembre 2026"
+  },
+  {
+   "start": "2027-01-25T09:00",
+   "title": "Hipotecas Mensual. Noviembre 2026"
+  },
+  {
+   "start": "2027-01-25T09:00",
+   "title": "Índice de Precios Industriales. Diciembre 2026"
+  },
+  {
+   "start": "2027-01-25T09:00",
+   "title": "Índice de Precios Industriales. Medias Anuales. Año 2026"
+  },
+  {
+   "start": "2027-01-28T09:00",
+   "title": "Índices de Comercio al por menor. Diciembre 2026"
+  },
+  {
+   "start": "2027-01-29T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Enero 2027"
+  },
+  {
+   "start": "2027-01-29T09:00",
+   "title": "Contabilidad Nacional Trimestral de España. Avance. Trimestre 4/2026"
+  },
+  {
+   "start": "2027-01-29T09:00",
+   "title": "Encuesta de Población Activa. Trimestre 4/2026"
+  },
+  {
+   "start": "2027-02-02T09:00",
+   "title": "Movimientos Turísticos en Fronteras. Diciembre 2026"
+  },
+  {
+   "start": "2027-02-02T09:00",
+   "title": "Encuesta de Gasto Turístico Mensual. Diciembre 2026"
+  },
+  {
+   "start": "2027-02-05T09:00",
+   "title": "Índice de Producción Industrial. Diciembre 2026"
+  },
+  {
+   "start": "2027-02-12T09:00",
+   "title": "Índice de Precios de Consumo. Enero 2027"
+  },
+  {
+   "start": "2027-02-18T09:00",
+   "title": "Hipotecas Mensual. Diciembre 2026"
+  },
+  {
+   "start": "2027-02-19T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Diciembre 2026"
+  },
+  {
+   "start": "2027-02-24T09:00",
+   "title": "Índice de Precios Industriales. Enero 2027"
+  },
+  {
+   "start": "2027-02-24T09:00",
+   "title": "Índice de Precios Industriales. Medias Anuales. Año 2026"
+  },
+  {
+   "start": "2027-02-26T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Febrero 2027"
+  },
+  {
+   "start": "2027-03-05T09:00",
+   "title": "Índice de Producción Industrial. Enero 2027"
+  },
+  {
+   "start": "2027-03-05T09:00",
+   "title": "Índice de Precios de Vivienda. Trimestre 4/2026"
+  },
+  {
+   "start": "2027-03-10T09:00",
+   "title": "Índices de Comercio al por menor. Enero 2027"
+  },
+  {
+   "start": "2027-03-12T09:00",
+   "title": "Índice de Precios de Consumo. Febrero 2027"
+  },
+  {
+   "start": "2027-03-16T09:00",
+   "title": "Encuesta Trimestral de Coste Laboral. Trimestre 4/2026"
+  },
+  {
+   "start": "2027-03-23T09:00",
+   "title": "Hipotecas Mensual. Enero 2027"
+  },
+  {
+   "start": "2027-03-23T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Enero 2027"
+  },
+  {
+   "start": "2027-03-24T09:00",
+   "title": "Índice de Precios Industriales. Febrero 2027"
+  },
+  {
+   "start": "2027-03-24T09:00",
+   "title": "Contabilidad Nacional Trimestral de España. Trimestre 4/2026"
+  },
+  {
+   "start": "2027-03-24T09:00",
+   "title": "Índice de Precios Industriales. Medias Anuales. Año 2026"
+  },
+  {
+   "start": "2027-03-30T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Marzo 2027"
+  },
+  {
+   "start": "2027-03-31T09:00",
+   "title": "Índices de Comercio al por menor. Febrero 2027"
+  },
+  {
+   "start": "2027-04-09T09:00",
+   "title": "Índice de Producción Industrial. Febrero 2027"
+  },
+  {
+   "start": "2027-04-13T09:00",
+   "title": "Índice de Precios de Consumo. Marzo 2027"
+  },
+  {
+   "start": "2027-04-22T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Febrero 2027"
+  },
+  {
+   "start": "2027-04-23T09:00",
+   "title": "Hipotecas Mensual. Febrero 2027"
+  },
+  {
+   "start": "2027-04-26T09:00",
+   "title": "Índice de Precios Industriales. Marzo 2027"
+  },
+  {
+   "start": "2027-04-26T09:00",
+   "title": "Índice de Precios Industriales. Medias Anuales. Año 2026"
+  },
+  {
+   "start": "2027-04-28T09:00",
+   "title": "Índices de Comercio al por menor. Marzo 2027"
+  },
+  {
+   "start": "2027-04-29T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Abril 2027"
+  },
+  {
+   "start": "2027-04-30T09:00",
+   "title": "Contabilidad Nacional Trimestral de España. Avance. Trimestre 1/2027"
+  },
+  {
+   "start": "2027-04-30T09:00",
+   "title": "Encuesta de Población Activa. Trimestre 1/2027"
+  },
+  {
+   "start": "2027-05-07T09:00",
+   "title": "Índice de Producción Industrial. Marzo 2027"
+  },
+  {
+   "start": "2027-05-14T09:00",
+   "title": "Índice de Precios de Consumo. Abril 2027"
+  },
+  {
+   "start": "2027-05-17T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Marzo 2027"
+  },
+  {
+   "start": "2027-05-25T09:00",
+   "title": "Índice de Precios Industriales. Abril 2027"
+  },
+  {
+   "start": "2027-05-26T09:00",
+   "title": "Hipotecas Mensual. Marzo 2027"
+  },
+  {
+   "start": "2027-05-28T09:00",
+   "title": "Índices de Comercio al por menor. Abril 2027"
+  },
+  {
+   "start": "2027-05-28T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Mayo 2027"
+  },
+  {
+   "start": "2027-06-03T09:00",
+   "title": "Índice de Producción Industrial. Abril 2027"
+  },
+  {
+   "start": "2027-06-07T09:00",
+   "title": "Índice de Precios de Vivienda. Trimestre 1/2027"
+  },
+  {
+   "start": "2027-06-07T09:00",
+   "title": "Índice de Precios de Vivienda. Ponderaciones. Año 2027"
+  },
+  {
+   "start": "2027-06-11T09:00",
+   "title": "Índice de Precios de Consumo. Mayo 2027"
+  },
+  {
+   "start": "2027-06-16T09:00",
+   "title": "Encuesta Trimestral de Coste Laboral. Trimestre 1/2027"
+  },
+  {
+   "start": "2027-06-18T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Abril 2027"
+  },
+  {
+   "start": "2027-06-21T09:00",
+   "title": "Hipotecas Mensual. Abril 2027"
+  },
+  {
+   "start": "2027-06-24T09:00",
+   "title": "Índice de Precios Industriales. Mayo 2027"
+  },
+  {
+   "start": "2027-06-24T09:00",
+   "title": "Contabilidad Nacional Trimestral de España. Trimestre 1/2027"
+  },
+  {
+   "start": "2027-06-29T09:00",
+   "title": "Índices de Comercio al por menor. Mayo 2027"
+  },
+  {
+   "start": "2027-06-29T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Junio 2027"
+  },
+  {
+   "start": "2027-07-05T09:00",
+   "title": "Índice de Producción Industrial. Mayo 2027"
+  },
+  {
+   "start": "2027-07-13T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Mayo 2027"
+  },
+  {
+   "start": "2027-07-14T09:00",
+   "title": "Índice de Precios de Consumo. Junio 2027"
+  },
+  {
+   "start": "2027-07-19T09:00",
+   "title": "Hipotecas Mensual. Mayo 2027"
+  },
+  {
+   "start": "2027-07-23T09:00",
+   "title": "Índice de Precios Industriales. Junio 2027"
+  },
+  {
+   "start": "2027-07-28T09:00",
+   "title": "Índices de Comercio al por menor. Junio 2027"
+  },
+  {
+   "start": "2027-07-30T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Julio 2027"
+  },
+  {
+   "start": "2027-07-30T09:00",
+   "title": "Contabilidad Nacional Trimestral de España. Avance. Trimestre 2/2027"
+  },
+  {
+   "start": "2027-07-30T09:00",
+   "title": "Encuesta de Población Activa. Trimestre 2/2027"
+  },
+  {
+   "start": "2027-08-05T09:00",
+   "title": "Índice de Producción Industrial. Junio 2027"
+  },
+  {
+   "start": "2027-08-06T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Junio 2027"
+  },
+  {
+   "start": "2027-08-13T09:00",
+   "title": "Índice de Precios de Consumo. Julio 2027"
+  },
+  {
+   "start": "2027-08-24T09:00",
+   "title": "Índice de Precios Industriales. Julio 2027"
+  },
+  {
+   "start": "2027-08-25T09:00",
+   "title": "Hipotecas Mensual. Junio 2027"
+  },
+  {
+   "start": "2027-08-27T09:00",
+   "title": "Índices de Comercio al por menor. Julio 2027"
+  },
+  {
+   "start": "2027-08-30T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Agosto 2027"
+  },
+  {
+   "start": "2027-09-06T09:00",
+   "title": "Índice de Precios de Vivienda. Trimestre 2/2027"
+  },
+  {
+   "start": "2027-09-10T09:00",
+   "title": "Índice de Producción Industrial. Julio 2027"
+  },
+  {
+   "start": "2027-09-14T09:00",
+   "title": "Índice de Precios de Consumo. Agosto 2027"
+  },
+  {
+   "start": "2027-09-17T09:00",
+   "title": "Encuesta Trimestral de Coste Laboral. Trimestre 2/2027"
+  },
+  {
+   "start": "2027-09-24T09:00",
+   "title": "Índice de Precios Industriales. Agosto 2027"
+  },
+  {
+   "start": "2027-09-24T09:00",
+   "title": "Contabilidad Nacional Trimestral de España. Trimestre 2/2027"
+  },
+  {
+   "start": "2027-09-24T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Julio 2027"
+  },
+  {
+   "start": "2027-09-27T09:00",
+   "title": "Hipotecas Mensual. Julio 2027"
+  },
+  {
+   "start": "2027-09-29T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Septiembre 2027"
+  },
+  {
+   "start": "2027-09-30T09:00",
+   "title": "Índices de Comercio al por menor. Agosto 2027"
+  },
+  {
+   "start": "2027-10-05T09:00",
+   "title": "Índice de Producción Industrial. Agosto 2027"
+  },
+  {
+   "start": "2027-10-14T09:00",
+   "title": "Índice de Precios de Consumo. Septiembre 2027"
+  },
+  {
+   "start": "2027-10-25T09:00",
+   "title": "Hipotecas Mensual. Agosto 2027"
+  },
+  {
+   "start": "2027-10-25T09:00",
+   "title": "Índice de Precios Industriales. Septiembre 2027"
+  },
+  {
+   "start": "2027-10-25T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Agosto 2027"
+  },
+  {
+   "start": "2027-10-28T09:00",
+   "title": "Índices de Comercio al por menor. Septiembre 2027"
+  },
+  {
+   "start": "2027-10-29T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Octubre 2027"
+  },
+  {
+   "start": "2027-10-29T09:00",
+   "title": "Contabilidad Nacional Trimestral de España. Avance. Trimestre 3/2027"
+  },
+  {
+   "start": "2027-10-29T09:00",
+   "title": "Encuesta de Población Activa. Trimestre 3/2027"
+  },
+  {
+   "start": "2027-11-05T09:00",
+   "title": "Índice de Producción Industrial. Septiembre 2027"
+  },
+  {
+   "start": "2027-11-12T09:00",
+   "title": "Índice de Precios de Consumo. Octubre 2027"
+  },
+  {
+   "start": "2027-11-16T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Septiembre 2027"
+  },
+  {
+   "start": "2027-11-24T09:00",
+   "title": "Hipotecas Mensual. Septiembre 2027"
+  },
+  {
+   "start": "2027-11-25T09:00",
+   "title": "Índice de Precios Industriales. Octubre 2027"
+  },
+  {
+   "start": "2027-11-29T09:00",
+   "title": "Índices de Comercio al por menor. Octubre 2027"
+  },
+  {
+   "start": "2027-11-29T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Noviembre 2027"
+  },
+  {
+   "start": "2027-12-03T09:00",
+   "title": "Índice de Producción Industrial. Octubre 2027"
+  },
+  {
+   "start": "2027-12-09T09:00",
+   "title": "Índice de Precios de Vivienda. Trimestre 3/2027"
+  },
+  {
+   "start": "2027-12-14T09:00",
+   "title": "Índice de Precios de Consumo. Noviembre 2027"
+  },
+  {
+   "start": "2027-12-14T09:00",
+   "title": "Estadística de Transmisiones de Derechos de la Propiedad. Octubre 2027"
+  },
+  {
+   "start": "2027-12-16T09:00",
+   "title": "Encuesta Trimestral de Coste Laboral. Trimestre 3/2027"
+  },
+  {
+   "start": "2027-12-17T09:00",
+   "title": "Hipotecas Mensual. Octubre 2027"
+  },
+  {
+   "start": "2027-12-23T09:00",
+   "title": "Índice de Precios Industriales. Noviembre 2027"
+  },
+  {
+   "start": "2027-12-23T09:00",
+   "title": "Contabilidad Nacional Trimestral de España. Trimestre 3/2027"
+  },
+  {
+   "start": "2027-12-29T09:00",
+   "title": "Índices de Comercio al por menor. Noviembre 2027"
+  },
+  {
+   "start": "2027-12-30T09:00",
+   "title": "Índice de Precios de Consumo. Avance. Diciembre 2027"
   }
  ]
 }

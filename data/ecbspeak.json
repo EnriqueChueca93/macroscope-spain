@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_at": "2026-11-26T01:15:29+00:00",
+ "updated_at": "2026-11-26T19:04:00+00:00",
  "rebuilt_at": "2026-11-01T06:28:54+00:00",
  "ecb_modified": "Sun, 01 Nov 2026 05:21:10 GMT",
  "ecb_last": "2026-10-30",
@@ -17600,6 +17600,23 @@
    "dovish": 0,
    "score": null,
    "policy_share": 0.0
+  },
+  {
+   "id": "https://www.bis.org/speeches/20261126-acting-time",
+   "date": "2026-11-26",
+   "speaker": "Christine Lagarde",
+   "key": "lagarde",
+   "institution": "ECB",
+   "seat": "ECB President",
+   "title": "President",
+   "speech_title": "Acting in time",
+   "url": "https://www.bis.org/speeches/20261126-acting-time",
+   "source": "BIS",
+   "words": 3051,
+   "hawkish": 0,
+   "dovish": 1,
+   "score": null,
+   "policy_share": 0.023
   }
  ]
 }
