@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-25",
-   "raw": 110.8739583,
-   "display": "111 €/MWh",
-   "period": "25 Nov 2026",
+   "date": "2026-11-26",
+   "raw": 194.3532292,
+   "display": "194 €/MWh",
+   "period": "26 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -449,10 +449,10 @@
    "flash": false
   },
   "electricity_demand": {
-   "date": "2026-11-24",
-   "raw": 765.61863,
-   "display": "765.6 GWh",
-   "period": "24 Nov 2026",
+   "date": "2026-11-25",
+   "raw": 751.70986,
+   "display": "751.7 GWh",
+   "period": "25 Nov 2026",
    "flash": false
   },
   "electricity_demand_monthly": {
@@ -961,8 +961,8 @@
   },
   "gdp_growth_de": {
    "date": "2026-07-01",
-   "raw": 1.2,
-   "display": "1.2%",
+   "raw": 1.1,
+   "display": "1.1%",
    "period": "Q3 2026",
    "flash": false
   },
@@ -6141,8 +6141,8 @@
   },
   "gdp_level_de": {
    "date": "2026-07-01",
-   "raw": 106.694,
-   "display": "1.2% y/y",
+   "raw": 106.584,
+   "display": "1.1% y/y",
    "period": "Q3 2026",
    "flash": false
   },
@@ -8968,24 +8968,24 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "raw": 1535.6773,
    "display": "€1,535.7 bn",
-   "period": "25 Nov 2026",
+   "period": "26 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "raw": 2.367892917,
    "display": "2.37%",
-   "period": "25 Nov 2026",
+   "period": "26 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-25",
-   "raw": 7.689452207,
+   "date": "2026-11-26",
+   "raw": 7.686714357,
    "display": "7.69 years",
-   "period": "25 Nov 2026",
+   "period": "26 Nov 2026",
    "flash": false
   },
   "madrid_general": {
@@ -9515,16 +9515,16 @@
   },
   "lp_hour_de": {
    "date": "2026-07-01",
-   "raw": 102.916,
-   "display": "102.9",
+   "raw": 102.81,
+   "display": "102.8",
    "period": "Q3 2026",
    "flash": false
   },
   "ulc_hour_de": {
-   "date": "2026-04-01",
-   "raw": 123.754,
-   "display": "123.8",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 124.703,
+   "display": "124.7",
+   "period": "Q3 2026",
    "flash": false
   },
   "lp_hour_fr": {
@@ -14134,8 +14134,43 @@
    "page": "international.html",
    "text": "Employment rate (15-64), United States for Q3 2026 revised to 71.9%, from 72.0%.",
    "at": "2026-11-25T19:18:03+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): +75.3% since the last update, to 194 €/MWh.",
+   "at": "2026-11-26T01:16:00+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "gdp_growth_de",
+   "page": "international.html",
+   "text": "Real GDP growth, Germany for Q3 2026 revised to 1.1%, from 1.2%.",
+   "at": "2026-11-26T01:16:00+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "gdp_level_de",
+   "page": "international.html",
+   "text": "Real GDP, Germany for Q3 2026 revised to 1.1% y/y, from 1.2% y/y.",
+   "at": "2026-11-26T01:16:00+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "lp_hour_de",
+   "page": "gdp.html",
+   "text": "Real labour productivity per hour worked, Germany for Q3 2026 revised to 102.8, from 102.9.",
+   "at": "2026-11-26T01:16:00+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "ulc_hour_de",
+   "page": "gdp.html",
+   "text": "Nominal unit labour cost (hours), Germany: 124.7 in Q3 2026, after 123.8 in Q2 2026.",
+   "at": "2026-11-26T01:16:00+00:00"
   }
  ],
- "updated_at": "2026-11-25T19:18:03+00:00",
+ "updated_at": "2026-11-26T01:16:00+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
