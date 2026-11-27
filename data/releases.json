@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-26",
-   "raw": 194.3532292,
-   "display": "194 €/MWh",
-   "period": "26 Nov 2026",
+   "date": "2026-11-27",
+   "raw": 221.9204167,
+   "display": "222 €/MWh",
+   "period": "27 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -449,10 +449,10 @@
    "flash": false
   },
   "electricity_demand": {
-   "date": "2026-11-25",
-   "raw": 771.5342,
-   "display": "771.5 GWh",
-   "period": "25 Nov 2026",
+   "date": "2026-11-26",
+   "raw": 747.08158,
+   "display": "747.1 GWh",
+   "period": "26 Nov 2026",
    "flash": false
   },
   "electricity_demand_monthly": {
@@ -652,24 +652,24 @@
    "flash": false
   },
   "ecb_deposit_rate": {
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "26 Nov 2026",
+   "period": "27 Nov 2026",
    "flash": false
   },
   "ecb_mro_rate": {
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "raw": 2.65,
    "display": "2.65%",
-   "period": "26 Nov 2026",
+   "period": "27 Nov 2026",
    "flash": false
   },
   "ecb_mlf_rate": {
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "raw": 2.9,
    "display": "2.90%",
-   "period": "26 Nov 2026",
+   "period": "27 Nov 2026",
    "flash": false
   },
   "estr": {
@@ -1751,10 +1751,10 @@
    "flash": false
   },
   "core_cpi_uk": {
-   "date": "2026-10-01",
+   "date": "2026-09-01",
    "raw": 3.1,
    "display": "3.1%",
-   "period": "Oct 2026",
+   "period": "Sep 2026",
    "flash": false
   },
   "unemployment_uk": {
@@ -6245,24 +6245,24 @@
    "flash": false
   },
   "youth_unemp_uk": {
-   "date": "2026-07-01",
-   "raw": 15.6,
-   "display": "15.6%",
-   "period": "Jul 2026",
+   "date": "2026-08-01",
+   "raw": 15.1,
+   "display": "15.1%",
+   "period": "Aug 2026",
    "flash": false
   },
   "youth_unemp_us": {
-   "date": "2026-09-01",
-   "raw": 9.9,
-   "display": "9.9%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 9.3,
+   "display": "9.3%",
+   "period": "Oct 2026",
    "flash": false
   },
   "youth_unemp_ca": {
-   "date": "2026-09-01",
-   "raw": 13.0,
-   "display": "13.0%",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 13.7,
+   "display": "13.7%",
+   "period": "Oct 2026",
    "flash": false
   },
   "youth_unemp_ea": {
@@ -6323,8 +6323,8 @@
   },
   "emp_rate_us": {
    "date": "2026-07-01",
-   "raw": 71.98423,
-   "display": "72.0%",
+   "raw": 71.94911,
+   "display": "71.9%",
    "period": "Q3 2026",
    "flash": false
   },
@@ -7379,15 +7379,15 @@
    "flash": false
   },
   "real_hpi_fr": {
-   "date": "2026-07-01",
-   "raw": 99.64983669,
-   "display": "−3.4% y/y",
-   "period": "Q3 2026",
+   "date": "2026-04-01",
+   "raw": 100.4871867,
+   "display": "−3.0% y/y",
+   "period": "Q2 2026",
    "flash": false
   },
   "real_hpi_de": {
    "date": "2026-04-01",
-   "raw": 114.0531827,
+   "raw": 114.0922917,
    "display": "−2.1% y/y",
    "period": "Q2 2026",
    "flash": false
@@ -7456,15 +7456,15 @@
    "flash": false
   },
   "price_income_fr": {
-   "date": "2026-07-01",
-   "raw": 103.3975885,
-   "display": "103.4",
-   "period": "Q3 2026",
+   "date": "2026-04-01",
+   "raw": 104.9325961,
+   "display": "104.9",
+   "period": "Q2 2026",
    "flash": false
   },
   "price_income_de": {
    "date": "2026-04-01",
-   "raw": 84.67323943,
+   "raw": 84.67372629,
    "display": "84.7",
    "period": "Q2 2026",
    "flash": false
@@ -7506,21 +7506,21 @@
   },
   "price_income_us": {
    "date": "2026-04-01",
-   "raw": 109.858709,
-   "display": "109.9",
+   "raw": 109.7514297,
+   "display": "109.8",
    "period": "Q2 2026",
    "flash": false
   },
   "price_income_ca": {
    "date": "2026-07-01",
-   "raw": 138.4272085,
+   "raw": 138.3562509,
    "display": "138.4",
    "period": "Q3 2026",
    "flash": false
   },
   "price_income_jp": {
    "date": "2025-10-01",
-   "raw": 88.28060187,
+   "raw": 88.28122733,
    "display": "88.3",
    "period": "Q4 2025",
    "flash": false
@@ -7533,10 +7533,10 @@
    "flash": false
   },
   "price_rent_fr": {
-   "date": "2026-07-01",
-   "raw": 125.691203,
-   "display": "125.7",
-   "period": "Q3 2026",
+   "date": "2026-04-01",
+   "raw": 126.6870958,
+   "display": "126.7",
+   "period": "Q2 2026",
    "flash": false
   },
   "price_rent_de": {
@@ -8968,24 +8968,24 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "raw": 1535.6773,
    "display": "€1,535.7 bn",
-   "period": "26 Nov 2026",
+   "period": "27 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "raw": 2.367892917,
    "display": "2.37%",
-   "period": "26 Nov 2026",
+   "period": "27 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-26",
-   "raw": 7.686714357,
-   "display": "7.69 years",
-   "period": "26 Nov 2026",
+   "date": "2026-11-27",
+   "raw": 7.683976506,
+   "display": "7.68 years",
+   "period": "27 Nov 2026",
    "flash": false
   },
   "madrid_general": {
@@ -9046,23 +9046,23 @@
   },
   "ms_domestic_claims": {
    "date": "2026-09-01",
-   "raw": 2416.942929,
-   "display": "€2,416.9 bn",
+   "raw": 2417.008929,
+   "display": "€2,417.0 bn",
    "period": "Sep 2026",
    "flash": false
   },
   "ms_net_claims_gg": {
-   "date": "2026-09-01",
-   "raw": 763.127,
-   "display": "€763.1 bn",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 725.321,
+   "display": "€725.3 bn",
+   "period": "Oct 2026",
    "flash": false
   },
   "ms_claims_gg": {
-   "date": "2026-09-01",
-   "raw": 857.636,
-   "display": "€857.6 bn",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 863.958,
+   "display": "€864.0 bn",
+   "period": "Oct 2026",
    "flash": false
   },
   "ms_gov_deposits": {
@@ -9095,8 +9095,8 @@
   },
   "ms_broad_money": {
    "date": "2026-09-01",
-   "raw": 1962.682,
-   "display": "€1,962.7 bn",
+   "raw": 1963.024,
+   "display": "€1,963.0 bn",
    "period": "Sep 2026",
    "flash": false
   },
@@ -9108,24 +9108,24 @@
    "flash": false
   },
   "ms_transferable": {
-   "date": "2026-09-01",
-   "raw": 1416.247,
-   "display": "€1,416.2 bn",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 1395.796,
+   "display": "€1,395.8 bn",
+   "period": "Oct 2026",
    "flash": false
   },
   "ms_other_deposits": {
-   "date": "2026-09-01",
-   "raw": 328.034,
-   "display": "€328.0 bn",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 336.42,
+   "display": "€336.4 bn",
+   "period": "Oct 2026",
    "flash": false
   },
   "ms_securities_bm": {
-   "date": "2026-09-01",
-   "raw": 46.987,
-   "display": "€47.0 bn",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 52.148,
+   "display": "€52.1 bn",
+   "period": "Oct 2026",
    "flash": false
   },
   "ms_deposits_xbm": {
@@ -9136,10 +9136,10 @@
    "flash": false
   },
   "ms_securities_xbm": {
-   "date": "2026-09-01",
-   "raw": 227.504,
-   "display": "€227.5 bn",
-   "period": "Sep 2026",
+   "date": "2026-10-01",
+   "raw": 228.42,
+   "display": "€228.4 bn",
+   "period": "Oct 2026",
    "flash": false
   },
   "ms_equity": {
@@ -9158,7 +9158,7 @@
   },
   "ms_oin": {
    "date": "2026-09-01",
-   "raw": 91.143558,
+   "raw": 91.084558,
    "display": "€91.1 bn",
    "period": "Sep 2026",
    "flash": false
@@ -14351,8 +14351,113 @@
    "page": "ecb.html",
    "text": "Loans to non-financial corporations, y/y: 5.6% in Oct 2026, after 5.5% in Sep 2026.",
    "at": "2026-11-26T19:04:35+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): +14.2% since the last update, to 222 €/MWh.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_demand",
+   "page": "activity.html",
+   "text": "Electricity demand: −3.2% since the last update, to 747.1 GWh.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "ms_domestic_claims",
+   "page": "financial.html",
+   "text": "Domestic claims (monetary survey) for Sep 2026 revised to €2,417.0 bn, from €2,416.9 bn.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "ms_net_claims_gg",
+   "page": "financial.html",
+   "text": "Net claims on general government (monetary survey): €725.3 bn in Oct 2026, after €763.1 bn in Sep 2026.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "ms_claims_gg",
+   "page": "financial.html",
+   "text": "Claims on general government (monetary survey): €864.0 bn in Oct 2026, after €857.6 bn in Sep 2026.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "ms_broad_money",
+   "page": "financial.html",
+   "text": "Broad money (monetary survey) for Sep 2026 revised to €1,963.0 bn, from €1,962.7 bn.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "ms_transferable",
+   "page": "financial.html",
+   "text": "Transferable deposits (monetary survey): €1,395.8 bn in Oct 2026, after €1,416.2 bn in Sep 2026.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "ms_other_deposits",
+   "page": "financial.html",
+   "text": "Other deposits in broad money (monetary survey): €336.4 bn in Oct 2026, after €328.0 bn in Sep 2026.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "ms_securities_bm",
+   "page": "financial.html",
+   "text": "Debt securities in broad money (monetary survey): €52.1 bn in Oct 2026, after €47.0 bn in Sep 2026.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "ms_securities_xbm",
+   "page": "financial.html",
+   "text": "Debt securities excluded from broad money (monetary survey): €228.4 bn in Oct 2026, after €227.5 bn in Sep 2026.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "youth_unemp_uk",
+   "page": "international.html",
+   "text": "Youth unemployment rate (15-24), United Kingdom: 15.1% in Aug 2026, after 15.6% in Jul 2026.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "youth_unemp_us",
+   "page": "international.html",
+   "text": "Youth unemployment rate (15-24), United States: 9.3% in Oct 2026, after 9.9% in Sep 2026.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "youth_unemp_ca",
+   "page": "international.html",
+   "text": "Youth unemployment rate (15-24), Canada: 13.7% in Oct 2026, after 13.0% in Sep 2026.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "emp_rate_us",
+   "page": "international.html",
+   "text": "Employment rate (15-64), United States for Q3 2026 revised to 71.9%, from 72.0%.",
+   "at": "2026-11-27T01:15:42+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "price_income_us",
+   "page": "housing.html",
+   "text": "House price to income ratio, United States for Q2 2026 revised to 109.8, from 109.9.",
+   "at": "2026-11-27T01:15:42+00:00"
   }
  ],
- "updated_at": "2026-11-26T19:04:35+00:00",
+ "updated_at": "2026-11-27T01:15:42+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
