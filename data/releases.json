@@ -421,10 +421,10 @@
    "flash": false
   },
   "electricity_price": {
-   "date": "2026-11-27",
-   "raw": 221.9204167,
-   "display": "222 €/MWh",
-   "period": "27 Nov 2026",
+   "date": "2026-11-28",
+   "raw": 211.3936458,
+   "display": "211 €/MWh",
+   "period": "28 Nov 2026",
    "flash": false
   },
   "industrial_production": {
@@ -652,24 +652,24 @@
    "flash": false
   },
   "ecb_deposit_rate": {
-   "date": "2026-11-27",
+   "date": "2026-11-28",
    "raw": 2.5,
    "display": "2.50%",
-   "period": "27 Nov 2026",
+   "period": "28 Nov 2026",
    "flash": false
   },
   "ecb_mro_rate": {
-   "date": "2026-11-27",
+   "date": "2026-11-28",
    "raw": 2.65,
    "display": "2.65%",
-   "period": "27 Nov 2026",
+   "period": "28 Nov 2026",
    "flash": false
   },
   "ecb_mlf_rate": {
-   "date": "2026-11-27",
+   "date": "2026-11-28",
    "raw": 2.9,
    "display": "2.90%",
-   "period": "27 Nov 2026",
+   "period": "28 Nov 2026",
    "flash": false
   },
   "estr": {
@@ -1751,10 +1751,10 @@
    "flash": false
   },
   "core_cpi_uk": {
-   "date": "2026-09-01",
+   "date": "2026-10-01",
    "raw": 3.1,
    "display": "3.1%",
-   "period": "Sep 2026",
+   "period": "Oct 2026",
    "flash": false
   },
   "unemployment_uk": {
@@ -6245,24 +6245,24 @@
    "flash": false
   },
   "youth_unemp_uk": {
-   "date": "2026-08-01",
-   "raw": 15.1,
-   "display": "15.1%",
-   "period": "Aug 2026",
+   "date": "2026-07-01",
+   "raw": 15.6,
+   "display": "15.6%",
+   "period": "Jul 2026",
    "flash": false
   },
   "youth_unemp_us": {
-   "date": "2026-10-01",
-   "raw": 9.3,
-   "display": "9.3%",
-   "period": "Oct 2026",
+   "date": "2026-09-01",
+   "raw": 9.9,
+   "display": "9.9%",
+   "period": "Sep 2026",
    "flash": false
   },
   "youth_unemp_ca": {
-   "date": "2026-10-01",
-   "raw": 13.7,
-   "display": "13.7%",
-   "period": "Oct 2026",
+   "date": "2026-09-01",
+   "raw": 13.0,
+   "display": "13.0%",
+   "period": "Sep 2026",
    "flash": false
   },
   "youth_unemp_ea": {
@@ -6323,8 +6323,8 @@
   },
   "emp_rate_us": {
    "date": "2026-07-01",
-   "raw": 71.94911,
-   "display": "71.9%",
+   "raw": 71.98423,
+   "display": "72.0%",
    "period": "Q3 2026",
    "flash": false
   },
@@ -7379,15 +7379,15 @@
    "flash": false
   },
   "real_hpi_fr": {
-   "date": "2026-04-01",
-   "raw": 100.4871867,
-   "display": "−3.0% y/y",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 99.64983669,
+   "display": "−3.4% y/y",
+   "period": "Q3 2026",
    "flash": false
   },
   "real_hpi_de": {
    "date": "2026-04-01",
-   "raw": 114.0922917,
+   "raw": 114.0531827,
    "display": "−2.1% y/y",
    "period": "Q2 2026",
    "flash": false
@@ -7400,10 +7400,10 @@
    "flash": false
   },
   "real_hpi_nl": {
-   "date": "2025-10-01",
-   "raw": 156.6042854,
-   "display": "2.9% y/y",
-   "period": "Q4 2025",
+   "date": "2026-04-01",
+   "raw": 157.1682937,
+   "display": "1.2% y/y",
+   "period": "Q2 2026",
    "flash": false
   },
   "real_hpi_pt": {
@@ -7456,15 +7456,15 @@
    "flash": false
   },
   "price_income_fr": {
-   "date": "2026-04-01",
-   "raw": 104.9325961,
-   "display": "104.9",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 103.3975885,
+   "display": "103.4",
+   "period": "Q3 2026",
    "flash": false
   },
   "price_income_de": {
    "date": "2026-04-01",
-   "raw": 84.67372629,
+   "raw": 84.67323943,
    "display": "84.7",
    "period": "Q2 2026",
    "flash": false
@@ -7477,10 +7477,10 @@
    "flash": false
   },
   "price_income_nl": {
-   "date": "2025-10-01",
-   "raw": 141.406982,
-   "display": "141.4",
-   "period": "Q4 2025",
+   "date": "2026-04-01",
+   "raw": 140.617543,
+   "display": "140.6",
+   "period": "Q2 2026",
    "flash": false
   },
   "price_income_pt": {
@@ -7506,21 +7506,21 @@
   },
   "price_income_us": {
    "date": "2026-04-01",
-   "raw": 109.7514297,
-   "display": "109.8",
+   "raw": 109.858709,
+   "display": "109.9",
    "period": "Q2 2026",
    "flash": false
   },
   "price_income_ca": {
    "date": "2026-07-01",
-   "raw": 138.3562509,
+   "raw": 138.4272085,
    "display": "138.4",
    "period": "Q3 2026",
    "flash": false
   },
   "price_income_jp": {
    "date": "2025-10-01",
-   "raw": 88.28122733,
+   "raw": 88.28060187,
    "display": "88.3",
    "period": "Q4 2025",
    "flash": false
@@ -7533,10 +7533,10 @@
    "flash": false
   },
   "price_rent_fr": {
-   "date": "2026-04-01",
-   "raw": 126.6870958,
-   "display": "126.7",
-   "period": "Q2 2026",
+   "date": "2026-07-01",
+   "raw": 125.691203,
+   "display": "125.7",
+   "period": "Q3 2026",
    "flash": false
   },
   "price_rent_de": {
@@ -7554,10 +7554,10 @@
    "flash": false
   },
   "price_rent_nl": {
-   "date": "2025-10-01",
-   "raw": 157.3571623,
-   "display": "157.4",
-   "period": "Q4 2025",
+   "date": "2026-04-01",
+   "raw": 155.8474284,
+   "display": "155.8",
+   "period": "Q2 2026",
    "flash": false
   },
   "price_rent_pt": {
@@ -8968,24 +8968,24 @@
    "flash": false
   },
   "state_debt_outstanding": {
-   "date": "2026-11-27",
+   "date": "2026-11-28",
    "raw": 1535.6773,
    "display": "€1,535.7 bn",
-   "period": "27 Nov 2026",
+   "period": "28 Nov 2026",
    "flash": false
   },
   "state_debt_avg_coupon": {
-   "date": "2026-11-27",
+   "date": "2026-11-28",
    "raw": 2.367892917,
    "display": "2.37%",
-   "period": "27 Nov 2026",
+   "period": "28 Nov 2026",
    "flash": false
   },
   "state_debt_avg_life": {
-   "date": "2026-11-27",
-   "raw": 7.683976506,
+   "date": "2026-11-28",
+   "raw": 7.681238655,
    "display": "7.68 years",
-   "period": "27 Nov 2026",
+   "period": "28 Nov 2026",
    "flash": false
   },
   "madrid_general": {
@@ -14561,8 +14561,78 @@
    "page": "financial.html",
    "text": "Madrid exchange: basic materials, industry and construction: +2.2% since the last update, to 2,539.5.",
    "at": "2026-11-27T19:00:12+00:00"
+  },
+  {
+   "kind": "market",
+   "id": "electricity_price",
+   "page": "inflation.html",
+   "text": "Electricity price (day-ahead): −4.7% since the last update, to 211 €/MWh.",
+   "at": "2026-11-28T00:47:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "core_cpi_uk",
+   "page": "international.html",
+   "text": "Core CPI inflation, United Kingdom: 3.1% in Oct 2026, after 3.1% in Sep 2026.",
+   "at": "2026-11-28T00:47:58+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "emp_rate_us",
+   "page": "international.html",
+   "text": "Employment rate (15-64), United States for Q3 2026 revised to 72.0%, from 71.9%.",
+   "at": "2026-11-28T00:47:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "real_hpi_fr",
+   "page": "housing.html",
+   "text": "Real house prices, France: −3.4% y/y in Q3 2026, after −3.0% y/y in Q2 2026.",
+   "at": "2026-11-28T00:47:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "real_hpi_nl",
+   "page": "housing.html",
+   "text": "Real house prices, Netherlands: 1.2% y/y in Q2 2026, after 2.9% y/y in Q4 2025.",
+   "at": "2026-11-28T00:47:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "price_income_fr",
+   "page": "housing.html",
+   "text": "House price to income ratio, France: 103.4 in Q3 2026, after 104.9 in Q2 2026.",
+   "at": "2026-11-28T00:47:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "price_income_nl",
+   "page": "housing.html",
+   "text": "House price to income ratio, Netherlands: 140.6 in Q2 2026, after 141.4 in Q4 2025.",
+   "at": "2026-11-28T00:47:58+00:00"
+  },
+  {
+   "kind": "revision",
+   "id": "price_income_us",
+   "page": "housing.html",
+   "text": "House price to income ratio, United States for Q2 2026 revised to 109.9, from 109.8.",
+   "at": "2026-11-28T00:47:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "price_rent_fr",
+   "page": "housing.html",
+   "text": "House price to rent ratio, France: 125.7 in Q3 2026, after 126.7 in Q2 2026.",
+   "at": "2026-11-28T00:47:58+00:00"
+  },
+  {
+   "kind": "release",
+   "id": "price_rent_nl",
+   "page": "housing.html",
+   "text": "House price to rent ratio, Netherlands: 155.8 in Q2 2026, after 157.4 in Q4 2025.",
+   "at": "2026-11-28T00:47:58+00:00"
   }
  ],
- "updated_at": "2026-11-27T19:00:12+00:00",
+ "updated_at": "2026-11-28T00:47:58+00:00",
  "started_at": "2026-10-31T23:31:49+00:00"
 }
